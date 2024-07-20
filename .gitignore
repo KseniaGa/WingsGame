@@ -6,3 +6,6 @@ game/saves/navigation.json
 traceback.txt
 log.txt
 errors.txt
+game/saves/persistent
+game/cache/shaders.txt
+/game/cache

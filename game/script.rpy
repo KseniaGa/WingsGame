@@ -5,6 +5,19 @@
 
 define e = Character("Ейлін")
 
+default show_countdown = False
+default countdown_value = 0.0
+
+label update_countdown(new_value):
+    while countdown_value < new_value:
+        $ countdown_value += 1
+        $ renpy.pause(0.01)
+        $ renpy.redraw(None, 0)
+    return
+
+define show_progress_bar = lambda: (renpy.show_screen("countdown_bar"), setattr(renpy.store, 'show_countdown', True))
+define hide_progress_bar = lambda: (renpy.hide_screen("countdown_bar"), setattr(renpy.store, 'show_countdown', False))
+define update_progress_bar = lambda new_value: renpy.call("update_countdown", new_value)
 
 # Гра починається тут.
 
