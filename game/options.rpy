@@ -180,7 +180,9 @@ init python:
     ## тек, а "**.psd " відповідає файлам psd будь-де в проєкті.
 
     ## Класифікуйте файли як None, щоб виключити їх із вбудованих дистрибутивів.
-
+    
+    config.rollback_enabled = False
+    
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)

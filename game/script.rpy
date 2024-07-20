@@ -14,6 +14,8 @@ label start:
     # додати файл (з назвою «bg room.png» або «bg room.jpg») до
     # теки images, щоб показати його.
 
+    call screen mapScreen
+
     scene bg room
 
     # Це показує спрайт персонажа. Використовується заповнювач, але ви можете

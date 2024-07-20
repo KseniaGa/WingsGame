@@ -1,0 +1,8 @@
+
+*.save
+/game/saves
+/game/saves
+game/saves/navigation.json
+traceback.txt
+log.txt
+errors.txt
