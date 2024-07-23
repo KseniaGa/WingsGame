@@ -1,5 +1,7 @@
 label room1:
     scene room hell bg
+
+    d "Hallowm I am Domovyk"
     
     "gonna show bar"
 

@@ -1,4 +1,5 @@
 label room4:
     scene room hell bg
-    "Hello this is room 4"
+    l "Hallowm I am Lysovuk"
+    
     call screen backButton
