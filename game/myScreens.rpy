@@ -1,28 +1,42 @@
 label myScreens:
 
 screen mapScreen:
-    add "hell bg.png"
+    add "map bg.png"
 
     #Room1
     imagebutton:
         focus_mask True
-        idle "r1-idle.png"
-        hover "r1-hover.png"
+        idle "map room 1 idle.png"
+        hover "map room 1 hover.png"
         action Jump("room1")
 
     #Room2
     imagebutton:
         focus_mask True
-        idle "r2-idle.png"
-        hover "r2-hover.png"
+        idle "map room 2 idle.png"
+        hover "map room 2 hover.png"
         action Jump("room2")
 
     #Room3
     imagebutton:
         focus_mask True
-        idle "r3-idle.png"
-        hover "r3-hover.png"
+        idle "map room 3 idle.png"
+        hover "map room 3 hover.png"
         action Jump("room3")
+        
+    #Room4
+    imagebutton:
+        focus_mask True
+        idle "map room 4 idle.png"
+        hover "map room 4 hover.png"
+        action Jump("room4")
+        
+    #Top Room
+    imagebutton:
+        focus_mask True
+        idle "map top room idle.png"
+        hover "map top room hover.png"
+        action Jump("toproom")
 
 screen backButton:
     imagebutton:

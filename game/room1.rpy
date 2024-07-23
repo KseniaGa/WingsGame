@@ -7,11 +7,14 @@ label room1:
     $ show_progress_bar()
     $ update_progress_bar(5)
 
-    
     "Hello this is room 1"
     $ update_progress_bar(60)
 
     "increased bar"
+
+    $ update_progress_bar(countdown_value + 20)
+
+    "increased bar again"
 
     $ hide_progress_bar()
 
