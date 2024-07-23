@@ -4,6 +4,7 @@ define b = Character("Berehynia", color="#ffcc00")
 define m = Character("Mara", color="#9932CC")
 define d = Character("Domovyk")
 define p = Character("Poludnicia")
+define l = Character("Lysovuk")
 
 # bar variables
 default show_countdown = False
