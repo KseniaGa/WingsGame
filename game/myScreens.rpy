@@ -50,7 +50,7 @@ screen countdown_bar:
     bar:
         xalign 0.95 yalign 0.15
         bar_vertical True
-        value countdown_value
+        value darkness_value
         range 100
         thumb None
         thumb_shadow None

@@ -5,16 +5,16 @@ label room1:
     
     "gonna show bar"
 
-    $ countdown_value = 0  # Initial value
+    $ darkness_value = 0  # Initial value
     $ show_progress_bar()
-    $ update_progress_bar(5)
+    $ update_darkness(5)
 
     "Hello this is room 1"
-    $ update_progress_bar(60)
+    $ update_darkness(60)
 
     "increased bar"
 
-    $ update_progress_bar(countdown_value + 20)
+    $ update_darkness(darkness_value + 20)
 
     "increased bar again"
 
