@@ -805,7 +805,11 @@ screen preferences():
                         textbutton _("Без звуку"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
-
+        vbox:
+            style_prefix "pref"
+            label _("Language")
+            textbutton "Українська мова" action Language(None) #default language of the VN
+            textbutton "English" action Language("english") #translation that you set in the Generate Translations 
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text

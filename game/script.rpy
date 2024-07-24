@@ -58,7 +58,7 @@ init python:
 # Гра починається тут.
 label start:
 
-    "In the middle of the darkness, a consciousness awakes."
+    "Посеред темряви прокидається свідомість."
     show vila at left with dissolve
     v "Where am I? It's is so dark..."
 
