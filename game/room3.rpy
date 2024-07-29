@@ -14,12 +14,13 @@ label room3:
     r "What brought you here to my peaceful ... home?"
 
     menu:
-        "Your home seems too dry at the moment, Rusalka. Looks like you need a drink, you know?": 
-            r "Never felt as thirsty in my life as here. Pointing to that does NOT help..."
-            $ increase_darkness()
-            $ increase_darkness()
+        "Your home seems too dry at the moment, Rusalka. Looks like you need a drink.": 
+            r "Never felt as thirsty in my life as here"
+            r "Pointing to that does NOT help..."
+            # $ increase_darkness()
+            # $ increase_darkness()
+            #Consider not punishing the first encounter...
 
-            #Consider not punishing hte first encounter...
             "Rusalka feels self-aware and hides her face in her used-to-be golden hair. Good job, Vila."
             jump rusalka_remember
 
@@ -30,23 +31,49 @@ label room3:
 
 
 label rusalka_remember:
-    r "'Rusalka'... Somehow my name carries a painful resemblence with what hurt us so much." #would need to come up with good tranlsation to Ukrainian
+    r "Somehow my name carries a painful resemblence with what hurt us so much. What was my existence outside of this darkness?" #would need to come up with good tranlsation to Ukrainian
+
+    # show vila at left with dissolve 
 
     menu:
         "You used to be full of light and laugh, until they came. Filling our waters with life.":
             $ wing_strength += 1
+            # hide vila with dissolve
+            r "Laughter?"
             r "I haven't laughed in ages!"
             # show hopefull rusalka's face
             "Rusalka glances at you - a sudden, yet quick, moment of light and hope. Then quickly looks back down, and turns quiet."
             # show back the sad rusalka
             jump make_rusalka_feel_better
 
-        "Other choice TODO"
+        "You used to come down to earh in the rain droplets. Enriching our soils, bringing life.":
+            # hide vila with dissolve
+            r "You must be confusing me with somebody else. "
+            r "I like fresh water..."
+            r "... but not up in the skies."
+            $ increase_darkness()
+            jump rusalka_remember
 
-        "Other choice 2 TODO"
+        "You used to roam our fields and steal young girls and boys, like a witch. That did bring a lot of harm.":
+        # ref: на Поліссі русалок зближували з відьмами, вони начебто лякають людей, псують посіви і шкодять худобі, 
+        # source https://uk.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D0%B0%D0%BB%D0%BA%D0%B0
+        # we can choose if to keep 'good' or 'bad' traits of the characters. I'm inclined to keep the good ones?
+        # "На відміну від інших подібних істот, зустріч з русалкою в українців зазвичай все ж вважалася доброю 
+        # ознакою чи свідчила про високі моральні якості людини, безгрішність. Тому здатність бачити русалок 
+        # приписувалася малим дітям, «достойним» людям[6]. В російській міфології образ русалки більш негативний. 
+        # Ці істоти збиткуються з людей, кидають у них каміння, лоскочуть до смерті, зваблюють хлопців і топлять їх"
+            # r "I was once a young girl myself.. And still bare the memories of her human life."
+            # ref: https://en.wikipedia.org/wiki/Rusalka "Slavic peoples [...] did not consider rusalki evil before the 19th century"
+            # hide vila with dissolve
+            r "People always fear what they don't know and falsely believe us to be evil."
+            r "We only come out of water in the spring to help nurture the crops. "
+            r "How harmful is that?"
+            $ increase_darkness()
+            jump rusalka_remember
 
 
 label make_rusalka_feel_better:
+    # show vila with dissolve
     v "I am here for you and would like to make you feel better!"
 
     menu:
@@ -54,22 +81,35 @@ label make_rusalka_feel_better:
         #ref: https://uk.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D0%B0%D0%BB%D0%BA%D0%B0
         # ENG: https://en.wikipedia.org/wiki/Green_week
         "In reality, your name is associated with the Green Week, or Rusalii (Rosalii) celebrations..":
-            v "These spring festivities are full of fertility and even funeral rites!"
+            v "These spring festivities are full of fertility rituals and even funeral rites!"
+            # hide vila with dissolve
             r "I remember young human girls wearing flower crowns."
             $ wing_strength += 1
             r "They invoked us during Rusalii in an attempt to bring the moisture and vigor to the fields."
             # show rusalka radiant at rightly with dissolve #this does not work yet
-            hide rusalka with dissolve
-        
-        "In reality, the damage done to you is not as bad as it seems. The fields you're nurtuting are being reborn. I've seen worse..":
-            r "One should not underestimate the power of water. It brings both destruction and rebirth."
-            r "I did not manage to save anybody, and shall stay here."
-            # v "But Rusalka.."
-            $ increase_darkness()
+            # jump make_rusalka_feel_better
             jump map
+        
+        "In reality, the damage done to you is not as bad as it seems..":
+            v "The fields you're nurtuting are being reborn."
+            # hide vila with dissolve
+            r "One should not underestimate the power of water. It brings both destruction and rebirth."
+            r "But I keep forgetting about the latter."
+            $ wing_strength += 1
+            # show rusalka radiant at rightly with dissolve #this does not work yet
+            # jump make_rusalka_feel_better
+            jump map
+
+        # idk, I wanna add a 'wrong answer' but not sure what fits, and if should be here
+        "In reality, it all could have been worse, at least you're alive and still here.":
+            # hide vila with dissolve
+            r "I did not manage to save anybody..."
+            r "...so I shall stay here, perhaps forever."
+            "Rusalka starts humming a sad song and turns away."
+            # # v "But Rusalka.."
+            $ increase_darkness()
+            jump make_rusalka_feel_better
             #TODO: consider setting a flag inc ase player returns to Rusalka, so that RUsalka 'remebers the last encounter'
-
-
 
 
 # label mara_remember:
