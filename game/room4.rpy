@@ -52,7 +52,7 @@ label lisovyk_guess:
             l "Forests have trees. Trees have leaves. Leaves rustle..."
             l "Those are not voices, but the leaves."
             pause 1.0
-            l "Hmmkhhmmm. Lisovyk turns his head left and right, a sound of sqeeky wood follows..."
+            "Lisovyk turns his head left and right, a sound of sqeeky wood follows..."
             jump lisovyk_remember
 
         "Lee-sooh-vyyyk, you are the patron of the bolds.": #Cause BOLD is LYSYY
