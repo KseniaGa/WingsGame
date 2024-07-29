@@ -15,13 +15,14 @@ label room3:
 
     menu:
         "Your home seems too dry at the moment, Rusalka. Looks like you need a drink.": 
-            r "Never felt as thirsty in my life as here"
+            r "Never felt as thirsty in my life as here."
             r "Pointing to that does NOT help..."
             # $ increase_darkness()
             # $ increase_darkness()
             #Consider not punishing the first encounter...
 
             "Rusalka feels self-aware and hides her face in her used-to-be golden hair. Good job, Vila."
+            pause 1.0
             jump rusalka_remember
 
         "Home? What happened to you, Rusalka? How did you get here?":
@@ -88,7 +89,8 @@ label make_rusalka_feel_better:
             r "They invoked us during Rusalii in an attempt to bring the moisture and vigor to the fields."
             # show rusalka radiant at rightly with dissolve #this does not work yet
             # jump make_rusalka_feel_better
-            jump map
+            # jump map
+            jump check_rusalka_level
         
         "In reality, the damage done to you is not as bad as it seems..":
             v "The fields you're nurtuting are being reborn."
@@ -98,7 +100,8 @@ label make_rusalka_feel_better:
             $ wing_strength += 1
             # show rusalka radiant at rightly with dissolve #this does not work yet
             # jump make_rusalka_feel_better
-            jump map
+            # jump map
+            jump check_rusalka_level
 
         # idk, I wanna add a 'wrong answer' but not sure what fits, and if should be here
         "In reality, it all could have been worse, at least you're alive and still here.":
@@ -108,34 +111,17 @@ label make_rusalka_feel_better:
             "Rusalka starts humming a sad song and turns away."
             # # v "But Rusalka.."
             $ increase_darkness()
+            pause 1.0
             jump make_rusalka_feel_better
             #TODO: consider setting a flag inc ase player returns to Rusalka, so that RUsalka 'remebers the last encounter'
 
-
-# label mara_remember:
-#     m "Remember... I used to guide souls and bring peace to the restless."
-    
-#     menu:
-#         "Yes, you ensured peace in the transition.":
-#             $ wing_strength += 1
-#             m "Thank you for reminding me. I can feel my strength returning."
-#             show mara radiant at rightly with dissolve
-#             "Mara transforms into a radiant form, and a part of her essence is absorbed into Vila's wings."
-#             hide mara with dissolve
-#             show berehynia at rightly with dissolve
-#             b "Well done. Your wings have grown stronger."
-#             b "Now you need to rescue more of us, so we can all escape together."
-#             jump map
-        
-#         "You protected the souls from harm.":
-#             m "No, that is not quite right. I brought peace, not protection from harm."
-#             $ increase_darkness()
-#             jump mara_remember
-        
-#         "You brought fear to the living.":
-#             m "No, that is not who I am. Try to remember more clearly."
-#             $ increase_darkness()
-#             jump mara_remember
+label check_rusalka_level:
+    if wing_strength >= 2:
+        "TODO: show Rusalka radiant, turns into magic, dissolves"
+        "TODO: show vila's wings getting stronger?"
+        jump map
+    else:
+        jump make_rusalka_feel_better
 
 # label game_over_darkness:
 #     scene black
