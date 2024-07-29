@@ -15,7 +15,7 @@ image mara = "character_sprites/mara_neutral.png"
 image mara radiant = "character_sprites/mara_radiant.png"
 image poludnicia = "character_sprites/poludnicia_neutral.png"
 image kikimora = "character_sprites/kikimora_neutral.png"
-image lisovyk = "character_sprites/lisovyk_neutral.png"
+image lisovyk = "character_sprites/lisovyk_neutral_flipped.png"
 image rusalka = "character_sprites/rusalka_neutral.png"
 image alkonost = "character_sprites/alkonost_neutral.png"
 
