@@ -1,117 +1,132 @@
-default kikimora_attitude = 0  # Track Kikimora's attitude toward Villa
+default kikimora_attitude = 0  # Відстеження ставлення Кікімори до Віли
+default kiki_visited = False
+default kiki_joined = False
 
 label room1:
     scene room hell bg
-
-    show vila at left with dissolve
-    # pause 0.1
-    # show kikimora at right with dissolve
-
     # scene bg_kiki with dissolve
 
-    "The room is dimly lit, filled with old, rustic furniture and shadows dancing on the walls as the flickering candlelight struggles to illuminate the space."
+    if kiki_joined:
+        jump kiki_already_joined  
+    elif kiki_visited:
+        jump kiki_already_visited  
+    else: 
+        jump kiki_intro
+        
+
+label kiki_already_joined:
+    # show berehynia at right with dissolve
+    b "Кікімната-"
+    b "Перепрошую! Кімната Кікімори наразі пустує. "
+    call screen backButton
+    
+
+label kiki_already_visited:
+    show berehynia at right with dissolve
+    b "Спробуй знову, люба! Я знаю, що в тебе вийде!"
+    jump kiki_first
+
+label kiki_intro:
+    show vila at left with dissolve
+    #"Кімната тьмяно освітлена, заповнена старими, сільськими меблями, а тіні танцюють на стінах, коли мерехтливе світло свічок намагається освітити простір."
     
     show kikimora at center with dissolve
+    pause 0.1
     show berehynia at right with dissolve
 
-    b "Kikimora, the spirit of the home. She was one of the first to get trapped here."
-    b "But you can help her dear, I know you can. Good luck"
+    b "Кікімора, дух дому. Вона була однією з перших, хто загубився в цій темряві."
+    b "Але ти можеш їй допомогти, люба, я знаю, що можеш. Удачі."
 
     hide berehynia at right with dissolve
-   
-    ki "Must keep tidying, must keep clean..."
-    ki "Never clean, never clean enough..."
-    ki "They all left, they up and left..."
-    
+
+label kiki_first: 
+    ki "Треба прибирати, треба прибирати..."
+    ki "Ніколи не чисто, ніколи не достатньо чисто..."
+    ki "Всі пішли, всі залишили..."
 
     menu:
-        "Introduce yourself":
-            v "Hi there, Kikimora, is it? I am Villa."
+        "Представити себе":
+            v "Вітаю, Кікімора, так? Я Віла."
             $ kikimora_attitude += 5
-            ki "Villa? Why are you here?"
+            ki "Віла? Чому ти тут?"
             jump remind_her
 
-        "Ask for Household Advice":
-            v "Hey there, do you know someone who can help me with a household problem, I can't seem to..."
-            $ kikimora_attitude += 5
+        "Попросити поради щодо домашніх справ":
+            v "Привіт, ти знаєш когось, хто може допомогти мені з домашньою проблемою, я не можу..."
+            $ kikimora_attitude += 10
             ki "..."
             jump remind_her
 
-        "Stress Urgency":
-            v "Kikimora, you must come with me at once."
-            $ kikimora_attitude -= 5
-            
+        "Підкреслити терміновість":
+            v "Кікімора, ти повинна негайно піти зі мною."
+            $ kikimora_attitude -= 10
             $ darkness_value += 10
             if darkness_value >= 100:
                 jump game_over_darkness
             # jump dim_screen
             
-            ki "Leave home... No, I cannot leave... What if they return"
-            v "Who's 'they', Kiki?"
-            
+            ki "Залишити дім... Ні, я не можу піти... А якщо вони повернуться?"
+            v "Хто 'вони', Кіки?"
             jump remind_her
-            
 
 label remind_her:
     menu:
-        "Show Don't Tell":
-            v "*Start Sweeping/Tidying Up*"
-            "Villa starts sweeping and tidying up the room."
-            $ kikimora_attitude += 5
-            ki "What are you doing?.."
-            v "Tidying up with you. We can do it together."
+        "Показати їй, ким вона була":
+            # v "*Віла починає прибирати*"
+            "Віла починає наводити лад у кімнаті."
+            $ kikimora_attitude += 10
+            ki ""
+            v ""
             jump reassure_her
 
-        "Tell Her who she is":
-            v "Kikimora, you are a spirit of the home, something terrible happened to you that made you forget who you are, but I'm here to remind you."
+        "Сказати їй, хто вона є":
+            v "Кікімора, ти дух дому, щось жахливе трапилося з тобою, і ти забула, хто ти є, але я тут, щоб нагадати тобі."
             $ kikimora_attitude += 5
-            ki "Spirit of the home... Forgot... You're here to remind me..."
+            ki "Дух дому..."
             jump reassure_her
 
 label reassure_her:
     menu:
-        "Look to Future":
-            v "There will be new places to tend to, new families to look after."
+        "Шукати надію в майбутньому":
+            v "Буде багато нових місць, про які потрібно піклуватися, нових сімей, за якими потрібно дивитися."
             $ kikimora_attitude += 5
-            ki "New places... New families..."
+            ki "Нові місця... Нові сім'ї..."
             jump invite_kikimora
 
-        "Look to the past":
-            v "I am here and I will help you find those you have lost."
+        "Шукати надію в минулому":
+            v "Я тут, і я допоможу тобі знайти тих, кого ти втратила."
             $ kikimora_attitude += 5
-            ki "You will help me find them..."
+            ki "Ти допоможеш мені знайти їх..."
             jump invite_kikimora
             
-        "Look at the present":
-            v "Tere are those who can use your help now. Like me"
-            $ kikimora_attitude += 5
+        "Шукати надію в теперішньому":
+            v "Є ті, хто потребує твоєї допомоги зараз. Як я."
+            $ kikimora_attitude += 10
             ki "..."
             jump invite_kikimora
 
 label invite_kikimora:
 
-    if kikimora_attitude >= 30:
-        v "Hey, I am planning to move to a new place with friends soon and I think we would need someone to make this place a home.., are you interested, Kiki?"
+    if kikimora_attitude >= 15:
+        v "Кікі, я планую знайти нове місце з друзями, і я думаю, нам знадобиться хтось, щоб зробити це місце домом... Чи зацікавлена ти до нас приєднатися?"
         
-        ki "A new home... A new family... I will join you."
-        "Kikimora begins to glow, her form brightening as she finds hope and remembers who she is."
+        ki "Новий дім... Нова сім'я... Я приєднаюсь до вас."
+        "Кікімора починає світитися, її форма стає яскравішою, коли вона знаходить надію і згадує, хто вона є."
+        $ kiki_joined = True
         $ wing_strength += 1
-        $ darkness_value -= 20
+        # $ darkness_value -= 20
     else:
-        v "Hey, I am planning to move to a new place with friends soon and I think we would need someone to make this place a home.., are you interested, Kiki?"
+        v "Кікі, я планую знайти нове місце з друзями, і я думаю, нам знадобиться хтось, щоб зробити це місце домом... Чи зацікавлена ти до нас приєднатися?"
         
-        ki "I... I need to get back to work"
-        "Kikimora looks uncertain, still struggling with her memories and the darkness."
-        ki "Never clean, never clean enough..."
-        ki "They all left, they up and left..."
+        ki "Я... Я повинна повернутися до роботи."
+        "Кікімора виглядає невпевненою, все ще бореться зі своїми спогадами та темрявою."
+        ki "Ніколи не чисто, ніколи не досить чисто..."
+        ki "Всі пішли, всі залишили..."
         
-        # $ darkness_value += 20
+       #  $ darkness_value += 20
+        $ increase_darkness()
         
     $ kikimora_attitude = 0
-    #kiki_visited = True 
-
-
-
-    
+    $ kiki_visited = True 
 
     call screen backButton
