@@ -1,12 +1,12 @@
 ﻿# Define characters
 define v = Character("Vila", color="#7ec8e3")       # Player Character
-define в = Character("Vila", color="#7ec8e3")       # Player Character
+define в = Character("Vila", color="#7ec8e3")       
 
 define b = Character("Berehynia", color="#ffcc00")  #  Guide
-define б = Character("Berehynia", color="#ffcc00")  #  Guide
+define б = Character("Berehynia", color="#ffcc00")  
 
 define m = Character("Mara", color="#9932CC")       # Tutorial 
-define м = Character("Mara", color="#9932CC")       #  
+define м = Character("Mara", color="#9932CC")         
 
 define p = Character("Poludnicia")                    # Level 2
 define ki = Character("Kikimora")                      # Level 2
@@ -27,13 +27,6 @@ image alkonost = "character_sprites/alkonost_neutral.png"
 
 # Define the dim overlay image
 image dim_overlay = Solid((0, 0, 0, 128))  # A simple semi-transparent black overlay
-
-# Label to dim the screen
-label dim_screen:
-    show dim_overlay with dissolve
-    $ renpy.pause(0.5)  # Adjust the pause duration as needed
-    hide dim_overlay with dissolve
-    
 
 # darkness bar variables
 default show_countdown = False       # Bar starts hidden
@@ -75,7 +68,7 @@ init python:
 label start:
 
 
-    show vila at left with dissolve
+    
 
     # show berehynia at center with move 
 
@@ -89,6 +82,8 @@ label start:
     b "Віла, люба"
     b "Будь ласка, прокинься" 
     b "Прокинься!"
+
+    show vila at left with dissolve
 
     b "Знайомий голос..."
     b "Але так холодно... так важко відкрити очі"
@@ -113,6 +108,7 @@ label start:
             v "Спати. Я хочу спати. Залиш мене, голос."
             b "О, ні..."
             b "Спи поки, люба, але я мушу спробувати знову."
+            b "До зустрічі."
             
             #jump start
             return
@@ -139,7 +135,13 @@ label villa_remember:
     в "Берегиня! Ти мене чуєш? Як я знайду твою сестру?"
     в "Ох, де ж мені її шукати?"
     $ increase_darkness()
-    # jump dim_screen
+
+    show dim_overlay with dissolve
+    # hide vila at left with dissolve
+    pause 0.1
+    hide dim_overlay with dissolve
+
+    #jump dim_screen
     в "Що тільки що трапилось? На секунду мені здалося ніби темрява знову поглинула мене."
     в "Мої крила... Час погасив їх світло, як же мені повернутися додому з цього підземелля?"
 
@@ -247,7 +249,7 @@ label mara_joins:
 label game_over_darkness:
     scene black
     hide all
-    $ hide_progress_bar()
+    
     "The darkness has consumed you. You must start over."
     # Reset variables or provide options to restart the game
     $ wing_strength = 0
