@@ -17,32 +17,84 @@
 
 # Серед українців було повір'я, що лісовик зимує в барлозі, поруч із ведмедем, і з носа у нього стирчить бурулька. Існувало повір'я: 
 # якщо смикнути полісуна за бурульку, вона розсиплеться золотими грішми[9].
-
+default lisovyk_attitude = 0 
+default lisovyk_visited = False
+default lisovyk_joined = False
 
 label room4:
     scene room hell bg
-    
+
+    if lisovyk_joined:
+        jump lisovyk_already_joined  
+    elif lisovyk_visited:
+        jump lisovyk_already_visited  
+    else: 
+        jump lisovyk_intro
+
+
+    # jump lisovyk_guess
+
+label lisovyk_already_joined:
+    b "There is nothing left here, except the old dry leaves."
+    call screen backButton
+
+label lisovyk_already_visited:
+    show berehynia at right with dissolve
+    b "I know he is old and grumpy, but you got it!"
+    jump lisovyk_guess
+
+label lisovyk_intro:
+    show lisovyk at center with dissolve
     show vila at left with dissolve
     pause 0.1
-    show lisovyk at rightly with dissolve
+    show berehynia at rightly with dissolve
 
-    l "This is not looking good, not looking good, I'm telling ya."
+    b "Lisovyk is a fighter at heart. Till the very end was he defending the nature and all that lives in the shadows of the woods."
+    b "Now he himself is in the deep shadows where no sun ray reaches. However, I am sure you can help him too, Vila.."
+    b "And yes, beware of something... "
+    b "Sometimes his memory fails due to his age, but he does not like when people remind him that!"
 
     # flashback scene about Lisovyk?
 
+    hide berehynia at rightly with dissolve
+
     $ show_progress_bar()
+
+    l "This is not looking good, not looking good, I'm telling ya."
+
+    show lisovyk at rightly with move 
 
     v "Lisovyk? Lisovyk, I am Vila."
 
-    jump lisovyk_guess
-
 
 label lisovyk_guess:
+    v "Lisovyk..?"
     # l "Liso-what? Speak louder, child. The voices of leaves keep whispering into my ears, I forget myself."
     l "Lyso-what? Speak louder, child. The voices around keep whispering into my ears, I forget myself."
-
+    
     menu:
+        "Comment on his hearing":
+            v "Do you have bananas in your ears?"
+            "Presence of Lisovyk makes Vila feel like an actual child, even though she is hundreds years old, maybe older than him!"
+            l "Excuse me?"
+            l "Bananas?"
+            l "Bananas don't grow where I come from. The father of jungles takes care of them. "
+            l "Hmm. I haven't spoken to him in ages..."
 
+        "Remind who he is":
+            jump lisovyk_remind_who_he_is
+
+        "Ask about your friends":
+            pass
+
+        "Ask how old he is"
+
+
+    call screen backButton
+
+
+label lisovyk_remind_who_he_is:
+    menu:
         "Lee-sooh-vyyyk, you are the father of the foxes. ": #Cause 'FOX' is LYS
             l "Foxes sure.. But not only. I like all the animals."
             $ increase_darkness() #make it harder by punishing wrong answers right away?
@@ -53,25 +105,21 @@ label lisovyk_guess:
             l "Those are not voices, but the leaves."
             pause 1.0
             "Lisovyk turns his head left and right, a sound of sqeeky wood follows..."
-            jump lisovyk_remember
+            jump lisovyk_remind_who_he_is
 
         "Lee-sooh-vyyyk, you are the patron of the bolds.": #Cause BOLD is LYSYY
             l "Khe-khe. My dress might be getting drier every season, yes..." 
             l "...but this is nothing but a natural process."
             $ increase_darkness()
-            jump lisovyk_guess
+            jump lisovyk_remind_who_he_is
 
         "Lee-sooh-vyyyk, you are the friend of the frogs. ": # Cause he sits like a frog, and there's a small frog 
             l "Frogs sure.. But not only. I like all the animals."
             $ increase_darkness() #make it harder by punishing wrong answers right away?
-            l "I do sit like a frog on Wednesdays, spent a lot of time with 'em. "
-            jump lisovyk_guess
-
-    call screen backButton
+            l "I do sit like a frog on Wednesdays occasionally, spent a lot of time with 'em. "
+            jump lisovyk_remind_who_he_is
     
-
-label lisovyk_remember:
-    
+label lisovuk_remember:
     l "What are the leaves whispering about, Vila?"
 
     v "TODO"
