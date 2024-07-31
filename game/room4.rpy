@@ -34,7 +34,7 @@ label room4:
 
     v "Lisovyk? Lisovyk, I am Vila."
 
-    jump lisovyk_remember
+    jump lisovyk_guess
 
 
 label lisovyk_guess:
