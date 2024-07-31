@@ -10,3 +10,4 @@ game/saves/persistent
 game/cache/shaders.txt
 /game/cache
 game/*.rpyc
+.DS_Store
