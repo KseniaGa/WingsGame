@@ -3,7 +3,7 @@ default kiki_visited = False
 default kiki_joined = False
 
 label room1:
-    scene room hell bg
+    # scene room hell bg
     # scene bg_kiki with dissolve
 
     if kiki_joined:
@@ -123,7 +123,7 @@ label invite_kikimora:
         ki "Ніколи не чисто, ніколи не досить чисто..."
         ki "Всі пішли, всі залишили..."
         
-       #  $ darkness_value += 20
+        #  $ darkness_value += 20
         $ increase_darkness()
         
     $ kikimora_attitude = 0

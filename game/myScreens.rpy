@@ -19,24 +19,36 @@ screen mapScreen:
 
     #Room3
     imagebutton:
-        focus_mask True
-        idle "map room 3 idle.png"
-        hover "map room 3 hover.png"
-        action Jump("room3")
+        if wing_strength >= 2:
+            focus_mask True
+            idle "map room 3 idle.png"
+            hover "map room 3 hover.png"
+            action Jump("room3")
+        else:
+            idle "map room empty.png"
+            hover "map room empty.png"
         
     #Room4
     imagebutton:
-        focus_mask True
-        idle "map room 4 idle.png"
-        hover "map room 4 hover.png"
-        action Jump("room4")
+        if wing_strength >= 2:
+            focus_mask True
+            idle "map room 4 idle.png"
+            hover "map room 4 hover.png"
+            action Jump("room4")
+        else:
+            idle "map room empty.png"
+            hover "map room empty.png"
         
     #Top Room
     imagebutton:
-        focus_mask True
-        idle "map top room idle.png"
-        hover "map top room hover.png"
-        action Jump("toproom")
+        if wing_strength >= 3:
+            focus_mask True
+            idle "map top room idle.png"
+            hover "map top room hover.png"
+            action Jump("toproom")
+        else:
+            idle "map room empty.png"
+            hover "map room empty.png"
 
 screen backButton:
     imagebutton:

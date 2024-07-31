@@ -1,5 +1,5 @@
 label room2:
-    scene room hell bg
+    # scene room hell bg
 
     show vila at left with dissolve
     pause 0.1
