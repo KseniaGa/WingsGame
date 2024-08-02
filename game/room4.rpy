@@ -42,6 +42,12 @@ label lisovyk_already_joined:
 label lisovyk_already_visited:
     show berehynia at right with dissolve
     b "I know he is old and grumpy, but you got it!"
+
+    show lisovyk at center with dissolve
+    show vila at left with dissolve
+    hide berehynia at right with dissolve
+    show lisovyk at rightly with move 
+    
     jump lisovyk_guess
 
 label lisovyk_intro:
@@ -99,7 +105,7 @@ label lisovyk_guess:
             $ darkness_value+=10
             if darkness_value>=100:
                 jump game_over_darkness
-            jump dim_screen
+            # jump dim_screen
             jump lisovyk_remind_who_he_is
 
         "Tell him he's trapped":
@@ -107,7 +113,8 @@ label lisovyk_guess:
             l "I am lost, child."
             v "How long have you spent in this depth?"
             l "I have zero clue how long it's been, nor what happened... Time flies!"
-            l "At the same time, for me it always flies differently...One year for you is like a day for me. But I wonder why.. What am I?"
+            l "At the same time, for me it always flies differently...One year for you is like a day for me - this much I can remember."
+            l "But I wonder why.. What am I?"
             l "*questions himself*"
             $ lisovyk_attitude+=10
             jump lisovyk_remind_who_he_is
@@ -126,12 +133,12 @@ label lisovyk_remind_who_he_is:
                 l "Again you with your bananas, khekhe."
                 l "I know I like them - who doesn't - but it does not quite feel like home..."
                 l "I miss my dear freinds.."
-                v "*self-conscious about her repeated jokes*"
+                v "*self-conscious about Vila's repeated jokes*"
                 $ lisovyk_attitude-= 10
                 $ darkness_value+= 10
                 if darkness_value>= 100:
                     jump game_over_darkness
-                jump dim_screen
+                # jump dim_screen
                 jump invite_lisovyk
             else:
                 l "Bananas..? I like all the plants."
@@ -141,7 +148,7 @@ label lisovyk_remind_who_he_is:
                 $ darkness_value+= 5
                 if darkness_value >= 100:
                     jump game_over_darkness
-                jump dim_screen
+                # jump dim_screen
                 jump invite_lisovyk
         
         "Master of the forests":
@@ -153,7 +160,7 @@ label lisovyk_remind_who_he_is:
             v "Exactly!"
             l "What are the leaves whispering about, Vila?"
             v "You used to protect all the woods and all that lives there!"
-            l "Ah yess, that sounds about right. "
+            l "Ah yess, that sounds about right. TODO add actual info!"
             v "This place does not look like your home at all.."
             l "Is there a way out?"
             "Lisovyk turns his head left and right, a sound of sqeeky wood follows..."
@@ -170,7 +177,7 @@ label lisovyk_remind_who_he_is:
             $ darkness_value+= 10
             if darkness_value >= 100:
                 jump game_over_darkness
-            jump dim_screen
+            # jump dim_screen
             jump invite_lisovyk
 
         "Friend of the frogs":
@@ -182,6 +189,7 @@ label lisovyk_remind_who_he_is:
             $ lisovyk_attitude+=5 #seems too much, need to check if numbers make sense here!
             jump invite_lisovyk
 
+       
 
 label invite_lisovyk:
     if lisovyk_attitude >= 15:
@@ -201,6 +209,12 @@ label invite_lisovyk:
         l "*falls asleep*"   
 
         $ increase_darkness()
+    
+    """
+        TODO: insert 1 more menu. or enrich answers with info - lisovyks playing card games,
+        protecting forest animals, like deer and wolves. Wars between lisovyks. ANd in general more about WHAT happened...
+        Or more interactin with Vila, and asking her things.
+    """
 
     $ lisovyk_attitude = 0
     $ lisovyk_visited = True 
