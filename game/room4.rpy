@@ -20,6 +20,7 @@
 default lisovyk_attitude = 0 
 default lisovyk_visited = False
 default lisovyk_joined = False
+default lisovyk_banana_joke = False
 
 label room4:
     scene room hell bg
@@ -52,7 +53,7 @@ label lisovyk_intro:
     b "Lisovyk is a fighter at heart. Till the very end was he defending the nature and all that lives in the shadows of the woods."
     b "Now he himself is in the deep shadows where no sun ray reaches. However, I am sure you can help him too, Vila.."
     b "And yes, beware of something... "
-    b "Sometimes his memory fails due to his age, but he does not like when people remind him that!"
+    b "Sometimes his memory fails due to his age, but he does not like when people remind him that! Be kind!"
 
     # flashback scene about Lisovyk?
 
@@ -66,63 +67,144 @@ label lisovyk_intro:
 
     v "Lisovyk? Lisovyk, I am Vila."
 
-
-label lisovyk_guess:
     v "Lisovyk..?"
     # l "Liso-what? Speak louder, child. The voices of leaves keep whispering into my ears, I forget myself."
     l "Lyso-what? Speak louder, child. The voices around keep whispering into my ears, I forget myself."
+
+label lisovyk_guess: 
     
     menu:
-        "Comment on his hearing":
+        "Make a fun joke":
             v "Do you have bananas in your ears?"
-            "Presence of Lisovyk makes Vila feel like an actual child, even though she is hundreds years old, maybe older than him!"
+            # "Presence of Lisovyk makes Vila feel like an actual child, even though she is hundreds years old, maybe older than him!"
             l "Excuse me?"
             l "Bananas?"
-            l "Bananas don't grow where I come from. The father of jungles takes care of them. "
-            l "Hmm. I haven't spoken to him in ages..."
-
-        "Remind who he is":
+            l "Bananas don't grow where I come from. The father of the jungles takes care of them. "
+            v "The father of the jungles???"
+            l "Hmm. I haven't spoken to him in ages...He's a good fellow. Don't know why I feel I know him."
+            l "*Experiences a sudden sense of nostalgia*"
+            v "*Has no clue what he is talking about*"
+            $ lisovyk_attitude+=5 #for sudden nostalgia
+            $ lisovyk_banana_joke=True
             jump lisovyk_remind_who_he_is
 
-        "Ask about your friends":
-            pass
+        "Ask directly about escape":
+            v "I've travelled these caves for a while.."
+            v "And I learned there is a way out.. But you need to remember who you are, Lisovyk!!!"
+            l "Brhhhkmmm. What?!"
+            l "I just had a cup of morning dew now. Or, I think it was dew.."
+            l "Or, i think I did..."
+            v "..."
+            $ lisovyk_attitude-=10
+            $ darkness_value+=10
+            if darkness_value>=100:
+                jump game_over_darkness
+            jump dim_screen
+            jump lisovyk_remind_who_he_is
 
-        "Ask how old he is"
-
+        "Tell him he's trapped":
+            v "You forget yourself because of the darkness that came upon us."
+            l "I am lost, child."
+            v "How long have you spent in this depth?"
+            l "I have zero clue how long it's been, nor what happened... Time flies!"
+            l "At the same time, for me it always flies differently...One year for you is like a day for me. But I wonder why.. What am I?"
+            l "*questions himself*"
+            $ lisovyk_attitude+=10
+            jump lisovyk_remind_who_he_is
 
     call screen backButton
 
 
 label lisovyk_remind_who_he_is:
+    v "Lisovyk? You hear me? I can help you remember!"
+
     menu:
-        "Lee-sooh-vyyyk, you are the father of the foxes. ": #Cause 'FOX' is LYS
-            l "Foxes sure.. But not only. I like all the animals."
-            $ increase_darkness() #make it harder by punishing wrong answers right away?
-            jump lisovyk_guess
-
-        "Lee-sooh-vyyyk, you are the master of the forests.":
-            l "Forests have trees. Trees have leaves. Leaves rustle..."
-            l "Those are not voices, but the leaves."
-            pause 1.0
+        # "Father of the foxes": #Cause 'FOX' is LYS
+        "Father of the bananas":
+            v "Lee-sooh-vyyyk, you are the father of bananas. " 
+            if lisovyk_banana_joke:
+                l "Again you with your bananas, khekhe."
+                l "I know I like them - who doesn't - but it does not quite feel like home..."
+                l "I miss my dear freinds.."
+                v "*self-conscious about her repeated jokes*"
+                $ lisovyk_attitude-= 10
+                $ darkness_value+= 10
+                if darkness_value>= 100:
+                    jump game_over_darkness
+                jump dim_screen
+                jump invite_lisovyk
+            else:
+                l "Bananas..? I like all the plants."
+                l "But mostly trees. Did you know banana is not a tree, but a grass?"
+                v "Trees, bush, grass - compared to me they all are gigantic! Let's focus..."
+                $ lisovyk_attitude -= 5
+                $ darkness_value+= 5
+                if darkness_value >= 100:
+                    jump game_over_darkness
+                jump dim_screen
+                jump invite_lisovyk
+        
+        "Master of the forests":
+            v "Lee-sooh-vyyyk, you are the master of the forests."
+            l "Forests have trees."
+            l "Trees have leaves. "
+            l "Leaves rustle..."
+            l "Those are not voices, but the leaves!"
+            v "Exactly!"
+            l "What are the leaves whispering about, Vila?"
+            v "You used to protect all the woods and all that lives there!"
+            l "Ah yess, that sounds about right. "
+            v "This place does not look like your home at all.."
+            l "Is there a way out?"
             "Lisovyk turns his head left and right, a sound of sqeeky wood follows..."
-            jump lisovyk_remind_who_he_is
+            $ lisovyk_attitude+= 10
+            jump invite_lisovyk
 
-        "Lee-sooh-vyyyk, you are the patron of the bolds.": #Cause BOLD is LYSYY
-            l "Khe-khe. My dress might be getting drier every season, yes..." 
+        "Patron of the bolds": #Cause BOLD is LYSYY
+            v "Lee-sooh-vyyyk, you are the patron of the bolds."
+            l "Khe-khe. Bolds?"
+            l "My dress might be getting drier every season, and the leaves on my head are falling, yes..." 
             l "...but this is nothing but a natural process."
-            $ increase_darkness()
-            jump lisovyk_remind_who_he_is
+            v "*whoops*"
+            $ lisovyk_attitude -= 10
+            $ darkness_value+= 10
+            if darkness_value >= 100:
+                jump game_over_darkness
+            jump dim_screen
+            jump invite_lisovyk
 
-        "Lee-sooh-vyyyk, you are the friend of the frogs. ": # Cause he sits like a frog, and there's a small frog 
-            l "Frogs sure.. But not only. I like all the animals."
-            $ increase_darkness() #make it harder by punishing wrong answers right away?
+        "Friend of the frogs":
+            v "Lee-sooh-vyyyk, you are the friend of the frogs." # Cause he sits like a frog, and there's a small frog 
+            l "Frogs sure.. But not only."
+            l "As i said - I think I said - I like ~all~ the animals."
             l "I do sit like a frog on Wednesdays occasionally, spent a lot of time with 'em. "
-            jump lisovyk_remind_who_he_is
+            l "*looks at his frog freind*"
+            $ lisovyk_attitude+=5 #seems too much, need to check if numbers make sense here!
+            jump invite_lisovyk
+
+
+label invite_lisovyk:
+    if lisovyk_attitude >= 15:
+        v "I know there is a way out, up there, to the sun. Do you want to hear the birds and rustle of the leaves again? Do you wanna join me?"
+
+        l "Oh, I would do anything to see my forest again, to protect it and its inhabitants from what is still upon us, and provide shade in the time of peace..."
+
+        $ lisovyk_joined = True
+        $ wing_strength+= 1
     
-label lisovuk_remember:
-    l "What are the leaves whispering about, Vila?"
+    else:
+        v "I know there is a way out, up there, to the sun. Do you want to hear the birds and rustle of the leaves again? Do you wanna join me?"
 
-    v "TODO"
+        l "I don't comprehend what you want of me, child."
+        l "You somehow made me more confused about myself."
+        l "Well, I guess I will forget about this encounter soonk, brhmsss."
+        l "*falls asleep*"   
 
+        $ increase_darkness()
+
+    $ lisovyk_attitude = 0
+    $ lisovyk_visited = True 
+
+    call screen backButton
     
     
