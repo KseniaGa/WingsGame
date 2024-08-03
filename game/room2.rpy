@@ -72,7 +72,6 @@ label poludnicia_intro:
     b "After all it is quite a toll to protect the fields...and unwanted visitors from being there at a wrong time."
     b "But now, you know, who wouldn't be angry from everything that happened to us? May luck be with you."
 
-    call screen backButton
 
     hide berehynia at rightly with dissolve
     show poludnicia at rightly with move 
@@ -81,6 +80,9 @@ label poludnicia_intro:
     p "It was ME who was driving others mad. Not vice versa!"
     p "I cannot even threaten anyone with... whatever I used to threaten with!" # (the power of the sun? the scythe?)
     p "* walks angrilly back and forth * "
+
+    jump poludnicia_greet
+
 
 
 label poludnicia_greet: 
