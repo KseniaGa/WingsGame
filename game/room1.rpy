@@ -123,11 +123,7 @@ label invite_kikimora:
         ki "Ніколи не чисто, ніколи не досить чисто..."
         ki "Всі пішли, всі залишили..."
         
-<<<<<<< HEAD
         #  $ darkness_value += 20
-=======
-       #  $ darkness_value += 20
->>>>>>> room/lisovyk
         $ increase_darkness()
         
     $ kikimora_attitude = 0
