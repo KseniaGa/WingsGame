@@ -23,7 +23,7 @@ default lisovyk_joined = False
 default lisovyk_banana_joke = False
 
 label room4:
-    scene room hell bg
+    # scene room hell bg
 
     if lisovyk_joined:
         jump lisovyk_already_joined  
@@ -32,8 +32,6 @@ label room4:
     else: 
         jump lisovyk_intro
 
-
-    # jump lisovyk_guess
 
 label lisovyk_already_joined:
     b "There is nothing left here, except the old dry leaves."
