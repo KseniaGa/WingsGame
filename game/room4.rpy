@@ -139,7 +139,7 @@ label lisovyk_remind_who_he_is:
                 if darkness_value>= 100:
                     jump game_over_darkness
                 # jump dim_screen
-                jump invite_lisovyk
+                jump get_to_know_more
             else:
                 l "Bananas..? I like all the plants."
                 l "But mostly trees. Did you know banana is not a tree, but a grass?"
@@ -149,7 +149,7 @@ label lisovyk_remind_who_he_is:
                 if darkness_value >= 100:
                     jump game_over_darkness
                 # jump dim_screen
-                jump invite_lisovyk
+                jump get_to_know_more
         
         "Master of the forests":
             v "Lee-sooh-vyyyk, you are the master of the forests."
@@ -165,7 +165,7 @@ label lisovyk_remind_who_he_is:
             l "Is there a way out?"
             "Lisovyk turns his head left and right, a sound of sqeeky wood follows..."
             $ lisovyk_attitude+= 10
-            jump invite_lisovyk
+            jump get_to_know_more
 
         "Patron of the bolds": #Cause BOLD is LYSYY
             v "Lee-sooh-vyyyk, you are the patron of the bolds."
@@ -178,7 +178,7 @@ label lisovyk_remind_who_he_is:
             if darkness_value >= 100:
                 jump game_over_darkness
             # jump dim_screen
-            jump invite_lisovyk
+            jump get_to_know_more
 
         "Friend of the frogs":
             v "Lee-sooh-vyyyk, you are the friend of the frogs." # Cause he sits like a frog, and there's a small frog 
@@ -187,7 +187,7 @@ label lisovyk_remind_who_he_is:
             l "I do sit like a frog on Wednesdays occasionally, spent a lot of time with 'em. "
             l "*looks at his frog freind*"
             $ lisovyk_attitude+=5 #seems too much, need to check if numbers make sense here!
-            jump invite_lisovyk
+            jump get_to_know_more
 
 label get_to_know_more:
     menu:
