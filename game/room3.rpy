@@ -213,6 +213,11 @@ label rusalka_invite:
 
         $ increase_darkness()
 
+    $ rusalka_attitude = 0
+    $ rusalka_visited = True 
+
+    call screen backButton
+
 # label game_over_darkness:
 #     scene black
 #     hide all
