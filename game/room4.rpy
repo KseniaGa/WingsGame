@@ -132,7 +132,7 @@ label lisovyk_remind_who_he_is:
             if lisovyk_banana_joke:
                 l "Again you with your bananas, khekhe."
                 l "I know I like them - who doesn't - but it does not quite feel like home..."
-                l "I miss my dear freinds.."
+                l "I miss my dear friends.."
                 v "*self-conscious about Vila's repeated jokes*"
                 $ lisovyk_attitude-= 10
                 $ darkness_value+= 10
@@ -189,10 +189,38 @@ label lisovyk_remind_who_he_is:
             $ lisovyk_attitude+=5 #seems too much, need to check if numbers make sense here!
             jump invite_lisovyk
 
-       
+label get_to_know_more:
+    menu:
+        "Ask about his past life":
+            v "What else do you remember, Lisovyk?"
+            if lisovyk_attitude >= 5:
+                l "I remember it used to be different from now."
+                v "I know, Lisovyk... I am sorry. What was is like?"
+                l "My home was shared with many others - the birds, the wolves, the bears.."
+                l "I'd walk the same old paths, and cherish the peace of the woods, protect it."
+                $ lisovyk_attitude+= 5
+            else:
+                l "I remember nothing, but the sounds."
+                v "What were they like? The birds? The hares?"
+                l "The latest memories seem dark, very dark. Fire cracking, screams and smoke, smoke everywhere..."
+                l "Cannot recall what life before was like."
+                v "Oh..."
+                $ lisovyk_attitude-=5
+
+            jump invite_lisovyk
+
+        "Tell about his past life:":
+            v "You used to rest at the foot of the Forest, and play cards with your friends!"
+            l "Games with friends - ha. Something so foreign here. You are the first visitor I had in ages.."
+            v "That was your leisure. And at other times, you took care of the cattle, so it does not get lost in your woods.."
+            v "You also helped the people, but often only if they leave a snack."
+            l "I am starting liking you, Vila. What are YOU doing here?"
+            v "I'm helping spirits like us to escape the darkness...Or, at least that's what I'm trying to do.."
+            $ lisovyk_attitude+= 5
+            jump invite_lisovyk
 
 label invite_lisovyk:
-    if lisovyk_attitude >= 15:
+    if lisovyk_attitude >= 20: #make the level harder?
         v "I know there is a way out, up there, to the sun. Do you want to hear the birds and rustle of the leaves again? Do you wanna join me?"
 
         l "Oh, I would do anything to see my forest again, to protect it and its inhabitants from what is still upon us, and provide shade in the time of peace..."
@@ -210,12 +238,6 @@ label invite_lisovyk:
 
         $ increase_darkness()
     
-    """
-        TODO: insert 1 more menu. or enrich answers with info - lisovyks playing card games,
-        protecting forest animals, like deer and wolves. Wars between lisovyks. ANd in general more about WHAT happened...
-        Or more interactin with Vila, and asking her things.
-    """
-
     $ lisovyk_attitude = 0
     $ lisovyk_visited = True 
 
