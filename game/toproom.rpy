@@ -37,7 +37,7 @@ label toproom:
     b "Будь обережна з нею. Не показуй занадто багато емоцій, особливо смутку."
 
     pause 0.5
-    play sound dragon-wings
+    play sound "dragon-wings.ogg"
     show alkonost at center with dissolve
         #xzoom 0.5
         #yzoom 0.5
@@ -296,7 +296,7 @@ label alk_chill:
 
     v "Я відчуваю, що не можу довіряти твоїм справжнім намірам, Берегине, але незалежно від твоїх методів, це закінчилося нашою свободою, і за це я хочу подякувати тобі."
     hide berehynia at right with dissolve
-    play sound evil-laugh
+    play sound "evil-laugh.ogg" 
     show mara at right with dissolve
     m "Ха-ха-ха"
     hide mara at right with dissolve
