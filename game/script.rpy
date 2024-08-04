@@ -208,7 +208,7 @@ label villa_remember:
 
     
 label meet_mara: 
-
+    play sound evil-laugh 
     show mara at right with dissolve  
     
     м "Ха ха ха."
