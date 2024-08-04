@@ -38,7 +38,7 @@ label toproom:
 
     pause 0.5
     play sound dragon-wings
-    show alkonost at center with dissolve:
+    show alkonost at center with dissolve
         #xzoom 0.5
         #yzoom 0.5
 
