@@ -21,15 +21,30 @@ define t4 = "audio/thump4.ogg"
 define t5 = "audio/thump5.ogg"
 define t6 = "audio/thump6.ogg"
 
+# wings variables
+default wing_strength = 0
+default wing_strength_threshold = 3
+
 # Define character images
-image vila = "character_sprites/vila_neutral.png"
+image vila:
+    "character_sprites/vila_wings_[wing_strength].PNG"
+    #xzoom(0.5)
+    #yzoom(0.5)
+
 image berehynia = "character_sprites/berehynia_neutral.png"
 image mara = "character_sprites/mara_neutral.png"
 image mara radiant = "character_sprites/mara_radiant.png"
 image poludnicia = "character_sprites/poludnicia_neutral.png"
+image poludnicia radiant = "character_sprites/poludnicia_radiant.png"
 image kikimora = "character_sprites/kikimora_neutral.png"
+image kikimora radiant = "character_sprites/kikimora_radiant.png"
 image lisovyk = "character_sprites/lisovyk_neutral_flipped.png"
+image lisovyk radiant:
+    "character_sprites/lisovyk_neutral_flipped.png"
+    xzoom(-1) #this will flip it horizontally
+
 image rusalka = "character_sprites/rusalka_neutral.png"
+image rusalka radiant = "character_sprites/rusalka_radiant.png"
 image alkonost = "character_sprites/alkonost_neutral.png"
 
 # Define the dim overlay image
@@ -62,9 +77,6 @@ define update_darkness = lambda new_value: renpy.call("update_countdown", new_va
 define increase_darkness = lambda: renpy.call("update_countdown", darkness_value + darkness_increase_rate)
 # Usage: $ increase_darkness() does the same as the second usage of update_darkness above but without needing parameters
 
-# wings variables
-default wing_strength = 0
-default wing_strength_threshold = 3
 
 init python:
     import random
@@ -103,6 +115,9 @@ label start:
     b "Віла, люба"
     b "Будь ласка, прокинься" 
     b "Прокинься!"
+
+    show rusalka radiant at left
+    show lisovyk radiant at right
 
     show vila at left with dissolve
 
@@ -234,8 +249,10 @@ label mara_joins:
     в "О, ні... Час в потойбіччі погасив їх магію, як же мені тоді повернутися додому з цього підземелля?"
     м "Хех, я тобі покажу"
 
-    #show mara_radiant at right with dissolve 
-    hide mara_radiant at right with dissolve 
+    show mara radiant at right with dissolve:
+        xzoom 0.5
+        yzoom 0.5
+    #hide mara radiant at right with dissolve 
     # Mara is turning into magic and joins ! 
     
     $ wing_strength += 1
