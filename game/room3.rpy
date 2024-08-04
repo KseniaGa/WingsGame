@@ -1,6 +1,9 @@
 label room3:
     # scene room hell bg
 
+    hide all
+    scene rusalkabg
+
     default rusalka_attitude = 0 
     default rusalka_visited = False
     default rusalka_joined = False

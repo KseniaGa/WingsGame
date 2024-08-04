@@ -98,6 +98,8 @@ label start:
     play music bgm loop
     play ambience ambience_cry loop volume 0.25
 
+    scene marabg
+
     b "Віла, люба"
     b "Будь ласка, прокинься" 
     b "Прокинься!"
