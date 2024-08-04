@@ -230,10 +230,11 @@ label invite_lisovyk:
 
         show lisovyk radiant
 
+        play sound tone
         $ lisovyk_joined = True
         if wing_strength < wing_strength_threshold:
             $ wing_strength += 1
-        play sound tone
+        # play sound tone
     
     else:
         v "Я знаю, що звідси є шлях, шлях нагору, до сонця. Чи хочеш ти знову почути спів птахів і шелест листя? Хочеш приєднатися до мене?"

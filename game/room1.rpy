@@ -181,7 +181,7 @@ label invite_kikimora:
         $ kiki_joined = True
         if wing_strength < wing_strength_threshold:
             $ wing_strength += 1
-        play sound tone
+        # play sound tone
 
     else:
         v "Кікі, я планую знайти новий дім, і мені знадобиться хтось, хто може зробити це місце домівкою... Чи приєднаєшься ти до мене?"

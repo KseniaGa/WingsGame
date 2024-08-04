@@ -204,9 +204,11 @@ label rusalka_invite:
         show rusalka radiant
         
         # "TODO: show vila's wings getting stronger?" - done
+        play sound tone
+        $ rusalka_joined = True
         if wing_strength < wing_strength_threshold:
             $ wing_strength += 1
-        play sound tone
+        # play sound tone
 
         pause 0.1
 

@@ -252,9 +252,11 @@ label poludnicia_invite:
 
         pause 0.1
 
+        play sound tone
+        $ poludnicia_joined = True
         if wing_strength < wing_strength_threshold:
             $ wing_strength += 1
-        play sound tone
+        # play sound tone
         
         p "Я хочу відпустити свій гнів, хочу літати, літати і кричати, щоб мене всі чули. Я приєднаюсь до тебе, Віло!"
         
