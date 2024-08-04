@@ -27,9 +27,13 @@ image berehynia = "character_sprites/berehynia_neutral.png"
 image mara = "character_sprites/mara_neutral.png"
 image mara radiant = "character_sprites/mara_radiant.png"
 image poludnicia = "character_sprites/poludnicia_neutral.png"
+image poludnicia radiant = "character_sprites/poludnicia_radiant.png"
 image kikimora = "character_sprites/kikimora_neutral.png"
+image kikimora radiant = "character_sprites/kikimora_radiant.png"
 image lisovyk = "character_sprites/lisovyk_neutral_flipped.png"
+image lisovyk radiant = im.Flip("character_sprites/lisovyk_neutral_flipped.png", horizontal="True")
 image rusalka = "character_sprites/rusalka_neutral.png"
+image rusalka radiant = "character_sprites/rusalka_radiant.png"
 image alkonost = "character_sprites/alkonost_neutral.png"
 
 # Define the dim overlay image
@@ -234,8 +238,10 @@ label mara_joins:
     в "О, ні... Час в потойбіччі погасив їх магію, як же мені тоді повернутися додому з цього підземелля?"
     м "Хех, я тобі покажу"
 
-    #show mara_radiant at right with dissolve 
-    hide mara_radiant at right with dissolve 
+    show mara radiant at right with dissolve:
+        xzoom 0.5
+        yzoom 0.5
+    #hide mara radiant at right with dissolve 
     # Mara is turning into magic and joins ! 
     
     $ wing_strength += 1
