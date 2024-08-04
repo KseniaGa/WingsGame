@@ -24,9 +24,9 @@ label kiki_already_joined:
     
 
 label kiki_already_visited:
-    show berehynia at right with dissolve
+    #show berehynia at right with dissolve
     b "Спробуй знову, люба! Я знаю, що в тебе вийде!"
-    jump kiki_first
+    jump kiki_intro
 
 label kiki_intro:
     show vila at left with dissolve
