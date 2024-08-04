@@ -54,7 +54,7 @@ label rusalka_intro:
 
     menu:
 
-        "Розрядити обстановку жартом"":
+        "Розрядити обстановку жартом":
             v "Твій дім зараз здається занадто сухим, Русалко. Комусь точно потрібно випити хехе!"
             r ""
             r "Ніколи не відчувала такої спраги, як тут."
@@ -201,9 +201,14 @@ label rusalka_invite:
         r "Я відчуваю тепло твого доброго серця. Дякую за це."
         r "Я дійсно хочу приєднатися до тебе... Що далі?"
 
+        show rusalka radiant
+
         "TODO: show Rusalka radiant, turns into magic, dissolves"
-        "TODO: show vila's wings getting stronger?"
-        $ wing_strength+=1
+        
+        # "TODO: show vila's wings getting stronger?" - done
+        if wing_strength < wing_strength_threshold:
+            $ wing_strength += 1
+        play sound tone
 
         jump map
     else:
