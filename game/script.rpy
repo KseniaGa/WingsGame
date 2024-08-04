@@ -14,6 +14,13 @@ define l = Character("Lisovyk")                       # Level 3
 define r = Character("Rusalka")                       # Level 3
 define a = Character("Alkonost")                      # Final Boss
 
+define t1 = "audio/thump1.ogg"
+define t2 = "audio/thump2.ogg"
+define t3 = "audio/thump3.ogg"
+define t4 = "audio/thump4.ogg"
+define t5 = "audio/thump5.ogg"
+define t6 = "audio/thump6.ogg"
+
 # Define character images
 image vila = "character_sprites/vila_neutral.png"
 image berehynia = "character_sprites/berehynia_neutral.png"
@@ -60,14 +67,24 @@ default wing_strength = 0
 default wing_strength_threshold = 3
 
 init python:
+    import random
+    def play_random_thump():
+        # List of sound effects
+        sfx_list = [t1, t2, t3, t4, t5, t6]
+        
+        # Select a random sound effect
+        selected_sfx = random.choice(sfx_list)
+        
+        # Play the selected sound effect
+        renpy.sound.play(selected_sfx)
+
+init python:
     # Define a new position that shifts characters a bit to the left from the far right edge
     rightly = Position(xalign=0.85)  
-
+    renpy.music.register_channel("ambience", "music", True)
 
 # Гра починається тут.
 label start:
-
-
     
 
     # show berehynia at center with move 
@@ -78,6 +95,8 @@ label start:
     # $ show_progress_bar()
     # hide berehynia with dissolve
 
+    play music bgm loop
+    play ambience ambience_cry loop volume 0.25
 
     b "Віла, люба"
     b "Будь ласка, прокинься" 
@@ -135,6 +154,7 @@ label villa_remember:
     в "Берегиня! Ти мене чуєш? Як я знайду твою сестру?"
     в "Ох, де ж мені її шукати?"
     $ increase_darkness()
+    $ play_random_thump()
 
     show dim_overlay with dissolve
     # hide vila at left with dissolve
@@ -215,7 +235,7 @@ label mara_joins:
     # Mara is turning into magic and joins ! 
     
     $ wing_strength += 1
-   
+    play sound tone
     
     в "Мої крила!  Я знову відчуваю магію. "
     
@@ -246,6 +266,7 @@ label game_over_darkness:
     scene black
     hide all
     
+    $ play_random_thump()
     "The darkness has consumed you. You must start over."
     # Reset variables or provide options to restart the game
     $ wing_strength = 0
