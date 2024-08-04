@@ -61,13 +61,13 @@ define gui.interface_text_color = '#ffffff'
 ## Шрифти та розміри шрифтів ###################################################
 
 ## Шрифт, який використовується для тексту в грі.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "Kotyhoroshko-Regular.0.2.otf"
 
 ## Шрифт, який використовується для імен символів.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "KyivRegion-Regular.ttf"
 
 ## Шрифт, який використовується для тексту поза грою.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "Kotyhoroshko-Regular.0.2.otf"
 
 ## Розмір звичайного тексту діалогу.
 define gui.text_size = 33
