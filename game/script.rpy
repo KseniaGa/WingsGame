@@ -332,8 +332,9 @@ label game_over_darkness:
     return 
 
 label game_over_light: 
-    scene happy_ending
+    scene good_end_screen
     hide all
     "Вітаємо! Ви звільнили Вілу та її супутників, повернувши їхні спогади!"
     # На цьому гра закінчується.
+    pause 1
     return
