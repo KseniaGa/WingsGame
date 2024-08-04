@@ -46,14 +46,14 @@ label room2:
         jump poludnicia_intro
 
 label poludnicia_already_joined:
-    b "*Looks at tumbleweed passing*"
+    b "*Спосерігає перекотиполе...*"
     call screen backButton
 
 label poludnicia_already_visited:
     show poludnicia at center with dissolve
     show berehynia at right with dissolve
     # b "Poludnytsa is not in the mood indeed. But you dealt with Mara, so this shoudl be doable too!"
-    b "You dealt with my sister already, so persuading Poludnytsa would be like snacking on sunflower seeds..." #як насі́ння луза́ти
+    b "Ти вже впоралася з моєю сестрою, тож переконати Полудницю буде як насіння лузати..." #як насі́ння луза́ти
 
     show vila at left with dissolve
     hide berehynia at right with dissolve
@@ -68,18 +68,20 @@ label poludnicia_intro:
     pause 0.1
     show berehynia at rightly with dissolve
 
-    b "Poludnytsa is a spirit living in the fields. She may have a strong character - don't we all?"
-    b "After all it is quite a toll to protect the fields...and unwanted visitors from being there at a wrong time."
-    b "But now, you know, who wouldn't be angry from everything that happened to us? May luck be with you."
+    b "Полудниця — це дух, що живе у полях. Характер в неї може так собі - але хто з нас ідеальний?"
+    b "Захищати поля і не пускати туди непроханих гостей — дуже нелегка справа."
+    b "Але, знаєш що? Хто б на її місці не розлютився після всього, що з нами сталося? Удачі, Віло!"
 
 
     hide berehynia at rightly with dissolve
     show poludnicia at rightly with move 
 
-    p "This darkness is driving me mad!"
-    p "It was ME who was driving others mad. Not vice versa!"
-    p "I cannot even threaten anyone with... whatever I used to threaten with!" # (the power of the sun? the scythe?)
-    p "* walks angrilly back and forth * "
+    p "Ця темрява зводить мене з розуму!"
+    p "Це Полудниця зводить людей з розуму, а ніяк не навпаки!"
+    p "Навіть не можу нікому пригрозити ... Але чим? Вже й не згадати! Це.Просто.Зводить.Мене.З.Розуму!" # (the power of the sun? the scythe?)
+    p "* сердито ходить туди-сюди * "
+    show poludnicia at center with move 
+    show poludnicia at rightly with move 
 
     jump poludnicia_greet
 
@@ -87,24 +89,24 @@ label poludnicia_intro:
 
 label poludnicia_greet: 
     menu:
-        "Greet gently":
-            v "Hi..."
-            p "*still preoccupied with her emptions*"
-            v "Poludnytsa, hello. I... I am Vila."
-            p "I had met enough villains in my life! No, thank you." #TODO adapt for uktrainian maybe, smth like Вили - для поля?
-            v "Vi-la. Not a villain."
-            p "What do you want, 'Viii-laaa'?"
+        "Тихенько привітати":
+            v "Привіт..."
+            p "* досі занурена у свої емоції *"
+            v "Полуднице, привіт. Я... я Віла."
+            p "Вили? Як вили для сіна? Ха. Якось підозріло. Ні, дякую!! Я надаю перевагу іншим знаряддям." #TODO adapt for uktrainian maybe, smth like Вили - для поля?
+            v "'Віла', а не 'вила'."
+            p "Ай, яка різниця! Ну, і шо ти тут забула?"
             $ poludnicia_attitude+=5
             jump poludnicia_remind
             
 
-        "Tell to calm down":
-            v "Woah woah woah, someone needs to chill here..."
-            p "Chill?!"
-            p "Are you kidding me?! Look where we are! And besides..."
-            p "..who, in Mara's name, are you?"
-            v "Khmm, I am Vila.. I just recently realized the state of things myself!"
-            v "You must believe me."
+        "Сказати заспокоїтися":
+            v "Йой-йой-ой. Комусь тут треба охолонути..."
+            p "Охолонути?!"
+            p "Ти серйозно?! Подивися, де ми! І крім того.."
+            p "..хто, в ім'я Мари, ти така?"
+            v "Я Віла... І сама тільки нещодавно усвідомила всю ситуацію!"
+            v "Повір мені."
             p "?!"
             $ poludnicia_attitude-=10
             $ darkness_value+= 10
@@ -114,10 +116,10 @@ label poludnicia_greet:
             jump poludnicia_remind
             
 
-        "Wait quietly":
+        "Почекати мовчки":
             v "..."
             show poludnicia at center with move 
-            p "*continues with anger*"
+            p "* продовжує сердитися *"
             show poludnicia at rightly with move 
             v "..."
             p "You're not triggered by my anger?"
