@@ -240,7 +240,7 @@ label vila_hope:
     pause 1.0
 
     # EPIC MUSIC STARTS ? play music smth 
-    play music bg loop 
+    play music bgm loop 
     play music boss loop
     # The screen gets darker and darker and the only thing we can see is the "menu" choices: Hope, Accept Help, Keep Going, Fight, Persevere
     "Какофонія знайомих голосів:"
