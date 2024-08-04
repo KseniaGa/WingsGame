@@ -302,7 +302,7 @@ label game_over_darkness:
     hide all
     
     $ play_random_thump()
-    "The darkness has consumed you. You must start over."
+    "Темрява поглинає вас знову..."
     # Reset variables or provide options to restart the game
     $ wing_strength = 0
     $ darkness_value = 0
@@ -320,10 +320,12 @@ label game_over_darkness:
     #$ rusalka_visited = False 
 
 
-    jump start
+    #jump start
+    return 
 
 label game_over_light: 
     scene happy_ending
-    "Congrats! You win!"
+    hide all
+    "Вітаємо! Ви звільнили Вілу та її супутників, повернувши їхні спогади!"
     # На цьому гра закінчується.
     return

@@ -266,7 +266,7 @@ label alk_chill:
     a "Можливо, мої послуги більше не потрібні тут."
     a "Ти переконала мене. Поки що."
     pause 1.0
-    a "Ви вільні йти."
+    a "Ви можете йти."
 
     # Vila is shining and all of the others appear? 
     "Віла відчуває радість усіх своїх друзів, вона переповнює все оточування."
@@ -275,15 +275,15 @@ label alk_chill:
     ki "Ти зробила це, метелик, я знала, що ти зможеш!"
     hide kikimora at right with dissolve
     show poludnicia at right with dissovle
-    p ""
+    p "Твоя мужність і рішучість вражають, Віла. Ми тепер вільні завдяки тобі."
     hide poludnicia at right with dissovle
 
     show lisovyk at right with dissovle
-    l ""
+    l "Твоя сила і відданість допомогли нам усім, дякую тобі, Віла."
     hide lisovyk at right with dissovle
 
     show rusalka at right with dissovle
-    r ""
+    r "Ти принесла світло в наші життя і звільнила нас від темряви. Ми ніколи не забудемо це, Віла."
     hide rusalka at right with dissovle
 
     v "Я хочу попрощатися з Берегинею."
