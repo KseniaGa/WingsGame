@@ -14,6 +14,13 @@ define l = Character("Lisovyk")                       # Level 3
 define r = Character("Rusalka")                       # Level 3
 define a = Character("Alkonost")                      # Final Boss
 
+define t1 = "audio/thump1.ogg"
+define t2 = "audio/thump2.ogg"
+define t3 = "audio/thump3.ogg"
+define t4 = "audio/thump4.ogg"
+define t5 = "audio/thump5.ogg"
+define t6 = "audio/thump6.ogg"
+
 # Define character images
 image vila = "character_sprites/vila_neutral.png"
 image berehynia = "character_sprites/berehynia_neutral.png"
@@ -60,12 +67,25 @@ default wing_strength = 0
 default wing_strength_threshold = 3
 
 init python:
+    import random
+    def play_random_thump():
+        # List of sound effects
+        sfx_list = [t1, t2, t3, t4, t5, t6]
+        
+        # Select a random sound effect
+        selected_sfx = random.choice(sfx_list)
+        
+        # Play the selected sound effect
+        renpy.sound.play(selected_sfx)
+
+init python:
     # Define a new position that shifts characters a bit to the left from the far right edge
     rightly = Position(xalign=0.85)  
-
+    renpy.music.register_channel("ambience", "music", True)
 
 # Гра починається тут.
 label start:
+    
 
     # show berehynia at center with move 
 
@@ -74,6 +94,9 @@ label start:
 
     # $ show_progress_bar()
     # hide berehynia with dissolve
+
+    play music bgm loop
+    play ambience ambience_cry loop volume 0.25
 
     b "Віла, люба"
     b "Будь ласка, прокинься" 
@@ -138,6 +161,7 @@ label villa_remember:
     в "Берегиня! Ти мене чуєш? Як я знайду твою сестру?"
     в "Берегиня?"
     $ increase_darkness()
+    $ play_random_thump()
 
     show dim_overlay with dissolve
     # hide vila at left with dissolve
@@ -213,30 +237,27 @@ label mara_joins:
     # Mara is turning into magic and joins ! 
     
     $ wing_strength += 1
-   
+    play sound tone
     
-v "Мої крила! Я знову відчуваю магію!"
-
-m "Так, так...Я дивовижна."
-m "Слухай, можливо, ти маєш рацію, а можливо, моя сестра нагодувала тебе пустими обіцянками. Час покаже."
-m "Але якщо ти хочеш вибратися звідси, тобі знадобиться допомога, і моєї допомоги недостатньо. Незважаючи на те, що я всемогутня і неймовірна Мара, до речі, набагато могутніша за Бережку, щоб ти знала."
-v "Еее, Мара?"
-m "Кхм-кхм, так що я хотіла сказати... А!"
-m "Це мій дім, тому я можу допомогти тобі орієнтуватися тут."
-
-# Show map image
-
-m "Якщо хочеш повернутися додому, тобі потрібно дістатися вершини підземелля. А щоб дістатися вершини, магія твоїх крил повинна бути відновлена."
-m "Моя магія дозволить тобі піднятися на наступний рівень, але для того, щоб піднятися вище, тобі знадобиться більше магії."
-m "Але знай, чим довше ти залишаєшся, тим більша ймовірність повернення темряви, і тих, хто під ЇЇ впливом, буде не так просто залучити, як мене, Віла."
-v "'Її'? Кого ти маєш на увазі?"
-m "Вона, та хто стоїть позаусім цим. Вона, та хто привласнила собі моє потойбіччя. Але, усе в власний час, Віла."
-m "До речі! Час рушати, красуня!"
-m "Ви, віли, наче соціальні метелики, так?"
-m "То йди вже, чаруй інших, чи що ви там віли робите. Час мені повернути моє потойбіччя, деякі створіння тут затрималися довше, ніж їх чекали. Враховуючи тебе, Віла."
-
-v "Е, вау, дуже мотивує, Мара... Дякую."
-
+    в "Мої крила!  Я знову відчуваю магію. "
+    
+    м "Так, так ... "
+    м "Слухай, можливо ти маєш рацію, а можливо моя сестра тебе нагодувала пустими обіцянками, час покаже." 
+    m "Але якщо ти хочеш  вибратися звідси, тобі знадобиться допомога, і моєї допомоги недостатьно. -незважаючи на те, що я всемогутня і неймовірна Мара, до речі набагато могутніша від Бережки, щоб ти знала-"
+    в "Еее, Мара? "
+    м "Кхм кхм, так що я хотіла сказати.. А!"
+    м "Це мій дім, тому я можу тобі допомогти орієнтуватися тут"
+    # show map image 
+    
+    м " Якщо хочеш вернутися додому, тобі потрібно якось дістатися верхівки підземелля, а щоб дістатися верхівки, магія твоїх крил повинна бути відновлена "
+    м "Моя магія дозволить тобі піднятися на наступний рівень, але для того щоб піднятися вище тобі буде потрібно більше магії"
+    м "Але знай, чим довше ти залишаєшся, тим більша вирогідність повернення темряви і тих хто під ЇЇ впливом буде не так просто залучити як мене, Віла."
+    # м "Чим більше спроб ти робиш, тим більше це на тобі сказується "
+    м "До речі ! Час рушати, красуня!  "
+    м "Ви вілли, начебто соціальні метелики, так?"
+    м "То йди вже чаруй та вербуй інших, чи що ви там вілли робите. Час мені повернути моє потойбіччя, деякі створіння тут OVERSTAYED THEIR WELCOME. Враховуючи тебе, Віла"
+    
+    в "Е, вау, дуже мотивує, Мара... Дякую. "
     
 б "Ха-ха я бачу ви подружилися. Хай щастить, люба. Я завжди поруч."
 
@@ -247,6 +268,7 @@ label game_over_darkness:
     scene black
     hide all
     
+    $ play_random_thump()
     "The darkness has consumed you. You must start over."
     # Reset variables or provide options to restart the game
     $ wing_strength = 0
