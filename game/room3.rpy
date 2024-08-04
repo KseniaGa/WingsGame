@@ -48,7 +48,7 @@ label rusalka_intro:
 
     r "Hello, stranger..."
 
-    $ show_progress_bar()
+    #$ show_progress_bar()
 
     r "What brought you here to my peaceful ... home?"
 

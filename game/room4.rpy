@@ -65,7 +65,7 @@ label lisovyk_intro:
 
     hide berehynia at rightly with dissolve
 
-    $ show_progress_bar()
+    #$ show_progress_bar()
 
     l "This is not looking good, not looking good, I'm telling ya."
 

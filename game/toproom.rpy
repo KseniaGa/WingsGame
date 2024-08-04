@@ -37,7 +37,7 @@ label toproom:
     b "Будь обережна з нею. Не показуй занадто багато емоцій, особливо смутку."
 
     pause 0.5
-    play sound dragon-wings
+    play sound "dragon-wings.ogg"
     show alkonost at center with dissolve
         #xzoom 0.5
         #yzoom 0.5
@@ -274,29 +274,29 @@ label alk_chill:
     show kikimora at right with dissolve
     ki "Ти зробила це, метелик, я знала, що ти зможеш!"
     hide kikimora at right with dissolve
-    show poludnicia at right with dissovle
+    show poludnicia at right with dissolve
     p "Твоя мужність і рішучість вражають, Віла. Ми тепер вільні завдяки тобі."
-    hide poludnicia at right with dissovle
+    hide poludnicia at right with dissolve
 
-    show lisovyk at right with dissovle
+    show lisovyk at right with dissolve
     l "Твоя сила і відданість допомогли нам усім, дякую тобі, Віла."
-    hide lisovyk at right with dissovle
+    hide lisovyk at right with dissolve
 
-    show rusalka at right with dissovle
+    show rusalka at right with dissolve
     r "Ти принесла світло в наші життя і звільнила нас від темряви. Ми ніколи не забудемо це, Віла."
-    hide rusalka at right with dissovle
+    hide rusalka at right with dissolve
 
     v "Я хочу попрощатися з Берегинею."
     a "Добре."
 
-    show berehynia at right with dissovle
+    show berehynia at right with dissolve
 
     b "Я бачу, ти досягла успіху, люба."
     b "Вітаю, я знала, що ти зможеш!"
 
     v "Я відчуваю, що не можу довіряти твоїм справжнім намірам, Берегине, але незалежно від твоїх методів, це закінчилося нашою свободою, і за це я хочу подякувати тобі."
     hide berehynia at right with dissolve
-    play sound evil-laugh
+    play sound "evil-laugh.ogg" 
     show mara at right with dissolve
     m "Ха-ха-ха"
     hide mara at right with dissolve
