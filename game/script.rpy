@@ -268,7 +268,8 @@ label mara_joins:
     #hide mara radiant at right with dissolve 
     # Mara is turning into magic and joins ! 
     
-    $ wing_strength += 1
+    if wing_strength < wing_strength_threshold:
+        $ wing_strength += 1
     play sound tone
     
     в "Мої крила!  Я знову відчуваю магію. "
@@ -300,27 +301,33 @@ label mara_joins:
 label game_over_darkness:
     scene black
     hide all
+    pause 0.5
+    scene bad_end_screen
     
+
     $ play_random_thump()
+    pause 1
+
     "Темрява поглинає вас знову..."
     # Reset variables or provide options to restart the game
     $ wing_strength = 0
     $ darkness_value = 0
 
-    #$ poludnicia_joined = False 
-    #$ poludnicia_visited = False 
+    $ poludnicia_joined = False 
+    $ poludnicia_visited = False 
 
-    #$ kiki_joined = False 
-    #$ kiki_visited = False 
+    $ kiki_joined = False 
+    $ kiki_visited = False 
 
-    #$ lisovyk_joined = False 
-    #$ lisovyk_visited = False 
+    $ lisovyk_joined = False 
+    $ lisovyk_visited = False 
 
-    #$ rusalka_joined = False 
-    #$ rusalka_visited = False 
+    $ rusalka_joined = False 
+    $ rusalka_visited = False 
 
+    pause 1
 
-    #jump start
+    jump start
     return 
 
 label game_over_light: 

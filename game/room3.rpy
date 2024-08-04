@@ -202,9 +202,14 @@ label rusalka_invite:
         r "I sense the warmth of your kind heart. Thank you for that."
         r "I do want to join you.. What's next?"
 
+        show rusalka radiant
+
         "TODO: show Rusalka radiant, turns into magic, dissolves"
-        "TODO: show vila's wings getting stronger?"
-        $ wing_strength+=1
+        
+        # "TODO: show vila's wings getting stronger?" - done
+        if wing_strength < wing_strength_threshold:
+            $ wing_strength += 1
+        play sound tone
 
         jump map
     else:
