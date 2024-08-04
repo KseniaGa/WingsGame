@@ -251,9 +251,7 @@ label mara_joins:
     в "О, ні... Час в потойбіччі погасив їх магію, як же мені тоді повернутися додому з цього підземелля?"
     м "Хех, я тобі покажу"
 
-    show mara radiant at right with dissolve:
-        xzoom 0.5
-        yzoom 0.5
+    show mara radiant at right with dissolve
     #hide mara radiant at right with dissolve 
     # Mara is turning into magic and joins ! 
     
