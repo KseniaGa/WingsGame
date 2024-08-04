@@ -274,22 +274,22 @@ label alk_chill:
     show kikimora at right with dissolve
     ki "Ти зробила це, метелик, я знала, що ти зможеш!"
     hide kikimora at right with dissolve
-    show poludnicia at right with dissovle
+    show poludnicia at right with dissolve
     p "Твоя мужність і рішучість вражають, Віла. Ми тепер вільні завдяки тобі."
-    hide poludnicia at right with dissovle
+    hide poludnicia at right with dissolve
 
-    show lisovyk at right with dissovle
+    show lisovyk at right with dissolve
     l "Твоя сила і відданість допомогли нам усім, дякую тобі, Віла."
-    hide lisovyk at right with dissovle
+    hide lisovyk at right with dissolve
 
-    show rusalka at right with dissovle
+    show rusalka at right with dissolve
     r "Ти принесла світло в наші життя і звільнила нас від темряви. Ми ніколи не забудемо це, Віла."
-    hide rusalka at right with dissovle
+    hide rusalka at right with dissolve
 
     v "Я хочу попрощатися з Берегинею."
     a "Добре."
 
-    show berehynia at right with dissovle
+    show berehynia at right with dissolve
 
     b "Я бачу, ти досягла успіху, люба."
     b "Вітаю, я знала, що ти зможеш!"
