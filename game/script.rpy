@@ -21,6 +21,18 @@ define t4 = "audio/thump4.ogg"
 define t5 = "audio/thump5.ogg"
 define t6 = "audio/thump6.ogg"
 
+default kiki_visited = False
+default kiki_joined = False
+
+default poludnicia_visited = False
+default poludnicia_joined = False
+
+default rusalka_visited = False
+default rusalka_joined = False
+
+default lisovyk_visited = False
+default lisovyk_joined = False
+
 # wings variables
 default wing_strength = 0
 default wing_strength_threshold = 3
@@ -44,8 +56,10 @@ image lisovyk radiant:
     xzoom(-1) #this will flip it horizontally
 
 image rusalka = "character_sprites/rusalka_neutral.png"
+image rusalka sad = "character_sprites/rusalka_sad.png"
 image rusalka radiant = "character_sprites/rusalka_radiant.png"
 image alkonost = "character_sprites/alkonost_neutral.png"
+image alkonost closedeyes = "character_sprites/alkonost_closedeyes.png"
 
 # Define the dim overlay image
 image dim_overlay = Solid((0, 0, 0, 128))  # A simple semi-transparent black overlay
@@ -98,7 +112,8 @@ init python:
 # Гра починається тут.
 label start:
     
-
+    # FOR TESTING THE FINAL LEVEL
+    #jump toproom
     # show berehynia at center with move 
 
     # rightly instead of right, because the progress bar is at the right edge
@@ -249,9 +264,7 @@ label mara_joins:
     в "О, ні... Час в потойбіччі погасив їх магію, як же мені тоді повернутися додому з цього підземелля?"
     м "Хех, я тобі покажу"
 
-    show mara radiant at right with dissolve:
-        xzoom 0.5
-        yzoom 0.5
+    show mara radiant at right with dissolve
     #hide mara radiant at right with dissolve 
     # Mara is turning into magic and joins ! 
     
@@ -280,7 +293,7 @@ label mara_joins:
     б "Ха-ха я бачу ви подружилися. Хай щастить, люба. Я завжди поруч."
 
 
-
+    stop ambience
     jump map
 
 

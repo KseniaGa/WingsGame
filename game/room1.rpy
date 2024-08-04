@@ -1,6 +1,5 @@
 default kikimora_attitude = 0  # Відстеження ставлення Кікімори до Віли
-default kiki_visited = False
-default kiki_joined = False
+
 
 label room1:
     # scene room hell bg

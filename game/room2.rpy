@@ -38,8 +38,7 @@ label room2:
     scene poludniciabg
 
     default poludnicia_attitude = 0 
-    default poludnicia_visited = False
-    default poludnicia_joined = False
+
 
     if poludnicia_joined:
         jump poludnicia_already_joined  

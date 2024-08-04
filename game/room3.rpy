@@ -5,8 +5,7 @@ label room3:
     scene rusalkabg
 
     default rusalka_attitude = 0 
-    default rusalka_visited = False
-    default rusalka_joined = False
+
 
     if rusalka_joined:
         jump rusalka_already_joined  
