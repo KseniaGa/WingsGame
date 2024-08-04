@@ -36,12 +36,12 @@ label room4:
 
 
 label lisovyk_already_joined:
-    b "There is nothing left here, except the old dry leaves."
+    b "Тут уже нічого не залишилось, окрім старого сухого листя."
     call screen backButton
 
 label lisovyk_already_visited:
     show berehynia at right with dissolve
-    b "I know he is old and grumpy, but you got it!"
+    b "Я знаю, що він старий і буркотливий, але ти впораєшся!"
 
     show lisovyk at center with dissolve
     show vila at left with dissolve
@@ -56,10 +56,10 @@ label lisovyk_intro:
     pause 0.1
     show berehynia at rightly with dissolve
 
-    b "Lisovyk is a fighter at heart. Till the very end was he defending the nature and all that lives in the shadows of the woods."
-    b "Now he himself is in the deep shadows where no sun ray reaches. However, I am sure you can help him too, Vila.."
-    b "And yes, beware of something... "
-    b "Sometimes his memory fails due to his age, but he does not like when people remind him that! Be kind!"
+    b "Лісовик — вояк у серці. До самого кінця захищав він природу і всіх, хто живе у прохолодних тінях лісу."
+    b "Тепер він сам перебуває у глибоких тінях, темряві, куди не пробивається жоден промінь сонця. Але я впевнена, що ти зможеш допомогти і йому, Віло..."
+    b "І ще, будь обережна з наступним..."
+    b "Іноді його пам’ять підводить через вік, але йому не подобається, коли люди нагадують йому про це! Залишайся доброю!"
 
     # flashback scene about Lisovyk?
 
@@ -67,39 +67,39 @@ label lisovyk_intro:
 
     #$ show_progress_bar()
 
-    l "This is not looking good, not looking good, I'm telling ya."
+    l "Ой, це виглядає не дуже, це виглядає недобре, кажу вам."
 
     show lisovyk at rightly with move 
+    v "Лісовик? Лісовик, я — Віла."
 
-    v "Lisovyk? Lisovyk, I am Vila."
+    v "Лісовик..?"
 
-    v "Lisovyk..?"
     # l "Liso-what? Speak louder, child. The voices of leaves keep whispering into my ears, I forget myself."
-    l "Lyso-what? Speak louder, child. The voices around keep whispering into my ears, I forget myself."
+    l "Лісо-що? Говори голосніше, дитя. Голоси навколо шепочуть мені на вухо, я все забуваю, і себе теж."
 
 label lisovyk_guess: 
     
     menu:
-        "Make a fun joke":
-            v "Do you have bananas in your ears?"
+        "Роказати жарт":
+            v "У тебе що, банани у вухах?"
             # "Presence of Lisovyk makes Vila feel like an actual child, even though she is hundreds years old, maybe older than him!"
-            l "Excuse me?"
-            l "Bananas?"
-            l "Bananas don't grow where I come from. The father of the jungles takes care of them. "
-            v "The father of the jungles???"
-            l "Hmm. I haven't spoken to him in ages...He's a good fellow. Don't know why I feel I know him."
-            l "*Experiences a sudden sense of nostalgia*"
-            v "*Has no clue what he is talking about*"
+            l "Перепрошую?"
+            l "Банани?"
+            l "Банани не ростуть там, звідки я. Про них піклується батько джунглів."
+            v "Батько джунглів???"
+            l "Хм. Давно вже я з ним не розмовляв... Хороший був хлопець. Якщо він існує. Не знаю, чому мені здається, що це хтось, кого я знаю."
+            l "*раптова ностальгія*"
+            v "*Не має уявлення, про що він говорить*"
             $ lisovyk_attitude+=5 #for sudden nostalgia
             $ lisovyk_banana_joke=True
             jump lisovyk_remind_who_he_is
 
-        "Ask directly about escape":
-            v "I've travelled these caves for a while.."
-            v "And I learned there is a way out.. But you need to remember who you are, Lisovyk!!!"
-            l "Brhhhkmmm. What?!"
-            l "I just had a cup of morning dew now. Or, I think it was dew.."
-            l "Or, i think I did..."
+        "Напряму поділитись планом втечі":
+            v "Я подорожувала цими печерами вже деякий час..."
+            v "І дізналася, що звідси є вихід... Але тобі потрібно згадати, хто ти є, Лісовику!!!"
+            l "Бррхкмм. Що?!"
+            l "Я тільки що випив ранкової роси. Або, я думаю, це була роса..."
+            l "Або, я думаю, що я це зробив..."
             v "..."
             $ lisovyk_attitude-=10
             $ darkness_value+=10
@@ -108,14 +108,14 @@ label lisovyk_guess:
             # jump dim_screen
             jump lisovyk_remind_who_he_is
 
-        "Tell him he's trapped":
-            v "You forget yourself because of the darkness that came upon us."
-            l "I am lost, child."
-            v "How long have you spent in this depth?"
-            l "I have zero clue how long it's been, nor what happened... Time flies!"
-            l "At the same time, for me it always flies differently...One year for you is like a day for me - this much I can remember."
-            l "But I wonder why.. What am I?"
-            l "*questions himself*"
+        "Пояснити, що він у пастці темряви":
+            v "Ти забуваєш хто ти є через темряву, що нас огорнула."
+            l "Я загублений, дитя."
+            v "Скільки часу ти вже провів у цій глибині?"
+            l "Не маю жодного уявлення, скільки це триває, і що саме сталося... Час летить!"
+            l "Водночас, для мене час завжди летить інакше... Один рік для тебе – це як день для мене - це я пам’ятаю."
+            l "Але цікаво, чому... Що я таке?"
+            l "* задумався над своїм існуванням *"
             $ lisovyk_attitude+=10
             jump lisovyk_remind_who_he_is
 
@@ -123,17 +123,17 @@ label lisovyk_guess:
 
 
 label lisovyk_remind_who_he_is:
-    v "Lisovyk? You hear me? I can help you remember!"
+    v "Лісовик? Ти чуєш мене? Я можу допомогти тобі згадати хто ти є!"
 
     menu:
         # "Father of the foxes": #Cause 'FOX' is LYS
         "Father of the bananas":
-            v "Lee-sooh-vyyyk, you are the father of bananas. " 
+            v "Лі-со-вик, ти – батько бананів."
             if lisovyk_banana_joke:
-                l "Again you with your bananas, khekhe."
-                l "I know I like them - who doesn't - but it does not quite feel like home..."
-                l "I miss my dear friends.."
-                v "*self-conscious about Vila's repeated jokes*"
+                l "Знову ти за свої банани, хехе."
+                l "Я знаю, що мені подобаються банани – кому ж ні? – але це не зовсім про мене."
+                l "Я сумую за моїми дорогими друзями..."
+                v "* засоромилась через свої повторювані жарти *"
                 $ lisovyk_attitude-= 10
                 $ darkness_value+= 10
                 if darkness_value>= 100:
@@ -141,9 +141,9 @@ label lisovyk_remind_who_he_is:
                 # jump dim_screen
                 jump get_to_know_more
             else:
-                l "Bananas..? I like all the plants."
-                l "But mostly trees. Did you know banana is not a tree, but a grass?"
-                v "Trees, bush, grass - compared to me they all are gigantic! Let's focus..."
+                l "Банани..? Я люблю всі рослини."
+                l "Але найбільше – дерева. Знаєш, банан не є деревом, а травою?"
+                v "Дерева, кущі, трава – порівняно зі мною, всі вони величезні! Давай сконцентруємося..."
                 $ lisovyk_attitude -= 5
                 $ darkness_value+= 5
                 if darkness_value >= 100:
@@ -151,28 +151,29 @@ label lisovyk_remind_who_he_is:
                 # jump dim_screen
                 jump get_to_know_more
         
-        "Master of the forests":
-            v "Lee-sooh-vyyyk, you are the master of the forests."
-            l "Forests have trees."
-            l "Trees have leaves. "
-            l "Leaves rustle..."
-            l "Those are not voices, but the leaves!"
-            v "Exactly!"
-            l "What are the leaves whispering about, Vila?"
-            v "You used to protect all the woods and all that lives there!"
-            l "Ah yess, that sounds about right. TODO add actual info!"
-            v "This place does not look like your home at all.."
-            l "Is there a way out?"
-            "Lisovyk turns his head left and right, a sound of sqeeky wood follows..."
+        "Володар лісів":
+            v "Лі-со-вик, ти - покровитель лісів."
+            l "У лісах є дерева."
+            l "На деревах є листя."
+            l "Листя шелестить..."
+            l "Це не голоси, а листя!"
+            v "Саме так!"
+            l "Про що шепоче листя, Віло?"
+            v "Ти колись охороняв всі ліси і все, що в них живе!"
+            l "А,хмм, це звучить знайомо..."
+            v "Це місце зовсім не схоже на твій дім..."
+            l "Чи є звідси вихід?"
+            "Лісовик повертає голову ліворуч і праворуч, лунає скрип деревини..."
+            #TODO sound of squeeku wood here
             $ lisovyk_attitude+= 10
             jump get_to_know_more
 
-        "Patron of the bolds": #Cause BOLD is LYSYY
-            v "Lee-sooh-vyyyk, you are the patron of the bolds."
-            l "Khe-khe. Bolds?"
-            l "My dress might be getting drier every season, and the leaves on my head are falling, yes..." 
-            l "...but this is nothing but a natural process."
-            v "*whoops*"
+        "Покровитель лисих": #Cause BOLD is LYSYY
+            v "Лі-со-вик, ти покровитель всіх лисих."
+            l "Хе-хе. Лисих?"
+            l "Моя одіж дійсно стає сухішою із кожним сезоном, і листя на моїй голові опадає, так..."
+            l "...але це всього навсього природний процес."
+            v "* упс *"
             $ lisovyk_attitude -= 10
             $ darkness_value+= 10
             if darkness_value >= 100:
@@ -180,50 +181,52 @@ label lisovyk_remind_who_he_is:
             # jump dim_screen
             jump get_to_know_more
 
-        "Friend of the frogs":
+        "Найкращий друг жаб":
             v "Lee-sooh-vyyyk, you are the friend of the frogs." # Cause he sits like a frog, and there's a small frog 
-            l "Frogs sure.. But not only."
-            l "As i said - I think I said - I like ~all~ the animals."
-            l "I do sit like a frog on Wednesdays occasionally, spent a lot of time with 'em. "
-            l "*looks at his frog freind*"
+            v "Лі-со-вик, ти Друг жаб."
+            l "Жаб, звичайно... Але не тільки жаб."
+            l "Як я казав – я думаю, що казав – мені подобаються ~всі~ тварини."
+            l "Я інколи сиджу, як жаба, по середах, бо так, проводжу з ними багато часу."
+            l "* дивиться на свого друга-жабу *"
+            #TODO frog sound
             $ lisovyk_attitude+=5 #seems too much, need to check if numbers make sense here!
             jump get_to_know_more
 
 label get_to_know_more:
     menu:
-        "Ask about his past life":
-            v "What else do you remember, Lisovyk?"
+        "Запитати про його минуле життя":
+            v "Що ще ти пам'ятаєш, Лісовику?"
             if lisovyk_attitude >= 5:
-                l "I remember it used to be different from now."
-                v "I know, Lisovyk... I am sorry. What was is like?"
-                l "My home was shared with many others - the birds, the wolves, the bears.."
-                l "I'd walk the same old paths, and cherish the peace of the woods, protect it."
-                $ lisovyk_attitude+= 5
+                l "Пам'ятаю, що раніше все було по-інакшому, не так, як зараз."
+                v "Я знаю, Лісовику... Мені шкода. Яким було твоє життя тоді?"
+                l "Мій дім ділили ми з багатьма іншими створіннями – птахами, вовками, ведмедями..."
+                l "Я ходив тими самим старими стежками щодня, дорожив спокоєм лісу, і захищав його."
+                $ lisovyk_attitude += 5
             else:
-                l "I remember nothing, but the sounds."
-                v "What were they like? The birds? The hares?"
-                l "The latest memories seem dark, very dark. Fire cracking, screams and smoke, smoke everywhere..."
-                l "Cannot recall what life before was like."
-                v "Oh..."
-                $ lisovyk_attitude-=5
+                l "Я не пам'ятаю нічого, крім звуків."
+                v "Що то були за звуки? Спів птахів? Стрибки зайців?"
+                l "Останні спогади здаються темними, дуже темними. Згадую лише тріскання вогню, крики і перед очима дим, всюди дим..."
+                l "Не можу згадати, яким життя було до того."
+                v "Ох..."
+                $ lisovyk_attitude -= 5
 
             jump invite_lisovyk
 
-        "Tell about his past life:":
-            v "You used to rest at the foot of the Forest, and play cards with your friends!"
-            l "Games with friends - ha. Something so foreign here. You are the first visitor I had in ages.."
-            v "That was your leisure. And at other times, you took care of the cattle, so it does not get lost in your woods.."
-            v "You also helped the people, but often only if they leave a snack."
-            l "I am starting liking you, Vila. What are YOU doing here?"
-            v "I'm helping spirits like us to escape the darkness...Or, at least that's what I'm trying to do.."
+        "Розповісти про його минуле життя:":
+            v "Ти любив відпочивати біля підніжжя лісу та грати в карти з друзями!"
+            l "Ігри з друзями – ха. Щось таке чуже тут. Ти перший відвідувач, якого я мав за довгий час..."
+            v "Це було твоє дозвілля. А в інший час ти дбав про худобу, щоб вона не заблукала в твоєму лісі..."
+            v "Ти також допомагав людям, але часто лише якщо вони залишали смаколики."
+            l "Ти починаєш мені подобатись! Що ти сама робиш тут?"
+            v "Я допомагаю духам, як ми, втекти з темряви... Або, принаймні, я намагаюсь це зробити..."
             $ lisovyk_attitude+= 5
             jump invite_lisovyk
 
 label invite_lisovyk:
     if lisovyk_attitude >= 20: #make the level harder?
-        v "I know there is a way out, up there, to the sun. Do you want to hear the birds and rustle of the leaves again? Do you wanna join me?"
+        v "Я знаю, що звідси є шлях, шлях нагору, до сонця. Чи хочеш ти знову почути спів птахів і шелест листя? Хочеш приєднатися до мене?"
 
-        l "Oh, I would do anything to see my forest again, to protect it and its inhabitants from what is still upon us, and provide shade in the time of peace..."
+        l "О, я зробив би все, щоб знову побачити свій ліс, щоб захищати його і його мешканців від небезпеки, що є досі над нами, і забезпечувати тінь у часи миру..."
 
         show lisovyk radiant
 
@@ -233,12 +236,12 @@ label invite_lisovyk:
         play sound tone
     
     else:
-        v "I know there is a way out, up there, to the sun. Do you want to hear the birds and rustle of the leaves again? Do you wanna join me?"
+        v "Я знаю, що звідси є шлях, шлях нагору, до сонця. Чи хочеш ти знову почути спів птахів і шелест листя? Хочеш приєднатися до мене?"
 
-        l "I don't comprehend what you want of me, child."
-        l "You somehow made me more confused about myself."
-        l "Well, I guess I will forget about this encounter soonk, brhmsss."
-        l "*falls asleep*"   
+        l "Я не розумію, що ти хочеш від мене, дитя."
+        l "Ти зробила мене ще більш непевним у тому, хто я є і ким я був.."
+        l "Гадаю, я все одно скоро забуду про цю зустріч, брмсс."
+        l "* засинає *"  
 
         $ increase_darkness()
     
