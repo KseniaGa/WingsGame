@@ -68,6 +68,7 @@ label toproom:
 
 label choice1: 
 #START PLAYING NORMAL MUSIC HERE
+    play music bgm loop
 
     menu:
         "Спати далі (так легше) ": 
@@ -212,7 +213,7 @@ label alk_stirs_drama:
     v "Чому ти говориш, наче ми вже зустрічалися? Я щойно зустріла тебе."
     a "Боюся, що ні, дитя."
     a "Бачиш, Берегиня пробувала це багато разів. Можливо, ти та ж сама Віла, а можливо, одна з інших. Кожного разу ви зазнаєте поразки, ваші спогади стираються, і ви повертаєтесь знову."
-    #STOP MUSIC HERE 
+    stop music  
     # HEART BEAT SOUND 
     v "Про що ти говориш? Це неможливо..."
     a "Так, дорога Віла, ти була тут раніше. Багато разів. І кожного разу ти не могла з цим впоратися. Ти впадала в розпач, твої спогади стиралися."
@@ -238,7 +239,9 @@ label vila_hope:
     show black with dissolve
     pause 1.0
 
-    # EPIC MUSIC STARTS ? 
+    # EPIC MUSIC STARTS ? play music smth 
+    play music bg loop 
+    play music boss loop
     # The screen gets darker and darker and the only thing we can see is the "menu" choices: Hope, Accept Help, Keep Going, Fight, Persevere
     "Какофонія знайомих голосів:"
     "Ми тут, люба Віло. Ми всі тут з тобою, ти не сама. Не здавайся!"
