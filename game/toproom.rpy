@@ -28,6 +28,8 @@ init python:
 label toproom:
     scene black
     
+    hide all
+
     show vila at left with dissolve
 
     v "There is noone here. Should we just escape?"
@@ -35,7 +37,9 @@ label toproom:
     b "Please be careful wit her. Don't show too much emotion, especislly sadness."
 
     pause 0.5
-    show alkonost at center with dissolve
+    show alkonost at center with dissolve:
+        xzoom 0.5
+        yzoom 0.5
 
     a "Ah.Greetings Vila."
     a "Radiant as always."

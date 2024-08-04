@@ -6,6 +6,9 @@ label room1:
     # scene room hell bg
     # scene bg_kiki with dissolve
 
+    hide all
+    scene kikimorabg
+
     if kiki_joined:
         jump kiki_already_joined  
     elif kiki_visited:

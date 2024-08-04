@@ -24,6 +24,9 @@ default lisovyk_banana_joke = False
 
 label room4:
     # scene room hell bg
+    
+    hide all
+    scene lisovykbg
 
     if lisovyk_joined:
         jump lisovyk_already_joined  

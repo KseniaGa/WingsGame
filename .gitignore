@@ -13,3 +13,6 @@ game/*.rpyc
 game/tl/english/*.rpyc
 .DS_Store
 game.images/character_sprites/.DS_Store
+game/saves/persistent
+game/saves/navigation.json
+game/cache/shaders.txt
