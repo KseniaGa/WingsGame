@@ -46,15 +46,15 @@ label room2:
         jump poludnicia_intro
 
 label poludnicia_already_joined:
-    b "*Looks at tumbleweed passing*"
+    b "*Спосерігає перекотиполе...*"
     call screen backButton
 
 label poludnicia_already_visited:
+    show poludnicia at center with dissolve
     show berehynia at right with dissolve
     # b "Poludnytsa is not in the mood indeed. But you dealt with Mara, so this shoudl be doable too!"
-    b "You dealt with my sister already, so persuading Poludnytsa would be like snacking on sunflower seeds..." #як насі́ння луза́ти
+    b "Ти вже впоралася з моєю сестрою, тож переконати Полудницю буде як насіння лузати..." #як насі́ння луза́ти
 
-    show poludnicia at center with dissolve
     show vila at left with dissolve
     hide berehynia at right with dissolve
     show poludnicia at rightly with move 
@@ -68,18 +68,20 @@ label poludnicia_intro:
     pause 0.1
     show berehynia at rightly with dissolve
 
-    b "Poludnytsa is a spirit living in the fields. She may have a strong character - don't we all?"
-    b "After all it is quite a toll to protect the fields...and unwanted visitors from being there at a wrong time."
-    b "But now, you know, who wouldn't be angry from everything that happened to us? May luck be with you."
+    b "Полудниця — це дух, що живе у полях. Характер в неї може так собі - але хто з нас ідеальний?"
+    b "Захищати поля і не пускати туди непроханих гостей — дуже нелегка справа."
+    b "Але, знаєш що? Хто б на її місці не розлютився після всього, що з нами сталося? Удачі, Віло!"
 
 
     hide berehynia at rightly with dissolve
     show poludnicia at rightly with move 
 
-    p "This darkness is driving me mad!"
-    p "It was ME who was driving others mad. Not vice versa!"
-    p "I cannot even threaten anyone with... whatever I used to threaten with!" # (the power of the sun? the scythe?)
-    p "* walks angrilly back and forth * "
+    p "Ця темрява зводить мене з розуму!"
+    p "Це Полудниця зводить людей з розуму, а ніяк не навпаки!"
+    p "Навіть не можу нікому пригрозити ... Але чим? Вже й не згадати! Це.Просто.Зводить.Мене.З.Розуму!" # (the power of the sun? the scythe?)
+    p "* сердито ходить туди-сюди * "
+    show poludnicia at center with move 
+    show poludnicia at rightly with move 
 
     jump poludnicia_greet
 
@@ -87,24 +89,24 @@ label poludnicia_intro:
 
 label poludnicia_greet: 
     menu:
-        "Greet gently":
-            v "Hi..."
-            p "*still preoccupied with her emptions*"
-            v "Poludnytsa, hello. I... I am Vila."
-            p "I had met enough villains in my life! No, thank you." #TODO adapt for uktrainian maybe, smth like Вили - для поля?
-            v "Vi-la. Not a villain."
-            p "What do you want, 'Viii-laaa'?"
+        "Тихенько привітати":
+            v "Привіт..."
+            p "* досі занурена у свої емоції *"
+            v "Полуднице, привіт. Я... я Віла."
+            p "Вили? Як вили для сіна? Ха. Якось підозріло. Ні, дякую!! Я надаю перевагу іншим знаряддям." #TODO adapt for uktrainian maybe, smth like Вили - для поля?
+            v "'Віла', а не 'вила'."
+            p "Ай, яка різниця! Ну, і шо ти тут забула?"
             $ poludnicia_attitude+=5
             jump poludnicia_remind
             
 
-        "Tell to calm down":
-            v "Woah woah woah, someone needs to chill here..."
-            p "Chill?!"
-            p "Are you kidding me?! Look where we are! And besides..."
-            p "..who, in Mara's name, are you?"
-            v "Khmm, I am Vila.. I just recently realized the state of things myself!"
-            v "You must believe me."
+        "Сказати заспокоїтися":
+            v "Йой-йой-ой. Комусь тут треба охолонути..."
+            p "Охолонути?!"
+            p "Ти серйозно?! Подивися, де ми! І крім того.."
+            p "..хто, в ім'я Мари, ти така?"
+            v "Я Віла... І сама тільки нещодавно усвідомила всю ситуацію!"
+            v "Повір мені."
             p "?!"
             $ poludnicia_attitude-=10
             $ darkness_value+= 10
@@ -114,9 +116,11 @@ label poludnicia_greet:
             jump poludnicia_remind
             
 
-        "Wait quietly":
+        "Почекати мовчки":
             v "..."
-            p "*continues*"
+            show poludnicia at center with move 
+            p "* продовжує сердитися *"
+            show poludnicia at rightly with move 
             v "..."
             p "You're not triggered by my anger?"
             p "How are you staying so calm?"
@@ -169,7 +173,7 @@ label poludnicia_remind:
             p "NO WORK AT MIDDAY - is it so hard to follow that rule?! They keep coming and coming. The small ones, the big ones. Someone needs to stop it."
             v "That's why you use ... the scythe or a sickle?"
             p "Ha, this is outdated. Now it's just about fashion."
-            p "What I do now is, ask reapers difficult questions. EaThesy ones, like how to sow, and when to reap? You know, the field stuff."
+            p "What I do now is, ask reapers difficult questions. The ones, like how to sow, and when to reap? You know, the field stuff."
             v "And if they don't answer?"
             p "That you don't wanna know..."
             p "There are worse things happenig now. Field was no safe place for humans at midday. Well now, for nobody.. even me."
@@ -180,7 +184,8 @@ label poludnicia_remind:
 
 label poludnicia_reassure:
     v "I feel your frustartion, Poludnytsa. Things are not easy now indeed... "
-    v "Would you want to do some of your favourite activities?"
+    v "So..."
+    # v "Would you want to do some of your favourite activities?"
     menu:
         "Let's dance!":
             # ref: "P"oludnitsa, according to beliefs, loves to dance. If she sees a girl lying down to rest in the field, she will wake her 
@@ -190,33 +195,66 @@ label poludnicia_reassure:
             v "Do you hear the wind howling? What a beat!"
             v "*starts dancing*"
             show vila at rightly with move 
-            show vila at left with move 
-            p "* a moment of shock*"
             show poludnicia at left with move 
+            show vila at left with move 
             show poludnicia at rightly with move 
+            p "* a moment of shock*"
+            # show poludnicia at left with move 
+            # show poludnicia at rightly with move 
+            p "I don't remember the last time I danced!!!"
+            p "I will not force you to dance till the dawn, like we would usually. We don't even know when the dawn comes deep in this darkness."
+            p "*Poludnytsa looks up*"
             $ poludnicia_attitude+=10
+            jump poludnicia_invite
 
         "Let's ask difficult questions!": 
             # ref "She will stop people in the field to ask them difficult questions or engage them in conversation. 
             # If anyone fails to answer a question or tries to change the subject, she will cut off their head or strike 
             # them with illness."
-            v "TODO"
-            v "Say 'Polunytsa."
-
+            v "Just like you ask reapers difficult questions, could I ask you one?"
+            p "Noot sure I like the reversed game, noone dared yet to do it.. But go on!"
+            v "Say 'Polunytsa'."
+            p "'Polunytsa'? Why?"
+            v "That's the answer."
+            v "*smiles*"
+            p "Ha, that was too easy!!"
+            p "Your turn!"
+            p "Can you tell me.. Where is Zhytomyr?"
+            v "👀"
+            p "One of my favourites. I wonder what's up with it now?"
+            p "I wish I could revenge for it! If needed, of course... If there is anything to revenge for still?"
             $ poludnicia_attitude+=5 
+            jump poludnicia_invite
 
-        "Let's fence with sickles!": #pretend her poer are still with her
-            v "TODO pretend her powers still work"
-
-            $ poludnicia_attitude-=5 #cannot do because there is not sun here, powerless without it?
+        "Let's fence with sickles!": #pretend her powers are still with her
+            v "If your sickle has no good use now... Then how about we play with it?"
+            v "I'll be the reaper, and you play yourself!"
+            p "Outrageous! Sickles are not toys!"
+            p "And I thought I was the one driven mad by the darkness!"
+            $ poludnicia_attitude-=5 
+            $ darkness_value+= 10
+            if darkness_value>= 100:
+                jump game_over_darkness
+            # jump dim_screen
+            jump poludnicia_invite
 
 label poludnicia_invite:
     if poludnicia_attitude>=15:
-        "TODO"
+        v "Poludnytsa, I know there is way out of here. There will be the sun, and hot summer days, there will be new fields to watch. Do you want to come along?"
+        p "If I am mad, then this is part of it, and I lose nothing."
+        p "I want to let my anger go, I want to fly, and fly, and scream, till everyone can hear me. I'll join you, Vila!"
+
+        "TODO show radiant Poludnytsa"
+        $ wing_strength+=1
+        jump map
 
     else:
-        "TODO"
-        
+        v "Poludnytsa, I know there is way out of here. There will be the sun, and hot summer days, there will be new fields to watch. Do you want to come along?"
+        p "I see no point in going anywhere!"
+        p "These are empty promises, it seems. The past me is the past, whatever she was like..."
+        v "Poludnytsa..."
+        $ increase_darkness()
+
     $ poludnicia_attitude = 0
     $ poludnicia_visited = True 
 

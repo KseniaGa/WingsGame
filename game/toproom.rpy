@@ -87,9 +87,9 @@ if kiki_already_joined:
 elif po_already_joined: 
     jump po_hope 
 elif lis_already_joined: 
-    lis_hope 
+    jump lis_hope 
 else:
-    r_hope 
+    jump r_hope 
 
 # Convince Alkonost that Kiki is better off free ! 
 # The room is illiminated with Kikimora's symbol! 
