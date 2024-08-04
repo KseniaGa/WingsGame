@@ -3,6 +3,8 @@
 label toproom:
     scene black
     
+    hide all
+    
     show vila at left with dissolve
 
     v "There is noone here. Should we just escape?"

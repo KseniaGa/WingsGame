@@ -34,6 +34,9 @@
 label room2:
     # scene room hell bg
 
+    hide all
+    scene poludniciabg
+
     default poludnicia_attitude = 0 
     default poludnicia_visited = False
     default poludnicia_joined = False
