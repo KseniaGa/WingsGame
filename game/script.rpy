@@ -1,18 +1,18 @@
 ﻿# Define characters
-define v = Character("Vila", color="#7ec8e3")       # Player Character
-define в = Character("Vila", color="#7ec8e3")       
+define v = Character("Віла", color="#7ec8e3")       # Player Character
+define в = Character("Віла", color="#7ec8e3")       
 
-define b = Character("Berehynia", color="#ffcc00")  #  Guide
-define б = Character("Berehynia", color="#ffcc00")  
+define b = Character("Берегиня", color="#ffcc00")  #  Guide
+define б = Character("Берегиня", color="#ffcc00")  
 
-define m = Character("Mara", color="#9932CC")       # Tutorial 
-define м = Character("Mara", color="#9932CC")         
+define m = Character("Мара", color="#9932CC")       # Tutorial 
+define м = Character("Мара", color="#9932CC")         
 
-define p = Character("Poludnicia")                    # Level 2
-define ki = Character("Kikimora")                     # Level 2
-define l = Character("Lisovyk")                       # Level 3
-define r = Character("Rusalka")                       # Level 3
-define a = Character("Alkonost")                      # Final Boss
+define p = Character("Полудниця")                    # Level 2
+define ki = Character("Кікімора")                     # Level 2
+define l = Character("Лісовик")                       # Level 3
+define r = Character("Русалка")                       # Level 3
+define a = Character("Алконост")                      # Final Boss
 
 define t1 = "audio/thump1.ogg"
 define t2 = "audio/thump2.ogg"
@@ -116,8 +116,8 @@ label start:
     b "Будь ласка, прокинься" 
     b "Прокинься!"
 
-    show rusalka radiant at left
-    show lisovyk radiant at right
+    #show rusalka radiant at left
+    #show lisovyk radiant at right
 
     show vila at left with dissolve
 
@@ -277,8 +277,9 @@ label mara_joins:
     м "То йди вже чаруй та вербуй інших, чи що ви там вілли робите. Час мені повернути моє потойбіччя, деякі створіння тут OVERSTAYED THEIR WELCOME. Враховуючи тебе, Віла"
     
     в "Е, вау, дуже мотивує, Мара... Дякую. "
-    
     б "Ха-ха я бачу ви подружилися. Хай щастить, люба. Я завжди поруч."
+
+
 
     jump map
 

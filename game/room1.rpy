@@ -31,7 +31,7 @@ label kiki_already_visited:
 
 label kiki_intro:
     show vila at left with dissolve
-    
+    pause 0.1
     show kikimora at center with dissolve
     pause 0.1
     show berehynia at right with dissolve 
@@ -160,9 +160,10 @@ label reassure_her:
         "Шукати надію в теперішньому":
             v "Є ті, хто потребує твоєї допомоги зараз. Як я."
             $ kikimora_attitude += 10
-            ki "Кікі потрібна?"
+            ki "Кікі... потрібна?"
             ki "Кікі потрібна метелику?"
-            ki ""
+            v "Так, звичайно потрібна."
+            "Кікі посміхається кріз сльози."
             jump invite_kikimora
 
 label invite_kikimora:
