@@ -1,10 +1,12 @@
-default kikimora_attitude = 0  # Відстеження ставлення Кікімори до Віли
+
 
 
 label room1:
     # scene room hell bg
     # scene bg_kiki with dissolve
 
+    default kikimora_attitude = 0  # Відстеження ставлення Кікімори до Віли
+    
     hide all
     scene kikimorabg
 

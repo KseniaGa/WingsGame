@@ -17,13 +17,13 @@
 
 # Серед українців було повір'я, що лісовик зимує в барлозі, поруч із ведмедем, і з носа у нього стирчить бурулька. Існувало повір'я: 
 # якщо смикнути полісуна за бурульку, вона розсиплеться золотими грішми[9].
-default lisovyk_attitude = 0 
+
 
 default lisovyk_banana_joke = False
 
 label room4:
     # scene room hell bg
-    
+    default lisovyk_attitude = 0 
     hide all
     scene lisovykbg
 
