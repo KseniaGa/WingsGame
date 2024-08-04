@@ -44,8 +44,10 @@ image lisovyk radiant:
     xzoom(-1) #this will flip it horizontally
 
 image rusalka = "character_sprites/rusalka_neutral.png"
+image rusalka sad = "character_sprites/rusalka_sad.png"
 image rusalka radiant = "character_sprites/rusalka_radiant.png"
 image alkonost = "character_sprites/alkonost_neutral.png"
+image alkonost closedeyes = "character_sprites/alkonost_closedeyes.png"
 
 # Define the dim overlay image
 image dim_overlay = Solid((0, 0, 0, 128))  # A simple semi-transparent black overlay
@@ -280,7 +282,7 @@ label mara_joins:
     б "Ха-ха я бачу ви подружилися. Хай щастить, люба. Я завжди поруч."
 
 
-
+    stop ambience
     jump map
 
 
