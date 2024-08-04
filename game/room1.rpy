@@ -31,7 +31,7 @@ label kiki_already_visited:
 
 label kiki_intro:
     show vila at left with dissolve
-    
+    pause 0.1
     show kikimora at center with dissolve
     pause 0.1
     show berehynia at right with dissolve 

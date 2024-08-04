@@ -116,8 +116,8 @@ label start:
     b "Будь ласка, прокинься" 
     b "Прокинься!"
 
-    show rusalka radiant at left
-    show lisovyk radiant at right
+    #show rusalka radiant at left
+    #show lisovyk radiant at right
 
     show vila at left with dissolve
 
