@@ -37,8 +37,8 @@ label toproom:
     b "Будь обережна з нею. Не показуй занадто багато емоцій, особливо смутку."
 
     pause 0.5
-    play sound dragon-wings
-    show alkonost at center with dissolve:
+    play sound "dragon-wings.ogg"
+    show alkonost at center with dissolve
         #xzoom 0.5
         #yzoom 0.5
 
@@ -266,37 +266,37 @@ label alk_chill:
     a "Можливо, мої послуги більше не потрібні тут."
     a "Ти переконала мене. Поки що."
     pause 1.0
-    a "Ви вільні йти."
+    a "Ви можете йти."
 
     # Vila is shining and all of the others appear? 
     "Віла відчуває радість усіх своїх друзів, вона переповнює все оточування."
 
-    show kikimora at right with dissolve
+    show kikimora radiant with dissolve
     ki "Ти зробила це, метелик, я знала, що ти зможеш!"
-    hide kikimora at right with dissolve
-    show poludnicia at right with dissovle
-    p ""
-    hide poludnicia at right with dissovle
+    hide kikimora radiant with dissolve
+    show poludnicia radiant with dissolve
+    p "Твоя мужність і рішучість вражають, Віла. Ми тепер вільні завдяки тобі."
+    hide poludnicia radiant with dissolve
 
-    show lisovyk at right with dissovle
-    l ""
-    hide lisovyk at right with dissovle
+    show lisovyk radiant with dissolve
+    l "Твоя сила і відданість допомогли нам усім, дякую тобі, Віла."
+    hide lisovyk radiant with dissolve
 
-    show rusalka at right with dissovle
-    r ""
-    hide rusalka at right with dissovle
+    show rusalka radiant with dissolve
+    r "Ти принесла світло в наші життя і звільнила нас від темряви. Ми ніколи не забудемо це, Віла."
+    hide rusalka radiant with dissolve
 
     v "Я хочу попрощатися з Берегинею."
     a "Добре."
 
-    show berehynia at right with dissovle
+    show berehynia at right with dissolve
 
     b "Я бачу, ти досягла успіху, люба."
     b "Вітаю, я знала, що ти зможеш!"
 
     v "Я відчуваю, що не можу довіряти твоїм справжнім намірам, Берегине, але незалежно від твоїх методів, це закінчилося нашою свободою, і за це я хочу подякувати тобі."
     hide berehynia at right with dissolve
-    play sound evil-laugh
+    play sound "evil-laugh.ogg" 
     show mara at right with dissolve
     m "Ха-ха-ха"
     hide mara at right with dissolve

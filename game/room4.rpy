@@ -65,7 +65,7 @@ label lisovyk_intro:
 
     hide berehynia at rightly with dissolve
 
-    $ show_progress_bar()
+    #$ show_progress_bar()
 
     l "This is not looking good, not looking good, I'm telling ya."
 
@@ -225,8 +225,12 @@ label invite_lisovyk:
 
         l "Oh, I would do anything to see my forest again, to protect it and its inhabitants from what is still upon us, and provide shade in the time of peace..."
 
+        show lisovyk radiant
+
         $ lisovyk_joined = True
-        $ wing_strength+= 1
+        if wing_strength < wing_strength_threshold:
+            $ wing_strength += 1
+        play sound tone
     
     else:
         v "I know there is a way out, up there, to the sun. Do you want to hear the birds and rustle of the leaves again? Do you wanna join me?"

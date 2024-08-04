@@ -246,10 +246,21 @@ label poludnicia_invite:
     if poludnicia_attitude>=15:
         v "Полуднице, я знаю, що звідси є вихід. Там буде сонце, спекотні літні дні, нові поля, які треба охороняти! Хочеш піти зі мною?"
         p "Якщо я вже зійшла з розуму, то це теж частина цього...  Думаю, я нічого не втрачу, якщо скажу так."
-        p "Я хочу відпустити свій гнів, хочу літати, літати і кричати, щоб мене всі чули. Я приєднаюсь до тебе, Віло!"
 
         "TODO show radiant Poludnytsa"
-        $ wing_strength+=1
+
+        show poludnicia radiant
+
+        if wing_strength < wing_strength_threshold:
+            $ wing_strength += 1
+        play sound tone
+        
+        p "Я хочу відпустити свій гнів, хочу літати, літати і кричати, щоб мене всі чули. Я приєднаюсь до тебе, Віло!"
+        
+        $ poludnicia_attitude = 0
+        $ poludnicia_visited = True 
+        $ poludnicia_joined = True
+
         jump map
 
     else:

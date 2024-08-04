@@ -16,12 +16,12 @@ label room3:
 
 
 label rusalka_already_joined:
-    b "One could say 'Not even a wet spot left' (І мокрого місця не залишилось?)'. Although I can see it here clearly."
+    b "Як то кажуть, 'і мокрого місця не залишилося'. Хоча тут трошки слизько від води."
     call screen backButton
 
 label rusalka_already_visited:
     show berehynia at right with dissolve
-    b "Rusalka's sensitivity might be a strength, but it requires patience to get through to her. Good luck!"
+    b "Сила Русалки - дійсно в її чутливісті, але потрібне терпіння, щоб достукатися до неї. Удачі!"
 
     show rusalka at center with dissolve
     show vila at left with dissolve
@@ -37,28 +37,28 @@ label rusalka_intro:
     pause 0.1
     show berehynia at rightly with dissolve
 
-    b "Rusalka's is a water spirit. Deep down here not even an underground stream passes."
-    b "Instead, the only water you can find here are her tears..."
-    b "Be kind to her, Vila!"
+    b "Русалка — це водяний дух. А тут, глибоко під землею навіть і підземного струмка нема."
+    b "Натомість, єдина вода, яку ти тут знайдеш, — це її сльози..."
+    b "Стався до неї з розумінням, Віло!"
 
     hide berehynia at rightly with dissolve
     show rusalka at rightly with move 
 
     pause 0.1
 
-    r "Hello, stranger..."
+    r "Привіт, незнайомко..."
 
-    $ show_progress_bar()
+    #$ show_progress_bar()
 
-    r "What brought you here to my peaceful ... home?"
+    r "Що привело тебе до мого мирного ... дому?"
 
     menu:
 
-        "Attempt an ice-breaker joke":
-            v "Your home seems too dry at the moment, Rusalka. Looks like someone needs a drink hehe!" 
+        "Розрядити обстановку жартом":
+            v "Твій дім зараз здається занадто сухим, Русалко. Комусь точно потрібно випити хехе!"
             r ""
-            r "Never felt as thirsty in my life as here."
-            r "Pointing to that does NOT help..."
+            r "Ніколи не відчувала такої спраги, як тут."
+            r "Вказувати на це НЕ допомагає..."
             v ""
             #Consider not punishing the first encounter...
             $ rusalka_attitude-=10
@@ -67,58 +67,56 @@ label rusalka_intro:
                 jump game_over_darkness
             # jump dim_screen
 
-            "*Rusalka feels self-aware and hides her face in her used-to-be golden hair*. Good job, Vila."
+            "*Русалка відчуває ніяковість і ховає обличчя у своє, колись золоте, волосся*. Молодець, Віло."
             pause 1.0
             jump rusalka_remember
 
-        "Introduce yourself carefully":
-            v "I am Vila! I am finding a way out of this darkness, and can help you too!"
-            r "*overwhelmed*"
-            v "No worries-no worries! All we need to do is to find the real YOU within you."
-            r "The real me? But I am here.. This is my life.."
-            r "You.. You can help me?"
-            $ rusalka_attitude+=10
+        "Обережно представитися":
+            v "Я Віла! І шукаю шлях з цієї темряви. Я можу допомогти тобі!"
+            r "*переповнена емоціями*"
+            v "Не хвилюйся, не хвилюйся! Все, що нам потрібно зробити, це знайти справжню ТЕБЕ. Вона захлвана десь в тобі, я знаю."
+            r "Справжню мене? Але я тут... Це моє життя..."
+            r "Ти.. Ти можеш мені допомогти?"
+            $ rusalka_attitude += 10
             jump rusalka_remember
 
-
-        "Ask directly what happened":
-            v "Home? What happened to you, Rusalka? How did you get here?"
-            r "I know terrible-terrible things happened. But I don't know what..."
-            v "I know, rusalka. We all were affected by it, though in different ways."
-            r "It feels like poison swallowed me... "
-            v "It sure could be described that way."
-            r "Thank you for undertsanding, stranger."
-            $ rusalka_attitude+=5
+        "Прямо запитати, що сталося":
+            v "Дім? Що сталося з тобою, Русалко? Як ти сюди потрапила?"
+            r "Здається, сталися жахливі-жахливі речі. Але я не знаю, що саме..."
+            v "Я знаю, Русалко. Це вплинуло на всіх нас, хоча і по-різному."
+            r "Ніби якась отрута поглинула мене..."
+            v "Гм, це дійсно можна описати так."
+            r "Дякую за розуміння, незнайомко."
+            $ rusalka_attitude += 5
             jump rusalka_remember
 
     call screen backButton
 
 
 label rusalka_remember:
-    r "Somehow my name carries a painful resemblence with what hurt us so much. What was my existence outside of this darkness?" #would need to come up with good tranlsation to Ukrainian
+    r "Чомусь моє ім'я несе болісну схожість з тим, що завдало нам так багато шкоди. Яким було моє існування поза цією темрявою?" 
 
     # show vila at left with dissolve 
 
     menu:
-        "Bringing laughter and light in our waters":
-            v "You used to be full of light and laugh, until they came. Filling our waters with life."
+        "Нести сміх і світло в наші води":
+            v "Ти була повна світла і сміху, поки вони не прийшли. Ти наповнювала наші води життям."
             # hide vila with dissolve
-            r "Laughter?"
-            r "I haven't laughed in ages!"
+            r "Сміх?"
+            r "Я не сміялася вже цілу вічність!"
             # show hopefull rusalka's face
-            "Rusalka glances at you - a sudden, yet quick, moment of light and hope. Then quickly looks back down, and turns quiet."
-            v "Yes, laughter. In fact, your tickling could even be some sort of weapon."
-            r "Hmm, I remember the tickling... Ah, swimming was always so much fun!"
-            # show back the sad rusalka
+            "Русалка підіймає на тебе очі - раптовий, але короткий, момент світла і надії. Потім швидко опускає очі і замовкає."
+            v "Так, сміх. Насправді, твоє лоскотання навіть могло бути зброєю."
+            r "Гм, я пам'ятаю лоскотання у воді... Ах, плавання і веселощі в воді - найкраще, що є у цьому житті! Найкраше, що було..."# show back the sad rusalka
             $ rusalka_attitude += 10
             jump make_rusalka_feel_better
 
-        "Using rain to enrich our soils and help the crops":
-            v "You used to come down to earh in the rain droplets. Enriching our soils, bringing life."
+        "Зрошувати наші ґрунти дощем і допомагати врожаям":
+            v "Ти спускалася на землю разом із краплями дощу. Ти збагачувала наші ґрунти, приносила життя."
             # hide vila with dissolve
-            r "You must be confusing me with somebody else. "
-            r "I like fresh water..."
-            r "... but not up in the skies."
+            r "Ти, мабуть, плутаєш мене з кимось іншим."
+            r "Мені дійно подобається вода..."
+            r "... але не та, що на небесах."
             $ rusalka_attitude-=5
             $ darkness_value+=5
             if darkness_value>=100:
@@ -126,9 +124,9 @@ label rusalka_remember:
             # jump dim_screen
             jump make_rusalka_feel_better 
 
-        "Stealing young boys and girls like a witch":
-            v "You used to roam our fields and steal young girls and boys, like a witch." 
-            v "That did bring a lot of harm."
+        "Красти молодих хлопців і дівчат":
+            v "Ти бродила нашими полями і викрадала молодих дівчат і хлопців, як відьма."
+            v "Це завдавало багато шкоди."
             # ref: на Поліссі русалок зближували з відьмами, вони начебто лякають людей, псують посіви і шкодять худобі, 
             # source https://uk.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D0%B0%D0%BB%D0%BA%D0%B0
             # we can choose if to keep 'good' or 'bad' traits of the characters. I'm inclined to keep the good ones?
@@ -139,10 +137,10 @@ label rusalka_remember:
             # r "I was once a young girl myself.. And still bare the memories of her human life."
             # ref: https://en.wikipedia.org/wiki/Rusalka "Slavic peoples [...] did not consider rusalki evil before the 19th century"
             # hide vila with dissolve
-            r "People always fear what they don't know and falsely believe us to be evil."
-            r "We only come out of water in the spring to help nurture the crops. "
-            r "How harmful is that?"
-            v "I suppose, those were rumors, sorry..."
+            r "Люди завжди бояться того, чого не знають, і помилково вважають нас злими."
+            r "Ми виходимо з води лише навесні, щоб допомагати доглядати за врожаєм."
+            r "Наскільки це погано?"
+            v "Гадаю, це були чутки, вибач..."
             $ rusalka_attitude-=10
             $ darkness_value+=10
             if darkness_value>=100:
@@ -152,40 +150,41 @@ label rusalka_remember:
 
 label make_rusalka_feel_better:
     # show vila with dissolve
-    r "Remembering can be so painful at times.."
-    v "I am here for you and would like to make you feel better!"
+    r "Згадувати минуле буває боляче..."
+    v "Але я тут, з тобою, Русалко!"
 
     menu:
-        "Remind about her past self":
+        "Нагадати про її минуле":
             #ref: https://uk.wikipedia.org/wiki/%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D1%96_%D1%81%D0%B2%D1%8F%D1%82%D0%B0
             #ref: https://uk.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D0%B0%D0%BB%D0%BA%D0%B0
             # ENG: https://en.wikipedia.org/wiki/Green_week
-            v "In reality, your name is associated with the Green Week, or Rusalii (Rosalii) celebrations.."
-            v "These spring festivities are full of fertility rituals and even funeral rites!"
+            v "Насправді, твоє ім'я асоціюється із Зеленими святами, або святом Русалій (Розалій)..."
+            v "Ці весняні святкування зазвичай повні обрядових дійств на родючість і навіть похоронних ритуалів!"
             # hide vila with dissolve
-            r "I remember young human girls wearing flower crowns."
-            r "They invoked us during Rusalii in an attempt to bring the moisture and vigor to the fields."
+            r "Я пам'ятаю молодих дівчат у вінках із квітів."
+            r "Вони закликали нас під час Русалій, щоб ми принесли вологість і життєву силу у поля."
             $ rusalka_attitude += 10
             jump rusalka_invite
         
-        "Give hope for future":
-            v "In reality, the damage done to you is not as bad as it seems.."
-            v "The fields you're nurtuting are being reborn."
-            r "The fields were flooded..."
-            r "One should not underestimate the power of water. It brings both destruction and rebirth."
-            r "But I keep forgetting about the latter."
+        "Дати надію на майбутнє":
+            v "Насправді, шкода, завдана тобі, не залишиться назавжди..."
+            v "Поля, які ти доглядала, відроджуються."
+            r "Поля були затоплені..."
+            r "Не можна недооцінювати силу води. Вона приносить як руйнування, так і відродження."
+            r "Останнє я постійно забуваю."
+        
             $ rusalka_attitude += 5
             jump rusalka_invite
 
-        "Pull realist/pessimist card": #not sure how to call this option
+        "Будь реалістом/песимістом": #not sure how to call this option
             # idk, I wanna add a 'wrong answer' but not sure what fits, and if should be here
-            v "In reality, it all could have been worse, at least you're alive and still here."
-            v "That is how much we know."
+            v "Насправді, все могло бути набагато гірше, принаймні ти жива і все ще тут."
+            v "Це єдине, що ми знаємо напевно."
             # hide vila with dissolve
-            r "I did not manage to save anybody..."
-            r "...so I shall stay here, perhaps forever."
-            r "I thought..I thought you would help.."
-            "Rusalka starts humming a sad song and turns away."
+            r "Мені не вдалося нікого врятувати..."
+            r "...тож я залишусь тут, можливо, назавжди."
+            r "Я думала... Я думала, ти допоможеш..."
+            "Русалка починає співати сумну пісню і відвертається."
             # v "But Rusalka.."
             pause 1.0
             $ rusalka_attitude-=10
@@ -198,20 +197,25 @@ label make_rusalka_feel_better:
 
 label rusalka_invite:
     if rusalka_attitude >= 15:
-        v "Rusalka, the hope is not lost yet! If you join me, we can find the way to our homes together? What do you say?"
-        r "I sense the warmth of your kind heart. Thank you for that."
-        r "I do want to join you.. What's next?"
+        v "Русалко, надія ще не втрачена! Якщо ти приєднаєшся до мене, ми зможемо разом знайти шлях додому. Що скажеш?"
+        r "Я відчуваю тепло твого доброго серця. Дякую за це."
+        r "Я дійсно хочу приєднатися до тебе... Що далі?"
+
+        show rusalka radiant
 
         "TODO: show Rusalka radiant, turns into magic, dissolves"
-        "TODO: show vila's wings getting stronger?"
-        $ wing_strength+=1
+        
+        # "TODO: show vila's wings getting stronger?" - done
+        if wing_strength < wing_strength_threshold:
+            $ wing_strength += 1
+        play sound tone
 
         jump map
     else:
-        v "Rusalka, the hope is not lost yet! If you join me, we can find the way to our homes together? What do you say?"
-
-        r "I am not so sure... The darkness weighs heavy on me."
-        r "You raised my hopes but it lead nowhere..."
+        v "Русалко, надія ще не втрачена! Якщо ти приєднаєшся до мене, ми зможемо разом знайти шлях додому. Що скажеш?"
+        
+        r "Я не впевнена... Темрява дуже тисне на мене."
+        r "Ти надала мені надію, але це ні до чого не призвело..."
 
         $ increase_darkness()
 
@@ -219,19 +223,3 @@ label rusalka_invite:
     $ rusalka_visited = True 
 
     call screen backButton
-
-# label game_over_darkness:
-#     scene black
-#     hide all
-#     $ hide_progress_bar()
-#     "The darkness has consumed you. You must start over."
-#     # Reset variables or provide options to restart the game
-#     $ wing_strength = 0
-#     $ darkness_value = 0
-#     jump start
-
-# label game_over_light: 
-#     scene happy_ending
-#     "Congrats! You win!"
-#     # На цьому гра закінчується.
-#     return
