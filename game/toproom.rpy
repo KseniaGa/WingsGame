@@ -32,87 +32,89 @@ label toproom:
 
     show vila at left with dissolve
 
-    v "There is noone here. Should we just escape?"
-    b "She'll be here any second, dear, you won't make it past her by force, she'll only listen to reason."
-    b "Please be careful wit her. Don't show too much emotion, especislly sadness."
+    v "Тут нікого немає. Може, просто втечемо поки є час?"
+    b "Вона буде тут за мить, люба, ти не зможеш пройти повз неї силою, вона вислухає тільки розум."
+    b "Будь обережна з нею. Не показуй занадто багато емоцій, особливо смутку."
 
     pause 0.5
+    play sound dragon-wings
     show alkonost at center with dissolve:
-        xzoom 0.5
-        yzoom 0.5
+        #xzoom 0.5
+        #yzoom 0.5
 
-    a "Ah.Greetings Vila."
-    a "Radiant as always."
-    a "Who do you have with you today?"
+    a "Ах, вітаю, Віло."
+    a "Сяюча, як завжди."
+    a "Хто сьогодні з тобою?"
 
-    v "Alkonost. So you're the reason for this darkness..."
+    v "Алконост. То ти причина цієї темряви..."
 
-    a "Hm. It's a bit too crowded here."
+    a "Хм. Тут трохи занадто людно."
 
-    v "Wait!" 
-    #SOUND: CAN BE A THUMP? 
-    #Mara and Berehynia are banished 
+    v "Зачекай!" 
 
-    # SOUND: HEARTBEAT? 
-    a "That's better."
-    v "ahdsafdgsdg"
-    v "No, no, no."
+    "Віла відчуває, як присутність Берегині зникає..." 
+    $ play_random_thump()
+
+
+    # SOUND: HEARTBEAT? play sound heartbeat
+    a "Тепер краще."
+    v "арвіпврпв"
+    v "ні, ні, ні."
     
-    a "I will give you an easy way out, Vila."
-    a "You have been puppeteered by the two sisters and thus, I will give you the benefit of the doubt."
-    a "Choose."
+    a "Я дам тобі легкий вихід, Віло."
+    a "Тобою керувала Берегиня, тому я дам тобі останню можливість."
+    a "Оберай."
     jump choice1
 
 label choice1: 
 
     menu:
-        "Keep Sleeping (it is easier) ": 
-            v "I'm so tired..."
-            b "I know you're tired, dear, but we can't give up here."
+        "Спати далі (так легше) ": 
+            v "Я так втомилася..."
+            b "Я знаю, що ти втомлена, люба, але ми не можемо здатися тут."
             jump toproom 
 
-        "RESIST": 
-            v "No, oblivion is not an option for me, Alkonost. Not anymore."
-            a "Hm"
+        "ОПИРАТИСЯ": 
+            v "Ні, забуття вже не варіант для мене, Алконост."
+            a "Хм"
             jump choice2 
 
 label choice2:
 
     menu:
-        "Keep Sleeping (it is less painful)": 
-            v "A little nap wouldn't hurt..."
-            b "I'm sorry, Vila, I can't let this happen..."
+        "Спати далі (так менш боляче)": 
+            v "Трохи поспати не зашкодить..."
+            b "Вибач, Віло, я не можу цього допустити..."
             jump toproom 
-        "RESIST": 
-            v "No."
-            v "No, I didn't come all this way, jsut to give up now. This is not going to happen, Alkonost."
-            a "Hm"
+        "ОПИРАТИСЯ": 
+            v "Ні."
+            v "Ні, я не пройшла весь цей шлях, щоб здатися зараз. Цього не станеться, Алконост."
+            a "Хм"
             jump choice3 
 
 label choice3:
 
     menu:
-        "Keep Sleeping (it is what you want deep inside)": 
-            v "It is what I want deep inside."
-            b "No, it's not, dear."
-            b "You will see that your only option is to keep going, you will see eventually..."
+        "Спати далі (це те, чого ти хочеш в глибині душі)": 
+            v "Це те, що я хочу в глибині душі."
+            b "Ні, це не так, люба."
+            b "Ти побачиш, що твій єдиний варіант - продовжувати рухатися вперед, ти побачиш це зрештою..."
             jump toproom 
-        "RESIST": 
-            v "No!"
-            v "What I want deep inside is to return home and help my friends."
-            a "Hm"
+        "ОПИРАТИСЯ": 
+            v "Ні!"
+            v "Те, чого я хочу в глибині душі - повернутися додому і допомогти своїм друзям."
+            a "Хм"
             jump resist 
 
 label resist: 
 
-    a "Very well."
-    a "Plead you case, Vila."
-    v "This is not a life, Alkonost. We are not living, we're barely even existing."
-    a "If you had all your memories back, Vila, if you knew in what a  state I found the others... You wouldn't want to leave, believe me."
-    v "I can't speak of the memories I've lost, but I can speak of the friends I've gained. Together we will percevere. I know it."
-    a "Alright. Let's speak of the 'friends' you have gained, Vila."
-    a "Let's see, who should we choose..."
-
+    a "Добре."
+    a "Захищай свою справу, Віло."
+    v "Це не життя, Алконост. Ми не живемо, ми ледь існуємо."
+    a "Якщо б ти мала всі свої спогади, Віло, якби ти знала, в якому стані я знайшла інших... Ти б не хотіла залишити потойбіччя, повір мені."
+    v "Я не можу говорити про спогади, які я втратила, але я можу говорити про друзів, яких я здобула. Разом ми вистоїмо. Я знаю це."
+    a "Добре. Поговоримо про 'друзів', яких ти здобула, Віло."
+    a "Подивимось, кого ж ми виберемо..."
     #  image overlaybg1 =
     $ flashing_bgs()
 
@@ -122,19 +124,23 @@ label resist:
 # Convince Alkonost that Kiki is better off free ! 
 # The room is illiminated with Kikimora's symbol! 
 label kiki_hope: 
-    a "Ah. Kikimora. Poor creature longs for a new home, for someone to care for."
-    a "How do you plan exactly on making her life better?"
+    scene kikimorabg
+    #bgs = ["kikimorabg", "poludniciabg", "lisovykbg", "rusalkabg"]
+    a "Ах, Кікімора. Бідолашна істота прагне нового дому, когось, хто буде піклуватися про неї."
+    a "Як ти плануєш зробити її життя кращим?"
 
     menu:
-        "Promise to Rebuild":
-            v "By keeping my promise to her. We will rebuild together, giving her a new family and a home to care for."
-        "Provide Companionship":
-            v "By being there for her. She will have a new family and friends who will care for her and make her feel valued."
+        "Обіцяти відбудувати":
+            v "Виконуючи свою обіцянку їй. Ми відбудуємо разом, дамо їй нову родину і дім, про який вона буде піклуватися."
+        "Надати компанію":
+            v "Бути поруч з нею. Вона матиме нову родину і друзів, які піклуватимуться про неї і зроблять її щасливою."
 
-    a "You are just one small creature. Are you ready to take on this kind of responsibility?"
+    a "Ти всього лише одна маленька істота. Чи готова ти взяти на себе таку відповідальність?"
 
-    v "I will not be alone. We will do it together."
+    v "Так, я дала їй обіцянку. Я маю намір її виконати."
 
+
+    scene black 
     jump alk_stirs_drama
 
 
@@ -142,67 +148,72 @@ label kiki_hope:
 label po_hope:
 #Convince Alkonost that Poludnicja is better off free ! 
 # The room is illiminated with Pol's symbol!
-    a "Ah. Poludnicja. She has an angry exterior, but inside her hurt runs deeper than others."
-    a "How do you plan exactly on making her life better?"
+    scene poludniciabg
+    a "Ах, Полудниця. Вона має злий вигляд, але всередині її біль глибший, ніж у інших."
+    a "Як ти плануєш зробити її життя кращим?"
 
     menu:
-        "Find Balance":
-            v "By helping her find balance and peace. She will no longer be tormented by the past and will find a new purpose."
-        "Support Her Journey":
-            v "By supporting her journey to self-discovery. She will find new ways to thrive and be happy."
+        "Знайти баланс":
+            v "Допомагаючи їй знайти баланс і мир. Вона більше не буде мучитися минулим і знайде нову мету."
+        "Підтримувати її шлях":
+            v "Підтримуючи її шлях до самопізнання. Вона знайде нові способи процвітання і бути щасливою."
 
-    a "You are just one small creature. Are you ready to take on this kind of responsibility?"
+    a "Ти всього лише одна маленька істота. Чи готова ти взяти на себе таку відповідальність?"
 
-    v "Yes, with the help of my friends, I can."
-
+    v "Так, я пройшла цей шлях, я знаю, що можу зробити все."
+    scene black
     jump alk_stirs_drama
  
 
 #Convince Alkonost that Lisovyk is better off free ! 
 # The room is illiminated with Lisovyk's symbol!
 label lis_hope:
-    a "Ah Lisovyk. Grumpy old guys with a heart of gold."
-    a "How do you plan exactly on making his life better?"
+    scene lisovykbg
+    a "Ах, Лісовик. Старий буркотун із золотим серцем."
+    a "Як ти плануєш зробити його життя кращим?"
 
     menu:
-        "Restore Forests":
-            v "By restoring the forests and lands he once protected. Together, we will heal the wounds of the past."
-        "Create New Habitats":
-            v "By creating new habitats for him to protect and nurture. He will find new purpose in caring for these lands."
+        "Відновити ліси":
+            v "Відновлюючи ліси і землі, які він колись захищав. Разом ми зцілимо рани минулого."
+        "Створити нові середовища":
+            v "Створюючи нові середовища, які він буде захищати і доглядати. Він знайде нову мету в піклуванні про ці землі."
 
-    a "You are just one small creature. Are you ready to take on this kind of responsibility?"
-    v "Yes, with the strength we all share."
+    a "Ти всього лише одна маленька істота. Чи готова ти взяти на себе таку відповідальність?"
+    v "Так! Я знаю, що я стійка, я знаю, що я готова до всього."
 
+    scene black
     jump alk_stirs_drama
 
 
 #Convince Alkonost that Rusalka is better off free ! 
 # The room is illiminated with Rusalka's symbol!
 label r_hope:
-    a "Ah. Rusalka. This poor unfrtunate sooul."
-    a "How do you plan exactly on making his life better?"
+    scene rusalkabg
+    a "Ах, Русалка. Ця бідна нещасна душа."
+    a "Як ти плануєш зробити її життя кращим?"
 
     menu:
-        "Grant Freedom":
-            v "By giving her the freedom to explore the waters and find peace. She will no longer be bound by the past."
-        "Provide New Adventures":
-            v "By offering her new adventures and places to discover. She will find joy in the journey and the new experiences."
+        "Надати свободу":
+            v "Даючи їй свободу досліджувати води і знайти мир. Вона більше не буде прив'язана до минулого."
+        "Надати нові пригоди":
+            v "Пропонуючи їй нові пригоди і місця для відкриття. Вона знайде радість у подорожах і нових враженнях."
 
-    a "You are just one small creature. Are you ready to take on this kind of responsibility?"
+    a "Ти всього лише одна маленька істота. Чи готова ти взяти на себе таку відповідальність?"
 
-    v "Yes, I know I am strong enough."
+    v "Так, я знаю, що свою силу."
+    scene black
     jump alk_stirs_drama
 
 label alk_stirs_drama: 
-    a "Well, I guess there is only one person left to vouch for."
-    a "The one creature at the heart of all of this."
-    v "The one creature who has been the most resisting to my help throughout my reign over the this dimention."
-    v "Why do you speak as though we've met before? I've only just met you."
-    a "I'm afraid not, child."
-    a "You see, Berehynia has tried this many times before. Maybe you're the same Vila, or maybe you're one of the others. Each time, you fail, your memories erased, and you return."
-    v "What are you saying?"
-    a "Yes, dear Vila, you have been here before. Many times. And each time, you couldn't handle it. You fell into despair, your memories wiped clean."
-    a "So, tell me, how will this time be any different? Why should I believe you will succeed now?"
+    a "Зрозуміла тебе, Віло. Дякую за співпрацю."
+    a "Здається, залишилася лише одна істота, щоб свідчити."
+    a "Та істота, яка була найбільш опірною до моєї допомоги протягом мого правління в цьому вимірі."
+    v "Чому ти говориш, наче ми вже зустрічалися? Я щойно зустріла тебе."
+    a "Боюся, що ні, дитя."
+    a "Бачиш, Берегиня пробувала це багато разів. Можливо, ти та ж сама Віла, а можливо, одна з інших. Кожного разу ви зазнаєте поразки, ваші спогади стираються, і ви повертаєтесь знову."
+    v "Про що ти говориш? Це неможливо..."
+    a "Так, дорога Віла, ти була тут раніше. Багато разів. І кожного разу ти не могла з цим впоратися. Ти впадала в розпач, твої спогади стиралися."
+    a "Отже, скажи мені, чим цей раз буде іншим? Чому я повинна вірити, що цього разу ти досягнеш успіху?"
 
     show dim_overlay with dissolve
     pause 0.1
@@ -214,59 +225,85 @@ label vila_hope:
     
     # a "Now, prove to me that you, Vila, will be fine with your memories intact."
 
-    # show dim_overlay with dissolve
-    v "No, no, no..."
-    v "No... this can't be true..."
-    v "Have I really been through this before?"
-    v "Is there no hope? Are we doomed to repeat this cycle forever?"
-    "Vila begins to lose hope, the darkness creeping in as she struggles to resist the darkness."
-    
+    v "Ні, ні, ні..."
+    v "Ні... це не може бути правдою..."
+    v "Невже я справді проходила через це раніше?"
+    v "Чи немає надії? Чи ми приречені повторювати цей цикл вічно?"
+    "Віла починає втрачати надію, темрява повзе в її душу."
+   
     # The screen dims to almost black to represent Vila's despair
     show black with dissolve
     pause 1.0
 
     # EPIC MUSIC STARTS ? 
     # The screen gets darker and darker and the only thing we can see is the "menu" choices: Hope, Accept Help, Keep Going, Fight, Persevere
-    "A cacophony of familiar voices:"
-    "We're here, dear Vila. We're all here for you. Don't give up now."
+    "Какофонія знайомих голосів:"
+    "Ми тут, люба Віло. Ми всі тут з тобою, ти не сама. Не здавайся!"
     menu: 
-        "Hope":
-            "You don't have to be the only one responsible for us. We are all responsible for each other, we will all care for each other."
-    menu:
-        "Keep Going":
-            "And if we must repeat this journey again, so we will."
-    menu: 
-        "Persevere": 
-            "It won't be in vain, butterfly."
-    menu: 
-        "Accept Help": 
-            "The closeness we feel towards each other will not be erased, it will only grow stronger."
+        "Надія":
+            p "Тобі не потрібно бути відповідальною за нас. Ми всі відповідальні одне за одного, ми будемо всі піклуватися одне про одного."
+        "Продовжувати":
+            l "І якщо нам доведеться повторювати цю подорож знову, так і буде."
+        "Вистояти": 
+            ki "Це не буде марно, метелик."
+        "Прийняти допомогу": 
+            r "Близькість, яку ми відчуваємо одне до одного, не буде стерта, вона тільки зростатиме."
 
     hide black with dissolve
     hide dim_overlay with dissolve
 
-    v "You're right... I can't give up. Not now. Not ever. We will break this cycle, together."
-    v "If not now, then next time! If not next time, then on a 100th time, but I know we will do it!"
+    v "Ви праві... Я не можу здатися. Не зараз. Ніколи. Ми зламаємо цей цикл разом."
+    v "Якщо не зараз, то наступного разу! Якщо не наступного разу, то на сотий раз, але я знаю, що ми зробимо це!"
 
-    a "Curious development. Very curious."
+    a "Цікавий розвиток подій. Дуже цікавий."
+
     
     jump alk_chill
 
 
 label alk_chill: 
-    a "I see."
-    a "Perhaps my services are no longer needed here."
-    a "You have convinced me. For now."
-    pause 0.3
-    a "You are free to go."
-    # SOUND OF RELIEF ? 
+    a "Хм."
+    a "Можливо, мої послуги більше не потрібні тут."
+    a "Ти переконала мене. Поки що."
+    pause 1.0
+    a "Ви вільні йти."
 
     # Vila is shining and all of the others appear? 
+    "Віла відчуває радість усіх своїх друзів, вона переповнює все оточування."
 
-    v "I want to say goodbye to Mara and Berehynia."
-    a "Very well."
+    show kikimora at right with dissolve
+    ki "Ти зробила це, метелик, я знала, що ти зможеш!"
+    hide kikimora at right with dissolve
+    show poludnicia at right with dissovle
+    p ""
+    hide poludnicia at right with dissovle
 
-    
+    show lisovyk at right with dissovle
+    l ""
+    hide lisovyk at right with dissovle
+
+    show rusalka at right with dissovle
+    r ""
+    hide rusalka at right with dissovle
+
+    v "Я хочу попрощатися з Берегинею."
+    a "Добре."
+
+    show berehynia at right with dissovle
+
+    b "Я бачу, ти досягла успіху, люба."
+    b "Вітаю, я знала, що ти зможеш!"
+
+    v "Я відчуваю, що не можу довіряти твоїм справжнім намірам, Берегине, але незалежно від твоїх методів, це закінчилося нашою свободою, і за це я хочу подякувати тобі."
+    hide berehynia at right with dissolve
+    play sound evil-laugh
+    show mara at right with dissolve
+    m "Ха-ха-ха"
+    hide mara at right with dissolve
+    show berehynia at right with dissolve 
+    b "Просто виконую свою роботу, люба. Бажаю тобі всього найкращого."
+    hide berehynia at right with dissolve
+
 
     jump game_over_light
 
