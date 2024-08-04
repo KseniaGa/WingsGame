@@ -21,6 +21,18 @@ define t4 = "audio/thump4.ogg"
 define t5 = "audio/thump5.ogg"
 define t6 = "audio/thump6.ogg"
 
+default kiki_visited = False
+default kiki_joined = False
+
+default poludnicia_visited = False
+default poludnicia_joined = False
+
+default rusalka_visited = False
+default rusalka_joined = False
+
+default lisovyk_visited = False
+default lisovyk_joined = False
+
 # wings variables
 default wing_strength = 0
 default wing_strength_threshold = 3
@@ -98,7 +110,8 @@ init python:
 # Гра починається тут.
 label start:
     
-
+    # FOR TESTING THE FINAL LEVEL
+    #jump toproom
     # show berehynia at center with move 
 
     # rightly instead of right, because the progress bar is at the right edge

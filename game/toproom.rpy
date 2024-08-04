@@ -7,20 +7,20 @@ init python:
         choices = []
         if kiki_joined:
             choices.append("kiki_hope")
-        if po_joined:
+        if poludnicia_joined:
             choices.append("po_hope")
-        if lis_joined:
+        if lisovyk_joined:
             choices.append("lis_hope")
-        if r_joined:  # Assuming r_joined should be considered as well
+        if rusalka_joined:  
             choices.append("r_hope")
         
         return random.choice(choices)
     
     def flashing_bgs():
-        bgs = ["bg_kiki", "bg_po", "bg_lis", "bg_default"]
+        bgs = ["kikimorabg", "poludniciabg", "lisovykbg", "rusalkabg"]
         for bg in bgs:
-            renpy.show(bg, at_list=None, layer='master', what=None)
-            renpy.pause(0.1)  # Pause for 0.1 seconds
+            renpy.show(bg)
+            renpy.pause(0.5)  # Pause for 0.1 seconds
             renpy.hide(bg)
         #renpy.show()
        
@@ -117,7 +117,7 @@ label resist:
     $ flashing_bgs()
 
     $ jump_target = random_jump()
-    jump jump_target
+    $ renpy.jump(jump_target)
 
 # Convince Alkonost that Kiki is better off free ! 
 # The room is illiminated with Kikimora's symbol! 
