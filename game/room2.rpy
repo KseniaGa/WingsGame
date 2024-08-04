@@ -124,28 +124,29 @@ label poludnicia_greet:
             p "* продовжує сердитися *"
             show poludnicia at rightly with move 
             v "..."
-            p "You're not triggered by my anger?"
-            p "How are you staying so calm?"
-            p "I haven't experienced calmness in ages!"
+            p "Тебе не дратує мій гнів?"
+            p "Як ти зберігаєш свій спокій?"
+            p "Я вже сто років не відчувала спокою!"
             v "..."
-            p "Hm, I like you.. kind of. What is your name?"
-            v "I am Vila.. Hello Polydnytsa!"
+            p "Хм, а ти мені подобаєшся. Трошки. Як тебе звати?"
+            v "Я Віла... Привіт, Полуднице!"
             $ poludnicia_attitude+=10
             jump poludnicia_remind
 
             
 label poludnicia_remind:
-    v "I can help you remember who you are!"
+    v "Я можу допомогти тобі згадати, хто ти!"
     
     menu:
-        "The sun master":
-            v "You control the sun going up and down over our villages."
-            v "Thus, it hits the fields ~exactly~ how it needs to, at Midday!"
-            p "I do remember being more active at the hottest hour of the hottest summer days!"
-            p "I don't control its movement though. His name is Dazhbog, or something."
-            p "So, you must be mistaken."
-            v "*fearful inhale*"
-            p "Good try! .. What sense talking of the sun, when we are stuck in this freaking cave!!!"
+        "Володарка сонця":
+            v "Ти контролюєш рух сонця над нашими землями."
+            v "Щоб воно освітлювало поля так, як потрібно, в ~полудень~!"
+            p "Хм, я пригадую тепер, що дійсно була завжди активнішою в найспекотнішу годину найспекотніших літніх днів!"
+            p "Але я не керую його, цебто сонця, рухом. Це робить Дажбог, чи як там його кличуть."
+            p "Таким чином, ти помиляєшься!"
+            v "*Віла затамувала подих*"
+            p "Гарна була спроба... "
+            p "Але! Який сенс говорити про сонце, коли ми застрягли в цій клятій печері!!!"
             $ poludnicia_attitude-=5
             $ darkness_value+= 10
             if darkness_value>= 100:
@@ -153,86 +154,87 @@ label poludnicia_remind:
             # jump dim_screen
             jump poludnicia_reassure
 
-        "The field goddess":
-            v "You are the goddess of the fields and protect them from the thieves."
-            p "How come you know me, but I don't know you at all?!"
-            p "Anywho, it does hit home."
-            p "For most of the time, I remember, I used to fly around, disquised as dust carried by the wind."
-            p "And then I come as myself..."
-            v "...at Midday."
-            p "When the sun is at its highest. High time for me.."
-            v "..No work for others."
-            p "Exactly! Good times... The times that are gone now!"
+        "Дух полів":
+            v "Ти дух полів і захищаєш їх від злодіїв."
+            p "Як так виходить, що ти мене знаєш, а я тебе - ну взагалі ніяк?!"
+            p "Ну, будь як там, це близько до істини."
+            p "Більшість часу, я потрохи пригадую, літала я навколо над полями, і маскувалася під пил, що несеться вітром."
+            p "А потім з'являлася у своїй справжній подобі.."
+            v "...в полудень."
+            p "Коли сонце в зеніті. Це час мого(!) дійства..."
+            v "...а для інших - час відпочинку."
+            p "Саме так! Чудові буди часи... Часи, що минули!"
             $ poludnicia_attitude+=10
             jump poludnicia_reassure
 
-        "The scarecrow woman":
-            v "Essentially, you scare away any visitors of fields at Midday. So I've heard."
-            v "You are known to protect the fields, but your methods are, hmm, pretty rough, to put midly."
-            p "'Scarecrow'... This is a bold statement, Vila!!"
-            v "*oh-oh*"
-            p "I like this compliment! Feels like true me."
-            p "NO WORK AT MIDDAY - is it so hard to follow that rule?! They keep coming and coming. The small ones, the big ones. Someone needs to stop it."
-            v "That's why you use ... the scythe or a sickle?"
-            p "Ha, this is outdated. Now it's just about fashion."
-            p "What I do now is, ask reapers difficult questions. The ones, like how to sow, and when to reap? You know, the field stuff."
-            v "And if they don't answer?"
-            p "That you don't wanna know..."
-            p "There are worse things happenig now. Field was no safe place for humans at midday. Well now, for nobody.. even me."
+        "Леді-Опудало":
+            v "По суті, ти відлякуєш будь-яких відвідувачів полів в полудень. Я чула таке."
+            v "Ти дійсно захищаєш поля, але твої методи, гм, доволі суворі, м'яко кажучи.."
+            p "'Опудало'... Це трохи грубо. Та правдиво! Сміливо з твого боку, Віло!!"
+            v "*oй-oй*"
+            p "Мені подобається цей комплімент!"
+            p "НІЯКОЇ РОБОТИ ОПІВДНІ - хіба це так важко, дотримуватись цього правила?! А вони все приходять.. Дорослі, малі. Хтось має це зупиняти! Хто, як не я?!!"
+            v "Це тому ти з собою носиш ... косу або серп?"
+            p "Ха, ні, це застарілі методи. Зараз це просто модно. Серед полудниць..."
+            p "Тепер же я просто ставлю женцям складні запитання. Наприклад, як сіяти і коли жати? Ти знаєш, всяке таке, про поля."
+            v "А якщо вони відповідають невірно, то?"
+            p "Цього тобі краще не знати..."
+            p "Набагато гірші речі відбуваються навколо зараз. Поля ніколи не були безпечними для людей опівдні.. Ну, а зараз вони є небезпечні для всіх нас, навіть для мене."
+            p "Але час помсти ще прийде..."
             # reapers in the field - ask them questions about how to take care of the fields.
             $ poludnicia_attitude+=5
             jump poludnicia_reassure
 
 
 label poludnicia_reassure:
-    v "I feel your frustartion, Poludnytsa. Things are not easy now indeed... "
-    v "So..."
+    v "Я розумію твоє розчарування, Полуднице. Зараз справді нелегко..."
+    v "Тож..."
     # v "Would you want to do some of your favourite activities?"
     menu:
-        "Let's dance!":
+        "Гайда танцювати!":
             # ref: "P"oludnitsa, according to beliefs, loves to dance. If she sees a girl lying down to rest in the field, she will wake her 
             #up and begin to persuade her to dance. If the girl agrees, she will be forced to dance until the «evening dawn». 
             #Poludnitsa cannot be beaten in dancing; however, if such a girl is found, the noon spirit will present her with a rich dowry.[8]"
 
-            v "Do you hear the wind howling? What a beat!"
-            v "*starts dancing*"
+            v "Чуєш, як вітер завиває?"
+            v "*починає танцювати*"
             show vila at rightly with move 
             show poludnicia at left with move 
             show vila at left with move 
             show poludnicia at rightly with move 
-            p "* a moment of shock*"
+            p "* мить шоку *"
             # show poludnicia at left with move 
             # show poludnicia at rightly with move 
-            p "I don't remember the last time I danced!!!"
-            p "I will not force you to dance till the dawn, like we would usually. We don't even know when the dawn comes deep in this darkness."
+            p "Не пам'ятаю, коли востаннє танцювала!!!"
+            p "Не буду змушувати тебе танцювати до світанку... Я навіть не знаю, коли буде світанок, і чи він ще взагалі існує."
             p "*Poludnytsa looks up*"
             $ poludnicia_attitude+=10
             jump poludnicia_invite
 
-        "Let's ask difficult questions!": 
+        "Задати складне питання!": 
             # ref "She will stop people in the field to ask them difficult questions or engage them in conversation. 
             # If anyone fails to answer a question or tries to change the subject, she will cut off their head or strike 
             # them with illness."
-            v "Just like you ask reapers difficult questions, could I ask you one?"
-            p "Noot sure I like the reversed game, noone dared yet to do it.. But go on!"
-            v "Say 'Polunytsa'."
-            p "'Polunytsa'? Why?"
-            v "That's the answer."
-            v "*smiles*"
-            p "Ha, that was too easy!!"
-            p "Your turn!"
-            p "Can you tell me.. Where is Zhytomyr?"
+            v "Знаєш як ти задаєш складні питання женцям в полях? Чи можу я задати тобі одне?"
+            p "Не впевнена, що мені подобається ця гра з перевертанням ролей, ніхто ще не наважувався на це... Але давай!"
+            v "Скажи 'Полуниця'."
+            p "'Полуниця'? І що?"
+            v "Ось і відповідь."
+            v "*усміхається*"
+            p "Ха, це було занадто легко!!"
+            p "Твоя черга!"
+            p "Чи можеш ти мені сказати... де Житомир?"
             v "👀"
-            p "One of my favourites. I wonder what's up with it now?"
-            p "I wish I could revenge for it! If needed, of course... If there is anything to revenge for still?"
+            p "Одне з моїх улюблених. Цікаво, що там зараз?"
+            p "Хотілося б помститися за нього! Якщо потрібно, звісно... Якщо ще є, за що мститися.."
             $ poludnicia_attitude+=5 
             jump poludnicia_invite
 
-        "Let's fence with sickles!": #pretend her powers are still with her
-            v "If your sickle has no good use now... Then how about we play with it?"
-            v "I'll be the reaper, and you play yourself!"
-            p "Outrageous! Sickles are not toys!"
-            p "And I thought I was the one driven mad by the darkness!"
+        "Грати серпами!": #pretend her powers are still with her
+            v "Якщо твій серп зараз не має доброго застосування... Як щодо того, щоб пограти з ним?"
+            v "Я буду жницею, а ти будь собою!"
+            p "Це безглуздя! Серпи — не іграшки!"
+            p "А я думала, що це я зійшла з розуму від цієї темряви!"
             $ poludnicia_attitude-=5 
             $ darkness_value+= 10
             if darkness_value>= 100:
@@ -242,19 +244,19 @@ label poludnicia_reassure:
 
 label poludnicia_invite:
     if poludnicia_attitude>=15:
-        v "Poludnytsa, I know there is way out of here. There will be the sun, and hot summer days, there will be new fields to watch. Do you want to come along?"
-        p "If I am mad, then this is part of it, and I lose nothing."
-        p "I want to let my anger go, I want to fly, and fly, and scream, till everyone can hear me. I'll join you, Vila!"
+        v "Полуднице, я знаю, що звідси є вихід. Там буде сонце, спекотні літні дні, нові поля, які треба охороняти! Хочеш піти зі мною?"
+        p "Якщо я вже зійшла з розуму, то це теж частина цього...  Думаю, я нічого не втрачу, якщо скажу так."
+        p "Я хочу відпустити свій гнів, хочу літати, літати і кричати, щоб мене всі чули. Я приєднаюсь до тебе, Віло!"
 
         "TODO show radiant Poludnytsa"
         $ wing_strength+=1
         jump map
 
     else:
-        v "Poludnytsa, I know there is way out of here. There will be the sun, and hot summer days, there will be new fields to watch. Do you want to come along?"
-        p "I see no point in going anywhere!"
-        p "These are empty promises, it seems. The past me is the past, whatever she was like..."
-        v "Poludnytsa..."
+        v "Полуднице, я знаю, що звідси є вихід. Там буде сонце, спекотні літні дні, нові поля, які треба охороняти! Хочеш піти зі мною?"
+        p "Я не бачу сенсу кудись йти!"
+        p "Це все порожні балачки і обіцянки. Минуле — в минулому... Трясця!"
+        v "Полуднице..."
         $ increase_darkness()
 
     $ poludnicia_attitude = 0
