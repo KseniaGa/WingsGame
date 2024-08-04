@@ -41,6 +41,7 @@ label kiki_intro:
     b "Допоможи їй згадати, хто вона є, Віло. Її магія може допомогти тобі на твоєму шляху."
 
     hide berehynia at right with dissolve
+    show kikimora at right with move
 
 label kiki_first: 
     ki "Треба прибирати, треба прибирати..."
