@@ -271,20 +271,20 @@ label alk_chill:
     # Vila is shining and all of the others appear? 
     "Віла відчуває радість усіх своїх друзів, вона переповнює все оточування."
 
-    show kikimora at right with dissolve
+    show kikimora radiant with dissolve
     ki "Ти зробила це, метелик, я знала, що ти зможеш!"
-    hide kikimora at right with dissolve
-    show poludnicia at right with dissolve
+    hide kikimora radiant with dissolve
+    show poludnicia radiant with dissolve
     p "Твоя мужність і рішучість вражають, Віла. Ми тепер вільні завдяки тобі."
-    hide poludnicia at right with dissolve
+    hide poludnicia radiant with dissolve
 
-    show lisovyk at right with dissolve
+    show lisovyk radiant with dissolve
     l "Твоя сила і відданість допомогли нам усім, дякую тобі, Віла."
-    hide lisovyk at right with dissolve
+    hide lisovyk radiant with dissolve
 
-    show rusalka at right with dissolve
+    show rusalka radiant with dissolve
     r "Ти принесла світло в наші життя і звільнила нас від темряви. Ми ніколи не забудемо це, Віла."
-    hide rusalka at right with dissolve
+    hide rusalka radiant with dissolve
 
     v "Я хочу попрощатися з Берегинею."
     a "Добре."
