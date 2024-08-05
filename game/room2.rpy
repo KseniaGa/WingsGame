@@ -81,10 +81,10 @@ label poludnicia_intro:
     p "Ця темрява зводить мене з розуму!"
     p "Це Полудниця зводить людей з розуму, а ніяк не навпаки!"
     p "Навіть не можу нікому пригрозити ... Але чим? Вже й не згадати! Це.Просто.Зводить.Мене.З.Розуму!" # (the power of the sun? the scythe?)
+    $ renpy.sound.play("footsteps_fast.ogg", loop=True)
     p "* сердито ходить туди-сюди * "
     show poludnicia at center with move 
     show poludnicia at rightly with move 
-
     jump poludnicia_greet
 
 
@@ -92,6 +92,7 @@ label poludnicia_intro:
 label poludnicia_greet: 
     menu:
         "Тихенько привітати":
+            $ renpy.sound.stop(fadeout=0.5)
             v "Привіт..."
             p "* досі занурена у свої емоції *"
             v "Полуднице, привіт. Я... я Віла."
@@ -103,6 +104,7 @@ label poludnicia_greet:
             
 
         "Сказати заспокоїтися":
+            $ renpy.sound.stop(fadeout=0.5)
             v "Йой-йой-ой. Комусь тут треба охолонути..."
             p "Охолонути?!"
             p "Ти серйозно?! Подивися, де ми! І крім того.."
@@ -123,6 +125,7 @@ label poludnicia_greet:
             show poludnicia at center with move 
             p "* продовжує сердитися *"
             show poludnicia at rightly with move 
+            $ renpy.sound.stop(fadeout=0.5)
             v "..."
             p "Тебе не дратує мій гнів?"
             p "Як ти зберігаєш свій спокій?"
@@ -196,6 +199,7 @@ label poludnicia_reassure:
             #up and begin to persuade her to dance. If the girl agrees, she will be forced to dance until the «evening dawn». 
             #Poludnitsa cannot be beaten in dancing; however, if such a girl is found, the noon spirit will present her with a rich dowry.[8]"
 
+            $ renpy.sound.play("howling-wind.ogg", loop=True)
             v "Чуєш, як вітер завиває?"
             v "*починає танцювати*"
             show vila at rightly with move 
@@ -206,6 +210,7 @@ label poludnicia_reassure:
             # show poludnicia at left with move 
             # show poludnicia at rightly with move 
             p "Не пам'ятаю, коли востаннє танцювала!!!"
+            $ renpy.sound.stop(fadeout=0.5)
             p "Не буду змушувати тебе танцювати до світанку... Я навіть не знаю, коли буде світанок, і чи він ще взагалі існує."
             p "* Полудниця вдивляється вгору!*"
             $ poludnicia_attitude+=10
