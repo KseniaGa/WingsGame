@@ -247,13 +247,16 @@ label poludnicia_invite:
         v "Полуднице, я знаю, що звідси є вихід. Там буде сонце, спекотні літні дні, нові поля, які треба охороняти! Хочеш піти зі мною?"
         p "Якщо я вже зійшла з розуму, то це теж частина цього...  Думаю, я нічого не втрачу, якщо скажу так."
 
-        "TODO show radiant Poludnytsa"
 
         show poludnicia radiant
 
+        pause 0.1
+
+        play sound tone
+        $ poludnicia_joined = True
         if wing_strength < wing_strength_threshold:
             $ wing_strength += 1
-        play sound tone
+        # play sound tone
         
         p "Я хочу відпустити свій гнів, хочу літати, літати і кричати, щоб мене всі чули. Я приєднаюсь до тебе, Віло!"
         

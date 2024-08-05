@@ -1,10 +1,12 @@
-default kikimora_attitude = 0  # Відстеження ставлення Кікімори до Віли
+
 
 
 label room1:
     # scene room hell bg
     # scene bg_kiki with dissolve
 
+    default kikimora_attitude = 0  # Відстеження ставлення Кікімори до Віли
+    
     hide all
     scene kikimorabg
 
@@ -181,7 +183,7 @@ label invite_kikimora:
         $ kiki_joined = True
         if wing_strength < wing_strength_threshold:
             $ wing_strength += 1
-        play sound tone
+        # play sound tone
 
     else:
         v "Кікі, я планую знайти новий дім, і мені знадобиться хтось, хто може зробити це місце домівкою... Чи приєднаєшься ти до мене?"
