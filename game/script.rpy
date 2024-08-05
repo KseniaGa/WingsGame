@@ -53,8 +53,8 @@ image kikimora radiant = "character_sprites/kikimora_radiant.png"
 image lisovyk = "character_sprites/lisovyk_neutral_flipped.png"
 image lisovyk radiant:
     "character_sprites/lisovyk_radiant.png"
-    xzoom(-0.5) #this will flip it horizontally
-    yzoom(0.5)
+    xzoom(-1) #this will flip it horizontally
+    yzoom(1)
 
 image rusalka = "character_sprites/rusalka_neutral.png"
 image rusalka sad = "character_sprites/rusalka_sad.png"
