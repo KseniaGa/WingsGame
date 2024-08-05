@@ -127,7 +127,7 @@ label lisovyk_remind_who_he_is:
 
     menu:
         # "Father of the foxes": #Cause 'FOX' is LYS
-        "Father of the bananas":
+        "Батько бананів":
             v "Лі-со-вик, ти – батько бананів."
             if lisovyk_banana_joke:
                 l "Знову ти за свої банани, хехе."
@@ -182,7 +182,7 @@ label lisovyk_remind_who_he_is:
             jump get_to_know_more
 
         "Найкращий друг жаб":
-            v "Lee-sooh-vyyyk, you are the friend of the frogs." # Cause he sits like a frog, and there's a small frog 
+            # v "Lee-sooh-vyyyk, you are the friend of the frogs." # Cause he sits like a frog, and there's a small frog 
             v "Лі-со-вик, ти Друг жаб."
             l "Жаб, звичайно... Але не тільки жаб."
             l "Як я казав – я думаю, що казав – мені подобаються ~всі~ тварини."
