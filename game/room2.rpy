@@ -81,7 +81,7 @@ label poludnicia_intro:
     p "Ця темрява зводить мене з розуму!"
     p "Це Полудниця зводить людей з розуму, а ніяк не навпаки!"
     p "Навіть не можу нікому пригрозити ... Але чим? Вже й не згадати! Це.Просто.Зводить.Мене.З.Розуму!" # (the power of the sun? the scythe?)
-    $ renpy.sound.play("footsteps_fast.ogg", loop=True)
+    $ renpy.sound.play("footsteps_fast.ogg", loop=True, relative_volume = 0.5)
     p "* сердито ходить туди-сюди * "
     show poludnicia at center with move 
     show poludnicia at rightly with move 
@@ -199,7 +199,7 @@ label poludnicia_reassure:
             #up and begin to persuade her to dance. If the girl agrees, she will be forced to dance until the «evening dawn». 
             #Poludnitsa cannot be beaten in dancing; however, if such a girl is found, the noon spirit will present her with a rich dowry.[8]"
 
-            $ renpy.sound.play("howling-wind.ogg", loop=True)
+            $ renpy.sound.play("howling-wind.ogg", loop=True, relative_volume = 0.2)
             v "Чуєш, як вітер завиває?"
             v "*починає танцювати*"
             show vila at rightly with move 

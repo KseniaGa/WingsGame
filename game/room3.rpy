@@ -107,8 +107,10 @@ label rusalka_remember:
             # show hopefull rusalka's face
             "Русалка підіймає на тебе очі - раптовий, але короткий, момент світла і надії. Потім швидко опускає очі і замовкає."
             v "Так, сміх. Насправді, твоє лоскотання навіть могло бути зброєю."
+            $ renpy.sound.play("splash.ogg", loop=False, relative_volume = 0.05)
             r "Гм, я пам'ятаю лоскотання у воді... Ах, плавання і веселощі в воді - найкраще, що є у цьому житті! Найкраше, що було..."# show back the sad rusalka
             $ rusalka_attitude += 10
+            $ renpy.sound.stop(fadeout=0.5)
             jump make_rusalka_feel_better
 
         "Зрошувати наші ґрунти дощем і допомагати врожаям":
@@ -161,8 +163,10 @@ label make_rusalka_feel_better:
             v "Насправді, твоє ім'я асоціюється із Зеленими святами, або святом Русалій (Розалій)..."
             v "Ці весняні святкування зазвичай повні обрядових дійств на родючість і навіть похоронних ритуалів!"
             # hide vila with dissolve
+            $ renpy.sound.play("laughter.ogg", loop=False, relative_volume = 0.005)
             r "Я пам'ятаю молодих дівчат у вінках із квітів."
             r "Вони закликали нас під час Русалій, щоб ми принесли вологість і життєву силу у поля."
+            $ renpy.sound.stop(fadeout=0.5)
             $ rusalka_attitude += 10
             jump rusalka_invite
         
