@@ -82,9 +82,9 @@ label poludnicia_intro:
     p "Це Полудниця зводить людей з розуму, а ніяк не навпаки!"
     p "Навіть не можу нікому пригрозити ... Але чим? Вже й не згадати! Це.Просто.Зводить.Мене.З.Розуму!" # (the power of the sun? the scythe?)
     $ renpy.sound.play("footsteps_fast.ogg", loop=True, relative_volume = 0.5)
-    p "* сердито ходить туди-сюди * "
     show poludnicia at center with move 
     show poludnicia at rightly with move 
+    p "* сердито ходить туди-сюди * "
     jump poludnicia_greet
 
 
@@ -123,10 +123,10 @@ label poludnicia_greet:
         "Почекати мовчки":
             v "..."
             show poludnicia at center with move 
-            p "* продовжує сердитися *"
             show poludnicia at rightly with move 
-            $ renpy.sound.stop(fadeout=0.5)
+            p "* продовжує сердитися *"
             v "..."
+            $ renpy.sound.stop(fadeout=0.5)
             p "Тебе не дратує мій гнів?"
             p "Як ти зберігаєш свій спокій?"
             p "Я вже сто років не відчувала спокою!"
