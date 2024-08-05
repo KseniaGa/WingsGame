@@ -113,7 +113,7 @@ init python:
 label start:
     
     # FOR TESTING THE FINAL LEVEL
-    #jump toproom
+    #jump alk_stirs_drama
     # show berehynia at center with move 
 
     # rightly instead of right, because the progress bar is at the right edge

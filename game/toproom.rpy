@@ -20,7 +20,7 @@ init python:
         bgs = ["kikimorabg", "poludniciabg", "lisovykbg", "rusalkabg"]
         for bg in bgs:
             renpy.show(bg)
-            renpy.pause(0.5)  # Pause for 0.1 seconds
+            renpy.pause(1.0)  # Pause for 0.1 seconds
             renpy.hide(bg)
         #renpy.show()
        
@@ -36,11 +36,12 @@ label toproom:
     b "Вона буде тут за мить, люба, ти не зможеш пройти повз неї силою, вона вислухає тільки розум."
     b "Будь обережна з нею. Не показуй занадто багато емоцій, особливо смутку."
 
-    pause 0.5
+    #pause 0.5
     play sound "dragon-wings.ogg"
-    show alkonost at center with dissolve
-        #xzoom 0.5
-        #yzoom 0.5
+    pause 3.0
+    show alkonost at center with dissolve:
+        xzoom 0.75
+        yzoom 0.75
 
     a "Ах, вітаю, Віло."
     a "Сяюча, як завжди."
@@ -63,7 +64,7 @@ label toproom:
     
     a "Я дам тобі легкий вихід, Віло."
     a "Тобою керувала Берегиня, тому я дам тобі останню можливість."
-    a "Оберай."
+    a "Обирай."
     jump choice1
 
 label choice1: 
@@ -118,15 +119,23 @@ label resist:
     a "Добре. Поговоримо про 'друзів', яких ти здобула, Віло."
     a "Подивимось, кого ж ми виберемо..."
     #  image overlaybg1 =
+    scene black
     $ flashing_bgs()
-
+    #$ flashing_bgs()
+    #hide all
+    scene black 
     $ jump_target = random_jump()
     $ renpy.jump(jump_target)
+
 
 # Convince Alkonost that Kiki is better off free ! 
 # The room is illiminated with Kikimora's symbol! 
 label kiki_hope: 
     scene kikimorabg
+    show kikimora at center with dissolve:
+        xzoom 0.75
+        yzoom 0.75 
+
     #bgs = ["kikimorabg", "poludniciabg", "lisovykbg", "rusalkabg"]
     a "А, Кікімора. Бідолашна істота прагне нового дому, когось, хто буде піклуватися про неї."
     a "Як ти плануєш зробити її життя кращим?"
@@ -151,6 +160,9 @@ label po_hope:
 #Convince Alkonost that Poludnicja is better off free ! 
 # The room is illiminated with Pol's symbol!
     scene poludniciabg
+    show poludnicia at center with dissolve:
+        xzoom 0.75
+        yzoom 0.75 
     a "А, Полудниця. Вона має злий вигляд, але всередині її біль глибший, ніж у інших."
     a "Як ти плануєш зробити її життя кращим?"
 
@@ -171,6 +183,9 @@ label po_hope:
 # The room is illiminated with Lisovyk's symbol!
 label lis_hope:
     scene lisovykbg
+    show lisovyk at center with dissolve:
+        xzoom 0.75
+        yzoom 0.75 
     a "А, Лісовик. Старий буркотун із золотим серцем."
     a "Як ти плануєш зробити його життя кращим?"
 
@@ -191,6 +206,9 @@ label lis_hope:
 # The room is illiminated with Rusalka's symbol!
 label r_hope:
     scene rusalkabg
+    show rusalka at center with dissolve:
+        xzoom 0.75
+        yzoom 0.75 
     a "А, Русалка. Ця бідна нещасна душа."
     a "Як ти плануєш зробити її життя кращим?"
 
@@ -208,7 +226,11 @@ label r_hope:
 
 label alk_stirs_drama: 
     a "Зрозуміла тебе, Віло. Дякую за співпрацю."
+    show alkonost at center with dissolve:
+        xzoom 0.75
+        yzoom 0.75
     a "Здається, залишилася лише одна істота, щоб свідчити."
+    show vila at left with dissolve 
     a "Та істота, яка була найбільш опірною до моєї допомоги протягом мого правління в цьому вимірі."
     v "Чому ти говориш, наче ми вже зустрічалися? Я щойно зустріла тебе."
     a "Боюся, що ні, дитя."
@@ -228,35 +250,43 @@ label alk_stirs_drama:
 label vila_hope: 
     
     # a "Now, prove to me that you, Vila, will be fine with your memories intact."
-
+    hide alkonost with dissolve 
+    show vila at center with move 
     v "Ні, ні, ні..."
     v "Ні... це не може бути правдою..."
     v "Невже я справді проходила через це раніше?"
     v "Чи немає надії? Чи ми приречені повторювати цей цикл вічно?"
     "Віла починає втрачати надію, темрява повзе в її душу."
-   
+    hide vila with dissolve 
     # The screen dims to almost black to represent Vila's despair
-    show black with dissolve
-    pause 1.0
+    #show black with dissolve
+    
+
+    pause 2.0
 
     # EPIC MUSIC STARTS ? play music smth 
     play music bgm loop 
-    play music boss loop
+    play ambience boss loop
     # The screen gets darker and darker and the only thing we can see is the "menu" choices: Hope, Accept Help, Keep Going, Fight, Persevere
     "Какофонія знайомих голосів:"
     "Ми тут, люба Віло. Ми всі тут з тобою, ти не сама. Не здавайся!"
     menu: 
         "Надія":
             p "Тобі не потрібно бути відповідальною за нас. Ми всі відповідальні одне за одного, ми будемо всі піклуватися одне про одного."
+    menu:
         "Продовжувати":
             l "І якщо нам доведеться повторювати цю подорож знову, так і буде."
+    menu:
         "Вистояти": 
             ki "Це не буде марно, метелик."
+    menu:
         "Прийняти допомогу": 
             r "Близькість, яку ми відчуваємо одне до одного, не буде стерта, вона тільки зростатиме."
 
-    hide black with dissolve
+    #hide black with dissolve
     hide dim_overlay with dissolve
+    scene black 
+    show vila at left with dissolve
 
     v "Ви праві... Я не можу здатися. Не зараз. Ніколи. Ми зламаємо цей цикл разом."
     v "Якщо не зараз, то наступного разу! Якщо не наступного разу, то на сотий раз, але я знаю, що ми зробимо це!"
@@ -268,12 +298,13 @@ label vila_hope:
 
 
 label alk_chill: 
+
     a "Хм."
     a "Можливо, мої послуги більше не потрібні тут."
     a "Ти переконала мене. Поки що."
     pause 1.0
     a "Ви можете йти."
-
+    scene marabg
     # Vila is shining and all of the others appear? 
     "Віла відчуває радість усіх своїх друзів, вона переповнює все оточування."
 
@@ -292,6 +323,7 @@ label alk_chill:
     r "Ти принесла світло в наші життя і звільнила нас від темряви. Ми ніколи не забудемо це, Віла."
     hide rusalka radiant with dissolve
 
+    show vila at left with dissolve
     v "Алконост, я хочу попрощатися з Берегинею."
     a "Добре."
 
