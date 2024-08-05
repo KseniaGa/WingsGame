@@ -25,6 +25,9 @@ init python:
         #renpy.show()
        
 
+transform semi_transparent:
+    alpha 0.5  # Adjust this value to change transparency
+
 label toproom:
     scene black
     
@@ -297,6 +300,8 @@ label vila_hope:
     v "Ви праві... Я не можу здатися. Не зараз. Ніколи. Ми зламаємо цей цикл разом."
     v "Якщо не зараз, то наступного разу! Якщо не наступного разу, то на сотий раз, але я знаю, що ми зробимо це!"
 
+    hide vila at left with dissolve
+
     a "Цікавий розвиток подій. Дуже цікавий."
 
     
@@ -304,14 +309,27 @@ label vila_hope:
 
 
 label alk_chill: 
-
+    
+    show alkonost_closedeyes at center with dissolve
     a "Хм."
     a "Можливо, мої послуги більше не потрібні тут."
-    a "Ти переконала мене. Поки що."
-    pause 1.0
+    a "Ти переконала мене, Віла."
+    pause 2.0
+    show alkonost_neutral at center 
+    a "Ви вільні."
     a "Ви можете йти."
-    scene marabg
+    #scene marabg
+    #scene combined_bg
+    #show combined_bg with dissolve
+    scene black 
+    show kikimorabg at semi_transparent with dissolve
+    show poludniciabg at semi_transparent with dissolve
+    show lisovykbg at semi_transparent with dissolve
+    show rusalkabg at semi_transparent with dissolve
+
     # Vila is shining and all of the others appear? 
+    hide alkonost
+    show vila at left with dissolve
     "Віла відчуває радість усіх своїх друзів, вона переповнює все оточування."
 
     show kikimora radiant with dissolve
@@ -328,6 +346,7 @@ label alk_chill:
     show rusalka radiant with dissolve
     r "Ти принесла світло в наші життя і звільнила нас від темряви. Ми ніколи не забудемо це, Віла."
     hide rusalka radiant with dissolve
+
 
     show vila at left with dissolve
     v "Алконост, я хочу попрощатися з Берегинею."
@@ -348,6 +367,26 @@ label alk_chill:
     b "Просто виконую свою роботу, люба. Бажаю тобі всього найкращого."
     hide berehynia at right with dissolve
 
+    v "Хм..."
+
+    show vila at center with move 
+    v "Ну що ж, друзі, час рушати додому!"
+    v "Я не знаю, що нас чекає потойбік цієї темряви, але я знаю, що з вами ми..."
+
+    menu: 
+        "Знайдемо": 
+            v "Я знаю, що разам ми знайдемо наш дім і створимо нові спогади!"
+
+        "Відбудуємо":
+            v "Я знаю, що разам ми відбудуємо наш дім і створимо нові спогади!"
+
+        "Вдома":
+            v "Я знаю, що разам ми вже вдома де б ми не були!"
+
+
+
+    pause 3
+    hide vila with dissolve 
 
     jump game_over_light
 

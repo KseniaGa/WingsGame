@@ -8,11 +8,11 @@ define б = Character("Берегиня", color="#ffcc00")
 define m = Character("Мара", color="#9932CC")       # Tutorial 
 define м = Character("Мара", color="#9932CC")         
 
-define p = Character("Полудниця")                    # Level 2
-define ki = Character("Кікімора")                     # Level 2
-define l = Character("Лісовик")                       # Level 3
-define r = Character("Русалка")                       # Level 3
-define a = Character("Алконост")                      # Final Boss
+define p = Character("Полудниця", color="#FFD700")  # Golden Yellow
+define ki = Character("Кікімора", color="#228B22")  # Dark Green
+define l = Character("Лісовик", color="#006400")    # Forest Green
+define r = Character("Русалка", color="#40E0D0")    # Turquoise
+define a = Character("Алконост", color="#800080")   # Deep Purple
 
 define t1 = "audio/thump1.ogg"
 define t2 = "audio/thump2.ogg"
@@ -114,7 +114,7 @@ init python:
 label start:
     
     # FOR TESTING THE FINAL LEVEL
-    #jump alk_stirs_drama
+    #jump alk_chill
     # show berehynia at center with move 
 
     # rightly instead of right, because the progress bar is at the right edge
@@ -291,8 +291,8 @@ label mara_joins:
     # м "Чим більше спроб ти робиш, тим більше це на тобі сказується "
 
     м "До речі ! Час рушати, красуня!  "
-    м "Ви вілли, начебто соціальні метелики, так?"
-    м "То йди вже чаруй та вербуй інших, чи що ви там вілли робите. Час мені повернути моє потойбіччя, деякі створіння тут затрималися довше, ніж потрібно. Враховуючи тебе, Віла"
+    м "Ви віли, начебто соціальні метелики, так?"
+    м "То йди вже чаруй інших, чи що ви там віли робите. Час мені повернути моє потойбіччя, деякі створіння тут затрималися довше, ніж потрібно. Враховуючи тебе, Віла"
     
     в "Е, вау, дуже мотивує, Мара... Дякую. "
     б "Ха-ха я бачу ви подружилися. Хай щастить, люба. Я завжди поруч."
@@ -327,7 +327,7 @@ label game_over_darkness:
     $ rusalka_joined = False 
     $ rusalka_visited = False 
 
-    pause 1
+    pause 2
 
     jump start
     return 
@@ -335,7 +335,7 @@ label game_over_darkness:
 label game_over_light: 
     scene good_end_screen
     hide all
-    "Вітаємо! Ви звільнили Вілу та її супутників, повернувши їхні спогади!"
+    "Вітаємо! Ви звільнили Вілу та її супутників!"
     # На цьому гра закінчується.
     pause 3
     return
