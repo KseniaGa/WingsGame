@@ -177,13 +177,15 @@ label invite_kikimora:
     if kikimora_attitude >= 20:
         v "Кікі, я планую знайти новий дім, і мені знадобиться хтось, щоб зробити це місце домівкою... Чи приєднаєшься ти до мене?"
         
-        ki "Новий дім... Нова сім'я... Я приєднаюсь до тебе, метелик."
         show kikimora radiant with dissolve
         play sound tone
         $ kiki_joined = True
         if wing_strength < wing_strength_threshold:
             $ wing_strength += 1
         # play sound tone
+
+        ki "Новий дім... Нова сім'я... Я приєднаюсь до тебе, метелик."
+        pause 0.5
 
     else:
         v "Кікі, я планую знайти новий дім, і мені знадобиться хтось, хто може зробити це місце домівкою... Чи приєднаєшься ти до мене?"

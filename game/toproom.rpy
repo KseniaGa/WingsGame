@@ -30,7 +30,10 @@ label toproom:
     
     hide all
 
-    show vila at left with dissolve
+    show vila at left with dissolve:
+        xzoom 0.5
+        yzoom 0.5
+        yalign 0.7
 
     v "Тут нікого немає. Може, просто втечемо поки є час?"
     b "Вона буде тут за мить, люба, ти не зможеш пройти повз неї силою, вона вислухає тільки розум."
@@ -40,8 +43,8 @@ label toproom:
     play sound "dragon-wings.ogg"
     pause 3.0
     show alkonost at center with dissolve:
-        xzoom 0.75
-        yzoom 0.75
+        xzoom 0.9
+        yzoom 0.9
 
     a "Ах, вітаю, Віло."
     a "Сяюча, як завжди."
@@ -227,10 +230,13 @@ label r_hope:
 label alk_stirs_drama: 
     a "Зрозуміла тебе, Віло. Дякую за співпрацю."
     show alkonost at center with dissolve:
-        xzoom 0.75
-        yzoom 0.75
+        xzoom 0.9
+        yzoom 0.9
     a "Здається, залишилася лише одна істота, щоб свідчити."
-    show vila at left with dissolve 
+    show vila at left with dissolve :
+        xzoom 0.5
+        yzoom 0.5
+        yalign 0.7
     a "Та істота, яка була найбільш опірною до моєї допомоги протягом мого правління в цьому вимірі."
     v "Чому ти говориш, наче ми вже зустрічалися? Я щойно зустріла тебе."
     a "Боюся, що ні, дитя."

@@ -52,8 +52,9 @@ image kikimora = "character_sprites/kikimora_neutral.png"
 image kikimora radiant = "character_sprites/kikimora_radiant.png"
 image lisovyk = "character_sprites/lisovyk_neutral_flipped.png"
 image lisovyk radiant:
-    "character_sprites/lisovyk_neutral_flipped.png"
-    xzoom(-1) #this will flip it horizontally
+    "character_sprites/lisovyk_radiant.png"
+    xzoom(-0.5) #this will flip it horizontally
+    yzoom(0.5)
 
 image rusalka = "character_sprites/rusalka_neutral.png"
 image rusalka sad = "character_sprites/rusalka_sad.png"
@@ -336,5 +337,5 @@ label game_over_light:
     hide all
     "Вітаємо! Ви звільнили Вілу та її супутників, повернувши їхні спогади!"
     # На цьому гра закінчується.
-    pause 1
+    pause 3
     return

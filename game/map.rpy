@@ -1,2 +1,3 @@
 label map:
-    call screen mapScreen
+    screen black
+    call screen mapScreen with fade

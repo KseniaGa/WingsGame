@@ -28,7 +28,7 @@ label rusalka_already_visited:
     hide berehynia at right with dissolve
     show rusalka at rightly with move 
     
-    jump rusalka_guess
+    jump rusalka_remember
     
 
 label rusalka_intro:
@@ -198,8 +198,7 @@ label make_rusalka_feel_better:
 label rusalka_invite:
     if rusalka_attitude >= 15:
         v "Русалко, надія ще не втрачена! Якщо ти приєднаєшся до мене, ми зможемо разом знайти шлях додому. Що скажеш?"
-        r "Я відчуваю тепло твого доброго серця. Дякую за це."
-        r "Я дійсно хочу приєднатися до тебе... Що далі?"
+        
 
         show rusalka radiant
         
@@ -211,6 +210,11 @@ label rusalka_invite:
         # play sound tone
 
         pause 0.1
+        
+        r "Я відчуваю тепло твого доброго серця. Дякую за це."
+        r "Я дійсно хочу приєднатися до тебе... Що далі?"
+
+        pause 0.5
 
         jump map
     else:
