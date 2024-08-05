@@ -64,8 +64,7 @@ define config.has_voice = True
 ## продовжуватиме відтворюватися в грі, доки його не буде зупинено або не буде
 ## відтворено інший файл.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
-
+define config.main_menu_music = "bgm.mp3"
 
 ## Переходи ####################################################################
 ##
@@ -154,7 +153,7 @@ define config.save_directory = "Wings-1720953189"
 ##
 ## Значок, що відображається на панелі завдань або док-станції.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "character_sprites/berehynia_neutral.png"
 
 
 ## Створити конфігурацію #######################################################
