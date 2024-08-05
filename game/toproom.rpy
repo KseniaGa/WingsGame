@@ -260,7 +260,10 @@ label vila_hope:
     
     # a "Now, prove to me that you, Vila, will be fine with your memories intact."
     hide alkonost with dissolve 
-    show vila at center with move 
+    show vila at center with move:
+        xzoom 1
+        yzoom 1 
+        yalign 0.5 
     v "Ні, ні, ні..."
     v "Ні... це не може бути правдою..."
     v "Невже я справді проходила через це раніше?"
@@ -279,18 +282,25 @@ label vila_hope:
     # The screen gets darker and darker and the only thing we can see is the "menu" choices: Hope, Accept Help, Keep Going, Fight, Persevere
     "Какофонія знайомих голосів:"
     "Ми тут, люба Віло. Ми всі тут з тобою, ти не сама. Не здавайся!"
-    menu: 
-        "Надія":
-            p "Тобі не потрібно бути відповідальною за нас. Ми всі відповідальні одне за одного, ми будемо всі піклуватися одне про одного."
-    menu:
-        "Продовжувати":
-            l "І якщо нам доведеться повторювати цю подорож знову, так і буде."
-    menu:
-        "Вистояти": 
-            ki "Це не буде марно, метелик."
-    menu:
-        "Прийняти допомогу": 
-            r "Близькість, яку ми відчуваємо одне до одного, не буде стерта, вона тільки зростатиме."
+    if poludnicia_joined:
+        menu: 
+            "Надія":
+                p "Тобі не потрібно бути відповідальною за нас. Ми всі відповідальні одне за одного, ми будемо всі піклуватися одне про одного."
+
+    if lisovyk_joined:
+        menu:
+            "Продовжувати":
+                l "І якщо нам доведеться повторювати цю подорож знову, так і буде."
+    
+    if kiki_joined:
+        menu:
+            "Вистояти": 
+                ki "Це не буде марно, метелик."
+    
+    if rusalka_joined:
+        menu:
+            "Прийняти допомогу": 
+                r "Близькість, яку ми відчуваємо одне до одного, не буде стерта, вона тільки зростатиме."
 
     #hide black with dissolve
     hide dim_overlay with dissolve
@@ -332,20 +342,25 @@ label alk_chill:
     show vila at left with dissolve
     "Віла відчуває радість усіх своїх друзів, вона переповнює все оточування."
 
-    show kikimora radiant with dissolve
-    ki "Ти зробила це, метелик, я знала, що ти зможеш!"
-    hide kikimora radiant with dissolve
-    show poludnicia radiant with dissolve
-    p "Твоя мужність і рішучість вражають, Віла. Ми тепер вільні завдяки тобі."
-    hide poludnicia radiant with dissolve
+    if kiki_joined:
+        show kikimora radiant at right with dissolve
+        ki "Ти зробила це, метелик, я знала, що ти зможеш!"
+        hide kikimora radiant with dissolve
+    
+    if poludnicia_joined:
+        show poludnicia radiant at right with dissolve
+        p "Твоя мужність і рішучість вражають, Віла. Ми тепер вільні завдяки тобі."
+        hide poludnicia radiant with dissolve
 
-    show lisovyk radiant with dissolve
-    l "Твоя сила і відданість допомогли нам усім, дякую тобі, Віла."
-    hide lisovyk radiant with dissolve
+    if lisovyk_joined:
+        show lisovyk radiant at right with dissolve
+        l "Твоя сила і відданість допомогли нам усім, дякую тобі, Віла."
+        hide lisovyk radiant with dissolve
 
-    show rusalka radiant with dissolve
-    r "Ти принесла світло в наші життя і звільнила нас від темряви. Ми ніколи не забудемо це, Віла."
-    hide rusalka radiant with dissolve
+    if rusalka_joined:
+        show rusalka radiant at right with dissolve
+        r "Ти принесла світло в наші життя і звільнила нас від темряви. Ми ніколи не забудемо це, Віла."
+        hide rusalka radiant with dissolve
 
 
     show vila at left with dissolve

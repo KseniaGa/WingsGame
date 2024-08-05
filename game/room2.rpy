@@ -253,6 +253,11 @@ label poludnicia_invite:
         
 
 
+        
+        p "Якщо я вже зійшла з розуму, то це теж частина цього...  Думаю, я нічого не втрачу, якщо скажу так."
+        p "Я хочу відпустити свій гнів, хочу літати, літати і кричати, щоб мене всі чули. Я приєднаюсь до тебе, Віло!"
+        
+
         show poludnicia radiant
 
 
@@ -261,17 +266,15 @@ label poludnicia_invite:
         if wing_strength < wing_strength_threshold:
             $ wing_strength += 1
         # play sound tone
-        
-        p "Якщо я вже зійшла з розуму, то це теж частина цього...  Думаю, я нічого не втрачу, якщо скажу так."
-        p "Я хочу відпустити свій гнів, хочу літати, літати і кричати, щоб мене всі чули. Я приєднаюсь до тебе, Віло!"
-        
+
         $ poludnicia_attitude = 0
         $ poludnicia_visited = True 
         $ poludnicia_joined = True
 
         pause 0.5
 
-        jump map
+        call screen backButton
+        #jump map
 
     else:
         v "Полуднице, я знаю, що звідси є вихід. Там буде сонце, спекотні літні дні, нові поля, які треба охороняти! Хочеш піти зі мною?"

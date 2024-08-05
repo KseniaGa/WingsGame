@@ -61,7 +61,7 @@ label rusalka_intro:
             r "Вказувати на це НЕ допомагає..."
             v ""
             #Consider not punishing the first encounter...
-            $ rusalka_attitude-=10
+            $ rusalka_attitude-=5
             $ darkness_value+=10
             if darkness_value>=100:
                 jump game_over_darkness
@@ -204,6 +204,9 @@ label rusalka_invite:
         v "Русалко, надія ще не втрачена! Якщо ти приєднаєшся до мене, ми зможемо разом знайти шлях додому. Що скажеш?"
         
 
+        r "Я відчуваю тепло твого доброго серця. Дякую за це."
+        r "Я дійсно хочу приєднатися до тебе... Що далі?"
+
         show rusalka radiant
         
         # "TODO: show vila's wings getting stronger?" - done
@@ -215,12 +218,11 @@ label rusalka_invite:
 
         pause 0.1
         
-        r "Я відчуваю тепло твого доброго серця. Дякую за це."
-        r "Я дійсно хочу приєднатися до тебе... Що далі?"
 
         pause 0.5
 
-        jump map
+        call screen backButton
+        #jump map
     else:
         v "Русалко, надія ще не втрачена! Якщо ти приєднаєшся до мене, ми зможемо разом знайти шлях додому. Що скажеш?"
         
