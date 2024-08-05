@@ -75,6 +75,8 @@ label lisovyk_intro:
     v "Лісовик..?"
 
     # l "Liso-what? Speak louder, child. The voices of leaves keep whispering into my ears, I forget myself."
+    $ renpy.sound.play("leaves.ogg", loop=False, relative_volume = 0.2)
+
     l "Лісо-що? Говори голосніше, дитя. Голоси навколо шепочуть мені на вухо, я все забуваю, і себе теж."
 
 label lisovyk_guess: 
@@ -158,12 +160,15 @@ label lisovyk_remind_who_he_is:
             l "Листя шелестить..."
             l "Це не голоси, а листя!"
             v "Саме так!"
+            $ renpy.sound.play("birds-chirping.ogg", loop=True, relative_volume = 0.1, fadein = 0.1)
             l "Про що шепоче листя, Віло?"
             v "Ти колись охороняв всі ліси і все, що в них живе!"
             l "А,хмм, це звучить знайомо..."
             v "Це місце зовсім не схоже на твій дім..."
+            $ renpy.sound.stop(fadeout=0.5)
             l "Чи є звідси вихід?"
-            "Лісовик повертає голову ліворуч і праворуч, лунає скрип деревини..."
+            $ renpy.sound.play("squeak.ogg", loop=False, relative_volume = 0.1, fadein = 0.5)
+            "Лісовик повертає голову ліворуч і праворуч..."
             #TODO sound of squeeku wood here
             $ lisovyk_attitude+= 10
             jump get_to_know_more
@@ -187,7 +192,9 @@ label lisovyk_remind_who_he_is:
             l "Жаб, звичайно... Але не тільки жаб."
             l "Як я казав – я думаю, що казав – мені подобаються ~всі~ тварини."
             l "Я інколи сиджу, як жаба, по середах, бо так, проводжу з ними багато часу."
+            $ renpy.sound.play("ambience_frogs.ogg", loop=False, relative_volume = 0.1, fadein = 0.5)
             l "* дивиться на свого друга-жабу *"
+            $ renpy.sound.stop(fadeout=0.5)
             #TODO frog sound
             $ lisovyk_attitude+=5 #seems too much, need to check if numbers make sense here!
             jump get_to_know_more
