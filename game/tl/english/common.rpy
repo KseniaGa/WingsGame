@@ -1234,3 +1234,11 @@ translate english strings:
     old "Parsing the script failed."
     new "Parsing the script failed."
 
+# TODO: Translation updated at 2024-08-11 13:58
+
+translate english strings:
+
+    # renpy/common/00accessibility.rpy:197
+    old "Self-voicing support is limited when using a touch screen."
+    new ""
+
