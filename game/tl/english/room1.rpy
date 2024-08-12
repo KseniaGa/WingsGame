@@ -436,7 +436,7 @@ translate english reassure_her_f9f0a79c:
 translate english invite_kikimora_fe7537fb:
 
     # v "Кікі, я планую знайти новий дім, і мені знадобиться хтось, щоб зробити це місце домівкою... Чи приєднаєшься ти до мене?"
-    v "Kiki, I am planning to find a new place to leave, and I will need someone to make it a home... Will you join me?"
+    v "Kiki, I am planning to find a new place to live, and I will need someone to make it a home... Will you join me?"
 
 # game/room1.rpy:187
 translate english invite_kikimora_f0dace6c:

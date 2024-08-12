@@ -628,7 +628,7 @@ translate english alk_chill_3f6b3fce:
 translate english alk_chill_4aa06e98:
 
     # v "Я не знаю, що нас чекає потойбік цієї темряви, але я знаю, що з вами ми..."
-    v "I don't know what's waiting for us beyond this darkness, but I know that together we..."
+    v "I don't know what's waiting for us beyond this darkness, but I know that together we will..."
 
 # game/toproom.rpy:393
 translate english alk_chill_9bf83b5f:
@@ -716,12 +716,12 @@ translate english strings:
 
     # game/toproom.rpy:391
     old "Знайдемо"
-    new "Will Find"
+    new "We will rediscover"
 
     # game/toproom.rpy:391
     old "Відбудуємо"
-    new "Will Rebuild"
+    new "Will Will Rebuild"
 
     # game/toproom.rpy:391
     old "Вдома"
-    new "Are Home"
+    new "Are Already Home"
