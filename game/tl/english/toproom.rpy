@@ -34,7 +34,7 @@ translate english toproom_7d14c6ac:
 translate english toproom_21fcadcb:
 
     # a "Хто сьогодні з тобою?"
-    a "Who's with you today?"
+    a "Who do you have with you today?"
 
 # game/toproom.rpy:56
 translate english toproom_98241007:
@@ -64,13 +64,13 @@ translate english toproom_b14db39a:
 translate english toproom_e6606670:
 
     # a "Тепер краще."
-    a "That's better."
+    a "Ah. That's better."
 
 # game/toproom.rpy:68
 translate english toproom_84b6a666:
 
     # v "арвіпврпв"
-    v "What...?"
+    v "hgfhmfcdm"
 
 # game/toproom.rpy:69
 translate english toproom_aded3fb7:
@@ -88,7 +88,7 @@ translate english toproom_8816f3f7:
 translate english toproom_2f5847f8:
 
     # a "Тобою керувала Берегиня, тому я дам тобі останню можливість."
-    a "Berehynia has been guiding you, so I'll give you one last chance."
+    a "Berehynia has been manipulating you, so I'll give you one last chance."
 
 # game/toproom.rpy:73
 translate english toproom_4aad3bd7:
@@ -124,7 +124,7 @@ translate english choice1_6086fdef:
 translate english choice2_61e05568:
 
     # v "Трохи поспати не зашкодить..."
-    v "A little sleep wouldn't hurt..."
+    v "A little nap wouldn't hurt..."
 
 # game/toproom.rpy:96
 translate english choice2_ea25b783:
@@ -154,7 +154,7 @@ translate english choice2_6086fdef:
 translate english choice3_3bc79336:
 
     # v "Це те, що я хочу в глибині душі."
-    v "This is what I want deep down."
+    v "It's what I want deep down."
 
 # game/toproom.rpy:109
 translate english choice3_987c9133:
@@ -178,7 +178,7 @@ translate english choice3_42d9f60b:
 translate english choice3_f259ce65:
 
     # v "Те, чого я хочу в глибині душі - повернутися додому і допомогти своїм друзям."
-    v "What I truly want deep down is to go home and help my friends."
+    v "What I truly want deep down is to return home and help my friends."
 
 # game/toproom.rpy:115
 translate english choice3_6086fdef:
@@ -196,19 +196,19 @@ translate english resist_d45517bc:
 translate english resist_76aadabf:
 
     # a "Я слухаю тебе, Віло."
-    a "I'm listening, Vila."
+    a "I'm listening, Vila. Plead your case."
 
 # game/toproom.rpy:122
 translate english resist_7a8523db:
 
     # v "Це не життя, Алконост. Ми не живемо, ми ледь існуємо."
-    v "This isn't living, Alkonost. We're not alive, we're barely existing."
+    v "This isn't life, Alkonost. We're not living here, we're barely existing."
 
 # game/toproom.rpy:123
 translate english resist_b9e4e020:
 
     # a "Якщо б ти мала всі свої спогади, Віло, якби ти знала, в якому стані я знайшла інших... Ти б не хотіла залишити потойбіччя, повір мені."
-    a "If you had all your memories, Vila, if you knew the state in which I found the others... You wouldn't want to leave the beyond, trust me."
+    a "If you had all your memories, Vila, if you knew the state in which I found the others... You wouldn't want to leave, trust me."
 
 # game/toproom.rpy:124
 translate english resist_029f873e:
@@ -220,25 +220,25 @@ translate english resist_029f873e:
 translate english resist_17f8385c:
 
     # a "Добре. Поговоримо про 'друзів', яких ти здобула, Віло."
-    a "Alright. Let's talk about the 'friends' you've gained, Vila."
+    a "Alright. Let's speak about the 'friends' you've gained, Vila."
 
 # game/toproom.rpy:126
 translate english resist_1e6177b7:
 
     # a "Подивимось, кого ж ми виберемо..."
-    a "Let's see who we shall choose..."
+    a "Let's see who shall we choose..."
 
 # game/toproom.rpy:146
 translate english kiki_hope_8313a339:
 
     # a "А, Кікімора. Бідолашна істота прагне нового дому, когось, хто буде піклуватися про неї."
-    a "Ah, Kikimora. Poor creature, yearning for a new home, someone to care for her."
+    a "Ah, Kikimora. Poor creature, yearning for a new home, someone to care for."
 
 # game/toproom.rpy:147
 translate english kiki_hope_bd55d820:
 
     # a "Як ти плануєш зробити її життя кращим?"
-    a "How do you plan to make her life better?"
+    a "How are you planning to make her life better?"
 
 # game/toproom.rpy:151
 translate english kiki_hope_7e969019:
@@ -256,7 +256,7 @@ translate english kiki_hope_76265460:
 translate english kiki_hope_a8dc105a:
 
     # a "Ти всього лише одна маленька істота. Чи готова ти взяти на себе таку відповідальність?"
-    a "You're just one small being. Are you ready to take on such responsibility?"
+    a "You're just one small creature. Are you ready to take on such responsibility?"
 
 # game/toproom.rpy:157
 translate english kiki_hope_e927f44e:
@@ -268,13 +268,13 @@ translate english kiki_hope_e927f44e:
 translate english po_hope_71f8e39a:
 
     # a "А, Полудниця. Вона має злий вигляд, але всередині її біль глибший, ніж у інших."
-    a "Ah, Poludnitsa. She may look fierce, but her pain runs deeper than others'."
+    a "Ah, Poludnicia. She may look angry, but her pain runs deeper than others'."
 
 # game/toproom.rpy:173
 translate english po_hope_bd55d820:
 
     # a "Як ти плануєш зробити її життя кращим?"
-    a "How do you plan to make her life better?"
+    a "How are you planning to make her life better?"
 
 # game/toproom.rpy:177
 translate english po_hope_d1c74305:
@@ -292,13 +292,13 @@ translate english po_hope_420bb29b:
 translate english po_hope_a8dc105a:
 
     # a "Ти всього лише одна маленька істота. Чи готова ти взяти на себе таку відповідальність?"
-    a "You're just one small being. Are you ready to take on such responsibility?"
+    a "You're just one small creature. Are you ready to take on such responsibility?"
 
 # game/toproom.rpy:183
 translate english po_hope_cfdaacdb:
 
     # v "Так, я пройшла цей шлях, я знаю, що можу зробити все."
-    v "Yes, I've walked this path, I know I can do anything."
+    v "Yes, I've come this far, I know I can do anything."
 
 # game/toproom.rpy:195
 translate english lis_hope_4879d782:
@@ -310,7 +310,7 @@ translate english lis_hope_4879d782:
 translate english lis_hope_1ee82a34:
 
     # a "Як ти плануєш зробити його життя кращим?"
-    a "How do you plan to make his life better?"
+    a "How are you planning to make his life better?"
 
 # game/toproom.rpy:200
 translate english lis_hope_aba31271:
@@ -328,13 +328,13 @@ translate english lis_hope_3c5db2b8:
 translate english lis_hope_a8dc105a:
 
     # a "Ти всього лише одна маленька істота. Чи готова ти взяти на себе таку відповідальність?"
-    a "You're just one small being. Are you ready to take on such responsibility?"
+    a "You're just one small creature. Are you ready to take on such responsibility?"
 
 # game/toproom.rpy:205
 translate english lis_hope_119c4bd6:
 
     # v "Так! Я знаю, що я стійка, я знаю, що я готова до всього."
-    v "Yes! I know I'm resilient, I know I'm ready for anything."
+    v "Yes! I know now how resilient I am, I know I'm ready for anything."
 
 # game/toproom.rpy:218
 translate english r_hope_d83519e3:
@@ -346,7 +346,7 @@ translate english r_hope_d83519e3:
 translate english r_hope_bd55d820:
 
     # a "Як ти плануєш зробити її життя кращим?"
-    a "How do you plan to make her life better?"
+    a "How are you planning to make her life better?"
 
 # game/toproom.rpy:223
 translate english r_hope_8e9be804:
@@ -364,31 +364,31 @@ translate english r_hope_e23f74c3:
 translate english r_hope_a8dc105a:
 
     # a "Ти всього лише одна маленька істота. Чи готова ти взяти на себе таку відповідальність?"
-    a "You're just one small being. Are you ready to take on such responsibility?"
+    a "You're just one small creature. Are you ready to take on such responsibility?"
 
 # game/toproom.rpy:229
 translate english r_hope_58f3aa03:
 
     # v "Так, я знаю, що свою силу."
-    v "Yes, I know my strength."
+    v "Yes, I know my power now."
 
 # game/toproom.rpy:234
 translate english alk_stirs_drama_d012ff2e:
 
     # a "Зрозуміла тебе, Віло. Дякую за співпрацю."
-    a "I understand you, Vila. Thank you for cooperating."
+    a "I understand, Vila. Thank you for your cooperation."
 
 # game/toproom.rpy:238
 translate english alk_stirs_drama_d8cd4a3d:
 
     # a "Здається, залишилася лише одна істота, щоб свідчити."
-    a "It seems there's only one creature left to testify."
+    a "It seems there's only one creature left to vouch for."
 
 # game/toproom.rpy:243
 translate english alk_stirs_drama_46d19799:
 
     # a "Та істота, яка була найбільш опірною до моєї допомоги протягом мого правління в цьому вимірі."
-    a "The one creature who was most resistant to my help during my reign in this realm."
+    a "The one creature who has been the most resistant to my help during my reign in this realm."
 
 # game/toproom.rpy:244
 translate english alk_stirs_drama_a8ff9cbb:
@@ -424,7 +424,7 @@ translate english alk_stirs_drama_8a7237c1:
 translate english alk_stirs_drama_e912c15a:
 
     # a "Отже, скажи мені, чим цей раз буде іншим? Чому я повинна вірити, що цього разу ти досягнеш успіху?"
-    a "So tell me, what makes this time different? Why should I believe you'll succeed this time?"
+    a "So tell me, what makes this time any different? Why should I believe you'll succeed now?"
 
 # game/toproom.rpy:267
 translate english vila_hope_46c71374:
@@ -496,13 +496,13 @@ translate english vila_hope_333835a0:
 translate english vila_hope_ae42955b:
 
     # v "Ви праві... Я не можу здатися. Не зараз. Ніколи. Ми зламаємо цей цикл разом."
-    v "You're right... I can't give up. Not now. Never. We'll break this cycle together."
+    v "You're right... I can't give up. Not now. Not ever. We'll break this cycle together."
 
 # game/toproom.rpy:311
 translate english vila_hope_2a85c6e7:
 
     # v "Якщо не зараз, то наступного разу! Якщо не наступного разу, то на сотий раз, але я знаю, що ми зробимо це!"
-    v "If not now, then next time! If not next time, then the hundredth time, but I know we'll do it!"
+    v "If not now, then next time! If not next time, then on the hundredth time, but I know we'll do it!"
 
 # game/toproom.rpy:315
 translate english vila_hope_6d2b082f:
@@ -538,7 +538,7 @@ translate english alk_chill_5d75023a:
 translate english alk_chill_660b749d:
 
     # a "Ви можете йти."
-    a "You may go."
+    a "You may leave."
 
 # game/toproom.rpy:343
 translate english alk_chill_743ea1f1:
@@ -550,7 +550,7 @@ translate english alk_chill_743ea1f1:
 translate english alk_chill_c26a628e:
 
     # ki "Ти зробила це, метелик, я знала, що ти зможеш!"
-    ki "You did it, butterfly, I knew you could!"
+    ki "You did it, butterfly, I knew you would!"
 
 # game/toproom.rpy:352
 translate english alk_chill_c30a867a:
@@ -568,13 +568,13 @@ translate english alk_chill_7e8b4db8:
 translate english alk_chill_1034ba74:
 
     # r "Ти принесла світло в наші життя і звільнила нас від темряви. Ми ніколи не забудемо це, Віла."
-    r "You brought light into our lives and freed us from the darkness. We will never forget this, Vila."
+    r "You brought the light into our lives and freed us from the darkness. We will never forget this, Vila."
 
 # game/toproom.rpy:367
 translate english alk_chill_19dcec2f:
 
     # v "Алконост, я хочу попрощатися з Берегинею."
-    v "Alkonost, I want to say goodbye to Berehynia."
+    v "Alkonost, I want to say goodbye to Berehynia now."
 
 # game/toproom.rpy:368
 translate english alk_chill_d45517bc:
@@ -592,13 +592,13 @@ translate english alk_chill_0c34e375:
 translate english alk_chill_088ed172:
 
     # b "Вітаю, я знала, що ти зможеш!"
-    b "Congratulations, I knew you could!"
+    b "Congratulations, I knew you could do it!"
 
 # game/toproom.rpy:375
 translate english alk_chill_80218dc0:
 
     # v "Я відчуваю, що не можу довіряти твоїм справжнім намірам, Берегине, але незалежно від твоїх методів, це закінчилося нашою свободою, і за це я хочу подякувати тобі."
-    v "I feel like I can't trust your true intentions, Berehynia, but regardless of your methods, this ended with our freedom, and for that, I want to thank you."
+    v "I feel like I can't trust your true intentions, Berehynia, but regardless of your methods, we now have our freedom, and for that, I want to thank you."
 
 # game/toproom.rpy:379
 translate english alk_chill_7d728c5f:
@@ -628,7 +628,7 @@ translate english alk_chill_3f6b3fce:
 translate english alk_chill_4aa06e98:
 
     # v "Я не знаю, що нас чекає потойбік цієї темряви, але я знаю, що з вами ми..."
-    v "I don't know what's waiting for us beyond this darkness, but I know that with you we..."
+    v "I don't know what's waiting for us beyond this darkness, but I know that together we..."
 
 # game/toproom.rpy:393
 translate english alk_chill_9bf83b5f:
@@ -646,13 +646,13 @@ translate english alk_chill_70f8252a:
 translate english alk_chill_17d0068c:
 
     # v "Я знаю, що разам ми вже вдома де б ми не були!"
-    v "I know that together we'll already be home, wherever we are!"
+    v "I know that together we are already home, wherever we are!"
 
 translate english strings:
 
     # game/toproom.rpy:80
     old "Спати далі (так легше) "
-    new "Keep sleeping (it's easier this way)"
+    new "Keep sleeping (it's easier this way)."
 
     # game/toproom.rpy:80
     old "ОПИРАТИСЯ"
@@ -660,43 +660,43 @@ translate english strings:
 
     # game/toproom.rpy:93
     old "Спати далі (так менш боляче)"
-    new "Keep sleeping (it's less painful this way)"
+    new "Keep sleeping (it's less painful)."
 
     # game/toproom.rpy:106
     old "Спати далі (це те, чого ти хочеш в глибині душі)"
-    new "Keep sleeping (it's what you want deep down)"
+    new "Keep sleeping (it's what you want deep inside)."
 
     # game/toproom.rpy:149
     old "Обіцяти відбудувати"
-    new "Promise to rebuild"
+    new "Promise to rebuild."
 
     # game/toproom.rpy:149
     old "Надати компанію"
-    new "Provide companionship"
+    new "Provide companionship."
 
     # game/toproom.rpy:175
     old "Знайти баланс"
-    new "Find balance"
+    new "Find balance."
 
     # game/toproom.rpy:175
     old "Підтримувати її шлях"
-    new "Support her journey"
+    new "Support her journey."
 
     # game/toproom.rpy:198
     old "Відновити ліси"
-    new "Restore the forests"
+    new "Restore the forests."
 
     # game/toproom.rpy:198
     old "Створити нові середовища"
-    new "Create new environments"
+    new "Create new environments."
 
     # game/toproom.rpy:221
     old "Надати свободу"
-    new "Give freedom"
+    new "Give freedom."
 
     # game/toproom.rpy:221
     old "Надати нові пригоди"
-    new "Provide new adventures"
+    new "Provide new adventures."
 
     # game/toproom.rpy:286
     old "Надія"
@@ -708,7 +708,7 @@ translate english strings:
 
     # game/toproom.rpy:296
     old "Вистояти"
-    new "Endure"
+    new "Keep going"
 
     # game/toproom.rpy:301
     old "Прийняти допомогу"
@@ -716,12 +716,12 @@ translate english strings:
 
     # game/toproom.rpy:391
     old "Знайдемо"
-    new "Find"
+    new "Will Find"
 
     # game/toproom.rpy:391
     old "Відбудуємо"
-    new "Rebuild"
+    new "Will Rebuild"
 
     # game/toproom.rpy:391
     old "Вдома"
-    new "Home"
+    new "Are Home"

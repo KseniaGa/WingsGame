@@ -35,13 +35,13 @@ translate english strings:
 translate english start_6d663ca3:
 
     # b "Віла, люба"
-    b "Vila, my dear"
+    b "Vila, my dear."
 
 # game/script.rpy:132
 translate english start_bf6f6bce:
 
     # b "Будь ласка, прокинься"
-    b "Please, wake up"
+    b "Please, wake up..."
 
 # game/script.rpy:133
 translate english start_905a44f9:
@@ -53,31 +53,31 @@ translate english start_905a44f9:
 translate english start_dbcb2a3f:
 
     # v "Знайомий голос..."
-    v "A familiar voice..."
+    v "Familiar voice..."
 
 # game/script.rpy:141
 translate english start_2b24d774:
 
     # v "Але так холодно... так важко відкрити очі"
-    v "But it’s so cold... it's so hard to open my eyes"
+    v "But it’s so cold... it's so hard to open my eyes."
 
 # game/script.rpy:142
 translate english start_fdbbfc4a:
 
     # v "Хочу спати далі, так буде легше, так буде менш болісно"
-    v "I want to keep sleeping, it will be easier, it will be less painful"
+    v "I just want to keep sleeping, it will be easier this way, less painful."
 
 # game/script.rpy:144
 translate english start_52c59326:
 
     # b "Віла, люба, я знаю тебе. Я знаю, що ти можеш побороти цю темряву."
-    b "Vila, my dear, I know you. I know that you can fight this darkness."
+    b "Vila, my dear, I know you. I know that you can overcome this darkness."
 
 # game/script.rpy:145
 translate english start_040ac85a:
 
     # b "Ти маєш велику силу!"
-    b "You have great strength!"
+    b "You have great power!"
 
 # game/script.rpy:146
 translate english start_3bea580c:
@@ -89,7 +89,7 @@ translate english start_3bea580c:
 translate english start_77c63e5d:
 
     # b "Тільки не здавайся, люба, не здавайся!"
-    b "Just don't give up, dear, don't give up!"
+    b "Just don't give up, my dear, don't give up!"
 
 # game/script.rpy:151
 translate english start_f707cd64:
@@ -107,13 +107,13 @@ translate english start_9a654caa:
 translate english start_73b88ab1:
 
     # b "Віло, я - Берегиня, твій дух-охоронець. Моя задача обороняти тебе та інших, кого спіткала ця темрява."
-    b "Vila, I am Berehynia, your guardian spirit. My task is to protect you and others who have been struck by this darkness."
+    b "Vila, I am Berehynia, your guardian spirit. My task is to protect you and others who have been consumed by this darkness."
 
 # game/script.rpy:161
 translate english start_e6485a3f:
 
     # v "Спати. Я хочу спати. Залиш мене, голос."
-    v "Sleep. I want to sleep. Leave me, voice."
+    v "Sleep. I just want to sleep. Leave me be, voice."
 
 # game/script.rpy:162
 translate english start_87a10ab6:
@@ -161,19 +161,19 @@ translate english villa_remember_526b0921:
 translate english villa_remember_5652a053:
 
     # v "Мої спогади... Я відчуваю себе такою загубленою. Як мені вибратися звідси?"
-    v "My memories... I feel so lost. How can I escape from here?"
+    v "My memories... I feel so lost. How can I escape this place?"
 
 # game/script.rpy:177
 translate english villa_remember_9af61cf3:
 
     # b "Не втрачай надію, Віло. Твоя магія, магія твоїх крил, може розсіяти цю темряву. Але тобі потрібно знайти інших і допомогти їм, адже їхня магія зробить тебе сильнішою."
-    b "Do not lose hope, Vila. Your magic, the magic of your wings, can dispel this darkness. But you need to find others and help them, as their magic will make you stronger."
+    b "Do not lose hope, Vila. Your magic, the magic of your wings, can dispel this darkness. But you need to find the others, as their magic will make you stronger."
 
 # game/script.rpy:179
 translate english villa_remember_a4956be9:
 
     # в "Я хочу допомогти іншим як ти допомогла мені!"
-    в "I want to help others as you helped me!"
+    в "I want to help the others just like you helped me!"
 
 # game/script.rpy:180
 translate english villa_remember_4496d813:
@@ -185,7 +185,7 @@ translate english villa_remember_4496d813:
 translate english villa_remember_1b9b50bd:
 
     # б "Мій час майже вийшов, люба. Моя сила дозволяє мені з тобою спілкуватися на великих відстанях, навіть дістатися тебе тут, у потойбіччі, але це потребує багато енергії тому, нажаль, мені інколи потрібно буде тебе залишити."
-    б "My time is almost up, dear. My power allows me to communicate with you across great distances, even to reach you here in the afterlife, but it takes a lot of energy, so unfortunately, I will sometimes need to leave you."
+    б "My time is almost up, dear. My power allows me to communicate with you across great distances, even to reach you here, but it takes a lot of energy, so unfortunately, I will need to leave you sometimes."
 
 # game/script.rpy:184
 translate english villa_remember_c6757238:
@@ -203,7 +203,7 @@ translate english villa_remember_6c4ece42:
 translate english villa_remember_648e55be:
 
     # б "Вона завжди була трохи... непередбачувана"
-    б "She has always been a bit... unpredictable"
+    б "She has always been a bit... unpredictable."
 
 # game/script.rpy:188
 translate english villa_remember_afcb0888:
@@ -239,13 +239,13 @@ translate english villa_remember_0de70240:
 translate english villa_remember_d04134f0:
 
     # в "Що тільки що трапилось? На секунду мені здалося ніби темрява знову поглинула мене."
-    в "What just happened? For a moment, it seemed like the darkness swallowed me again."
+    в "What just happened? For a moment, it seemed like the darkness consumed me again."
 
 # game/script.rpy:206
 translate english villa_remember_e27ad41b:
 
     # в "Ох, де ж мені її шукати?"
-    в "Oh, where should I look for her?"
+    в "Oh, where am I supposed to look for her?"
 
 # game/script.rpy:215
 translate english meet_mara_98fe503d:
@@ -257,7 +257,7 @@ translate english meet_mara_98fe503d:
 translate english meet_mara_a42e9ca2:
 
     # м "Заблукала в потойбіччі, Віла?"
-    м "Lost in the afterlife, Vila?"
+    м "Got lost in the dark, Vila?"
 
 # game/script.rpy:218
 translate english meet_mara_bc4be808:
@@ -269,7 +269,7 @@ translate english meet_mara_bc4be808:
 translate english meet_mara_710dd3af:
 
     # м "Не маєш цигарки часом? "
-    м "Got a cigarette by any chance?"
+    м "Got any cigarettes by chance?"
 
 # game/script.rpy:220
 translate english meet_mara_150e757c:
@@ -281,7 +281,7 @@ translate english meet_mara_150e757c:
 translate english meet_mara_17ff3844:
 
     # в "Eee..Мара, твоя сестра поручила мені тебе знайти. Вона сказала,що ти можеш мені допомогти. Допомогти врятувати інших від темряви та повернутися додому."
-    в "Eee..Mara, your sister instructed me to find you. She said you could help me. Help me save others from the darkness and return home."
+    в "Uhh..Mara, your sister instructed me to find you. She said you could help me. Help me save the others from the darkness and return home."
 
 # game/script.rpy:224
 translate english meet_mara_7a249b52:
@@ -293,7 +293,7 @@ translate english meet_mara_7a249b52:
 translate english meet_mara_421d8a3d:
 
     # м "Ех, вона любить обіцянки давати "
-    м "Oh, she loves making promises."
+    м "Oh, she loves to make promises."
 
 # game/script.rpy:226
 translate english meet_mara_dcd198d3:
@@ -323,7 +323,7 @@ translate english meet_mara_a9c9c666:
 translate english meet_mara_6033fafe:
 
     # в "Я знаю, що богиня темряви зазвичай не ховається бо-зна-де в потойбіччі..."
-    в "I know that the goddess of darkness doesn’t usually hide out in the afterlife..."
+    в "I know that the goddess of darkness doesn’t usually hide out in the middle of nowhere..."
 
 # game/script.rpy:232
 translate english meet_mara_5185c39e:
@@ -335,7 +335,7 @@ translate english meet_mara_5185c39e:
 translate english meet_mara_fe729662:
 
     # м "Ха! Страждаю від темряви? Дівчинко, я і є темрява."
-    м "Ha! Suffer from the darkness? Girl, I am the darkness."
+    м "Ha! Suffer from the darkness? Little girl, I am the darkness."
 
 # game/script.rpy:235
 translate english meet_mara_19d53dd7:
@@ -359,7 +359,7 @@ translate english meet_mara_3350aa24:
 translate english meet_mara_596c39d9:
 
     # в "Я обіцяю, що достану тобі цигарки за першої можливості!"
-    в "I promise I'll get you cigarettes at the first opportunity!"
+    в "I promise I'll get you a cigarette at the first opportunity!"
 
 # game/script.rpy:246
 translate english meet_mara_9e81772b:
@@ -407,7 +407,7 @@ translate english mara_joins_2e9fc95f:
 translate english mara_joins_b3852158:
 
     # м "Але передай моїй сестрі, що вона у мене в боргу (знову.)"
-    м "But tell my sister that she owes me (again.)"
+    м "But tell my sister that she owes me one (again.)"
 
 # game/script.rpy:264
 translate english mara_joins_f7f06ba7:
@@ -419,7 +419,7 @@ translate english mara_joins_f7f06ba7:
 translate english mara_joins_393aed94:
 
     # в "О, ні... Час в потойбіччі погасив їх магію, як же мені тоді повернутися додому з цього підземелля?"
-    в "Oh, no... The time in the afterlife has dimmed their magic, how will I get home from this dungeon?"
+    в "Oh, no... The time in this place has dimmed their magic, how will I ever get home?"
 
 # game/script.rpy:266
 translate english mara_joins_20835cc8:
@@ -431,13 +431,13 @@ translate english mara_joins_20835cc8:
 translate english mara_joins_80deded7:
 
     # в "Мої крила! Я знову відчуваю магію. "
-    в "My wings! I feel the magic again."
+    в "My wings! I feel their magic again!"
 
 # game/script.rpy:278
 translate english mara_joins_f1a2dfe1:
 
     # м "Так, так ... "
-    м "Yes, yes..."
+    м "Yeah, yeah..."
 
 # game/script.rpy:279
 translate english mara_joins_27ed6635:
@@ -455,31 +455,31 @@ translate english mara_joins_99ee91e0:
 translate english mara_joins_39352d35:
 
     # в "Еее, Мара? "
-    в "Eee, Mara?"
+    в "Uhh, Mara?"
 
 # game/script.rpy:282
 translate english mara_joins_5ef89a76:
 
     # м "Кхм кхм, так що я хотіла сказати.. А!"
-    м "Ahem ahem, so what I wanted to say... Ah!"
+    м "Ahem ahem, so what was I saying... Ah!"
 
 # game/script.rpy:283
 translate english mara_joins_d2cf63c1:
 
     # м "Це мій дім, тому я можу тобі допомогти орієнтуватися тут"
-    м "This is my home, so I can help you navigate here."
+    м "This is my domain, so I can help you navigate here."
 
 # game/script.rpy:286
 translate english mara_joins_e89336ee:
 
     # м " Якщо хочеш вернутися додому, тобі потрібно якось дістатися верхівки підземелля, а щоб дістатися верхівки, магія твоїх крил повинна бути відновлена "
-    м "If you want to get home, you’ll need to reach the top of the dungeon, and to reach the top, the magic of your wings must be restored."
+    м "If you want to get home, you’ll need to reach the very top level, and to reach the top, the magic of your wings must be restored."
 
 # game/script.rpy:287
 translate english mara_joins_b5b6c24f:
 
     # м "Моя магія дозволить тобі піднятися на наступний рівень, але для того щоб піднятися вище тобі буде потрібно більше магії"
-    м "My magic will allow you to ascend to the next level, but to rise higher, you’ll need more magic."
+    м "My magic will allow you to ascend to the next level, but to rise higher, you’ll need much more."
 
 # game/script.rpy:290
 translate english mara_joins_6e42ae29:
@@ -497,13 +497,13 @@ translate english mara_joins_3727be16:
 translate english mara_joins_e2dbba60:
 
     # м "Ви віли, начебто соціальні метелики, так?"
-    м "You vilas are like social butterflies, right?"
+    м "You vilas are social butterflies, right?"
 
 # game/script.rpy:295
 translate english mara_joins_7b19fbdc:
 
     # м "То йди вже чаруй інших, чи що ви там віли робите. Час мені повернути моє потойбіччя, деякі створіння тут затрималися довше, ніж потрібно. Враховуючи тебе, Віла"
-    м "So go and charm others, or whatever it is you vilas do. It's time for me to return to my afterlife, some creatures here have overstayed their welcome. Including you, Vila."
+    м "So go and charm others, or whatever it is you vilas do. It's time for me to get back my kingdom, some creatures here have overstayed their welcome. Including you, Vila."
 
 # game/script.rpy:297
 translate english mara_joins_e28fd3cc:
@@ -533,15 +533,15 @@ translate english strings:
 
     # game/script.rpy:149
     old "Прокинутися"
-    new "Wake Up"
+    new "Wake Up."
 
     # game/script.rpy:149
     old "Спати далі"
-    new "Keep Sleeping"
+    new "Keep Sleeping."
 
     # game/script.rpy:237
     old "Благати Мару"
-    new "Plead with Mara"
+    new "Beg Her."
 
     # game/script.rpy:237
     old "Цигарки!"

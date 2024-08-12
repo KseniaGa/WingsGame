@@ -4,13 +4,13 @@
 translate english kiki_already_joined_48061d46:
 
     # b "Кікімната-"
-    b "Kiki's room—"
+    b "Kikirooma—"
 
 # game/room1.rpy:24
 translate english kiki_already_joined_f77f55aa:
 
     # b "Перепрошую! Кімната Кікімори наразі пустує. "
-    b "Sorry! Kikimora's room is empty at the moment."
+    b "Apologies! Kikimora's room is empty at the moment."
 
 # game/room1.rpy:30
 translate english kiki_already_visited_6145fc01:
@@ -58,31 +58,31 @@ translate english kiki_first_4ffb3fc1:
 translate english kiki_first_83a652ff:
 
     # ki "Всі пішли, всі залишили..."
-    ki "They all left, they all abandoned..."
+    ki "They all left, they all up and left..."
 
 # game/room1.rpy:55
 translate english kiki_first_0a9d2681:
 
     # v "Вітаю, Кікімора, так? Я Віла."
-    v "Hello, Kikimora, right? I’m Vila."
+    v "Greetings, Kikimora, is it? I’m Vila."
 
 # game/room1.rpy:57
 translate english kiki_first_342f7efd:
 
     # ki "Віла? Метелик?"
-    ki "Vila? Butterfly?"
+    ki "Vila? The butterfly?"
 
 # game/room1.rpy:58
 translate english kiki_first_860372b1:
 
     # ki "Віла? Фея?"
-    ki "Vila? Fairy?"
+    ki "Vila? The fairy?"
 
 # game/room1.rpy:59
 translate english kiki_first_995a48ce:
 
     # ki "Вілла? Будинок?"
-    ki "Villa? House?"
+    ki "Villa? A house?!"
 
 # game/room1.rpy:60
 translate english kiki_first_f5b69f6b:
@@ -94,7 +94,7 @@ translate english kiki_first_f5b69f6b:
 translate english kiki_first_77770c9e:
 
     # v "Ха-ха. Не будинок, Кікі. Щось поміж феєю та метеликом більш."
-    v "Haha. Not a house, Kiki. Something more between a fairy and a butterfly."
+    v "Haha. Not a house, Kiki. Something in between between a fairy and a butterfly, I guess."
 
 # game/room1.rpy:63
 translate english kiki_first_39a0ad2b:
@@ -118,13 +118,13 @@ translate english kiki_first_c8e4acc0:
 translate english kiki_first_ceddde96:
 
     # v "Давай тоді знайдемо тобі будинок та метелеків, Кікі."
-    v "Let’s find you a house and butterflies, Kiki."
+    v "Let’s find you a house and some butterflies then, Kiki."
 
 # game/room1.rpy:68
 translate english kiki_first_bb7bb537:
 
     # ki "Будинок та метеликів..."
-    ki "A house and butterflies..."
+    ki "House and butterflies..."
 
 # game/room1.rpy:73
 translate english kiki_first_7a548ff4:
@@ -214,7 +214,7 @@ translate english kiki_first_b86955fa:
 translate english kiki_first_2e60d3ca:
 
     # ki "Залишити дім... Ні, я не можу, я не можу залишити..."
-    ki "Leave the house... No, I can't, I can't leave..."
+    ki "Leave home... No, I can't, I can't leave..."
 
 # game/room1.rpy:103
 translate english kiki_first_c4535b7c:
@@ -256,13 +256,13 @@ translate english kiki_first_e8ba30af:
 translate english kiki_first_83a652ff_1:
 
     # ki "Всі пішли, всі залишили..."
-    ki "They all left, they all abandoned..."
+    ki "They all left, they all up and left..."
 
 # game/room1.rpy:112
 translate english kiki_first_b80632a5:
 
     # v "Я тобі допоможу! Не знаю як, але ми щось придумаємо разом"
-    v "I will help you! I don’t know how, but we’ll figure something out together."
+    v "I will help you! I don’t know how yet, but we’ll figure something out together."
 
 # game/room1.rpy:113
 translate english kiki_first_103df08d:
@@ -292,7 +292,7 @@ translate english remind_her_d564dcc0:
 translate english remind_her_f5993aa7:
 
     # ki "Дивись, метелик..."
-    ki "Watch, butterfly..."
+    ki "Look, butterfly..."
 
 # game/room1.rpy:127
 translate english remind_her_b6a10a92_1:
@@ -352,7 +352,7 @@ translate english remind_her_1a887da3:
 translate english remind_her_849c2cd6:
 
     # в "Дух дому - Кікі, Віла - метелик, тобто, я."
-    в "Kiki is the spirit of the home, Vila is the butterfly, which means me."
+    в "Kiki is the spirit of the home, and Vila is the butterfly, I mean, Vila is me."
 
 # game/room1.rpy:142
 translate english remind_her_bb26e345:
@@ -382,7 +382,7 @@ translate english reassure_her_06a20d80:
 translate english reassure_her_5b7ba42b:
 
     # ki "Як довго чекати..."
-    ki "How long to wait..."
+    ki "How much longer to wait still..."
 
 # game/room1.rpy:157
 translate english reassure_her_405c9a9b:
@@ -436,7 +436,7 @@ translate english reassure_her_f9f0a79c:
 translate english invite_kikimora_fe7537fb:
 
     # v "Кікі, я планую знайти новий дім, і мені знадобиться хтось, щоб зробити це місце домівкою... Чи приєднаєшься ти до мене?"
-    v "Kiki, I am planning to find a new home, and I will need someone to make it a home... Will you join me?"
+    v "Kiki, I am planning to find a new place to leave, and I will need someone to make it a home... Will you join me?"
 
 # game/room1.rpy:187
 translate english invite_kikimora_f0dace6c:
@@ -472,38 +472,38 @@ translate english invite_kikimora_7ba006f9:
 translate english invite_kikimora_83a652ff:
 
     # ki "Всі пішли, всі залишили..."
-    ki "They all left, they all abandoned..."
+    ki "They all left, they all up and left..."
 
 translate english strings:
 
     # game/room1.rpy:53
     old "Представити себе"
-    new "Introduce yourself"
+    new "Introduce yourself."
 
     # game/room1.rpy:53
     old "Попросити поради щодо домашніх справ"
-    new "Ask for advice on household matters"
+    new "Ask for advice on household matters."
 
     # game/room1.rpy:53
     old "Підкреслити терміновість"
-    new "Emphasize urgency"
+    new "Emphasize urgency."
 
     # game/room1.rpy:119
     old "Показати їй, хто вона"
-    new "Show her who she is"
+    new "Show don't tell."
 
     # game/room1.rpy:119
     old "Сказати їй, хто вона"
-    new "Tell her who she is"
+    new "Tell her who she is."
 
     # game/room1.rpy:147
     old "Шукати надію в майбутньому"
-    new "Look for hope in the future"
+    new "Look for hope in the future."
 
     # game/room1.rpy:147
     old "Шукати надію в минулому"
-    new "Look for hope in the past"
+    new "Look for hope in the past."
 
     # game/room1.rpy:147
     old "Шукати надію в теперішньому"
-    new "Look for hope in the present"
+    new "Look for hope in the present."
