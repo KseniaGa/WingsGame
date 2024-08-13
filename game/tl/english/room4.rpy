@@ -36,7 +36,7 @@ translate english lisovyk_intro_c1ac1f11:
 translate english lisovyk_intro_8a86fddc:
 
     # b "І ще, будь обережна з наступним..."
-    b "And one more thing, be careful with the next..."
+    b "And one more thing, be careful..."
 
 # game/room4.rpy:62
 translate english lisovyk_intro_24605470:
@@ -66,7 +66,7 @@ translate english lisovyk_intro_026c81c6:
 translate english lisovyk_intro_ece4a74f:
 
     # l "Лісо-що? Говори голосніше, дитя. Голоси навколо шепочуть мені на вухо, я все забуваю, і себе теж."
-    l "Liso-what? Speak louder, child. The voices around me whisper in my ear, I forget everything, including myself."
+    l "Liso-what? Speak louder, child. The voices around me whisper in my ear, I forgot everything, including myself."
 
 # game/room4.rpy:86
 translate english lisovyk_guess_cde566b1:
@@ -96,13 +96,13 @@ translate english lisovyk_guess_2765ec9f:
 translate english lisovyk_guess_26c06a6e:
 
     # v "Батько джунглів???"
-    v "Father of the Jungle???"
+    v "The Father of the Jungle??"
 
 # game/room4.rpy:92
 translate english lisovyk_guess_7ee83395:
 
     # l "Хм. Давно вже я з ним не розмовляв... Хороший був хлопець. Якщо він існує. Не знаю, чому мені здається, що це хтось, кого я знаю."
-    l "Hmm. I haven't spoken to him in a long time... He was a good fellow. If he exists. I don't know why it feels like someone I know."
+    l "Hmm. I haven't spoken to him in a long time... He was a good fellow. If he exists. I don't know why, but it feels like somebody that I used to know."
 
 # game/room4.rpy:93
 translate english lisovyk_guess_029fd462:
@@ -132,13 +132,13 @@ translate english lisovyk_guess_3ff3a445:
 translate english lisovyk_guess_084d5df3:
 
     # l "Бррхкмм. Що?!"
-    l "Brhhkm. What?!"
+    l "Brhhm. What?!"
 
 # game/room4.rpy:103
 translate english lisovyk_guess_be5a68f7:
 
     # l "Я тільки що випив ранкової роси. Або, я думаю, це була роса..."
-    l "I just drank some morning dew. Or, I think it was dew..."
+    l "I just drank some morning dew. Or, at least I think it was dew..."
 
 # game/room4.rpy:104
 translate english lisovyk_guess_adc71191:
@@ -204,7 +204,7 @@ translate english lisovyk_remind_who_he_is_20b0fef7:
 translate english lisovyk_remind_who_he_is_9901a285:
 
     # v "Лі-со-вик, ти – батько бананів."
-    v "Li-so-vyk, you are the Father of Bananas."
+    v "Lisovyk, you are the Father of Bananas."
 
 # game/room4.rpy:135
 translate english lisovyk_remind_who_he_is_ee2f399c:
@@ -216,7 +216,7 @@ translate english lisovyk_remind_who_he_is_ee2f399c:
 translate english lisovyk_remind_who_he_is_e9ca0237:
 
     # l "Я знаю, що мені подобаються банани – кому ж ні? – але це не зовсім про мене."
-    l "I know I like bananas – who doesn't? – but that's not quite about me."
+    l "I know I like bananas - who doesn't? But still, that's not me."
 
 # game/room4.rpy:137
 translate english lisovyk_remind_who_he_is_6465936c:
@@ -240,19 +240,19 @@ translate english lisovyk_remind_who_he_is_89d393cd:
 translate english lisovyk_remind_who_he_is_fdc46bb4:
 
     # l "Але найбільше – дерева. Знаєш, банан не є деревом, а травою?"
-    l "But most of all – trees. You know, a banana is not a tree, but a grass?"
+    l "But most of all, I love the trees. Did you know, that the banana plant is not a tree, but actually a herb?"
 
 # game/room4.rpy:148
 translate english lisovyk_remind_who_he_is_b5819d0a:
 
     # v "Дерева, кущі, трава – порівняно зі мною, всі вони величезні! Давай сконцентруємося..."
-    v "Trees, bushes, grass – compared to me, they are all enormous! Let's focus..."
+    v "Trees, bushes, herbs - compared to me, they are all enormous! Let's focus..."
 
 # game/room4.rpy:157
 translate english lisovyk_remind_who_he_is_259dc38e:
 
     # v "Лі-со-вик, ти - покровитель лісів."
-    v "Li-so-vyk, you are the Guardian of Forests."
+    v "Lis means forest. Lisovik, you are the Guardian of Forests."
 
 # game/room4.rpy:158
 translate english lisovyk_remind_who_he_is_50a7f716:
@@ -288,7 +288,7 @@ translate english lisovyk_remind_who_he_is_1eb1b88d:
 translate english lisovyk_remind_who_he_is_46075655:
 
     # l "Про що шепоче листя, Віло?"
-    l "What does the leaves whisper about, Vila?"
+    l "What do the leaves whisper about, Vila?"
 
 # game/room4.rpy:165
 translate english lisovyk_remind_who_he_is_4a6e7acc:
@@ -318,13 +318,13 @@ translate english lisovyk_remind_who_he_is_2ef783a5:
 translate english lisovyk_remind_who_he_is_e6b0c428:
 
     # "Лісовик повертає голову ліворуч і праворуч..."
-    ""
+    "Lisovyk turns his head left and right..."
 
 # game/room4.rpy:177
 translate english lisovyk_remind_who_he_is_21d99b80:
 
     # v "Лі-со-вик, ти покровитель всіх лисих."
-    v "Li-so-vyk, you are the protector of all the bald."
+    v "Lysyy means bald. So, Lisovyk, you are the protector of all the bald!"
 
 # game/room4.rpy:178
 translate english lisovyk_remind_who_he_is_389b150d:
@@ -342,7 +342,7 @@ translate english lisovyk_remind_who_he_is_3dfdeb42:
 translate english lisovyk_remind_who_he_is_8ce6fcb1:
 
     # l "...але це всього навсього природний процес."
-    l "...but it's just a natural process."
+    l "...but that's just a natural process."
 
 # game/room4.rpy:181
 translate english lisovyk_remind_who_he_is_82f7715d:
@@ -354,7 +354,7 @@ translate english lisovyk_remind_who_he_is_82f7715d:
 translate english lisovyk_remind_who_he_is_4ba1f4e5:
 
     # v "Лі-со-вик, ти Друг жаб."
-    v "Li-so-vyk, you are the Friend of Frogs."
+    v "Look at you, Lisovyk, you are the Friend of Frogs!"
 
 # game/room4.rpy:192
 translate english lisovyk_remind_who_he_is_0a5626b2:
@@ -366,7 +366,7 @@ translate english lisovyk_remind_who_he_is_0a5626b2:
 translate english lisovyk_remind_who_he_is_eaa37f1a:
 
     # l "Як я казав – я думаю, що казав – мені подобаються ~всі~ тварини."
-    l "As I said – I think I said – I like ~all~ animals."
+    l "As I said - at least I think that I said that - I like ALL animals."
 
 # game/room4.rpy:194
 translate english lisovyk_remind_who_he_is_c6b43c3a:
@@ -402,7 +402,7 @@ translate english get_to_know_more_bf58fbe4:
 translate english get_to_know_more_912ec177:
 
     # l "Мій дім ділили ми з багатьма іншими створіннями – птахами, вовками, ведмедями..."
-    l "My home was shared with many other creatures – birds, wolves, bears..."
+    l "My home was shared with many other creatures. Birds, wolves, bears..."
 
 # game/room4.rpy:210
 translate english get_to_know_more_35b356a0:
@@ -420,13 +420,13 @@ translate english get_to_know_more_181d221b:
 translate english get_to_know_more_86f5ed8e:
 
     # v "Що то були за звуки? Спів птахів? Стрибки зайців?"
-    v "What were those sounds? Birdsong? Rabbit jumps?"
+    v "What were those sounds? Birdsong? Rabbits jumping around?"
 
 # game/room4.rpy:215
 translate english get_to_know_more_ce1651d3:
 
     # l "Останні спогади здаються темними, дуже темними. Згадую лише тріскання вогню, крики і перед очима дим, всюди дим..."
-    l "The last memories seem dark, very dark. I only recall the crackling of fire, screams, and smoke before my eyes, smoke everywhere..."
+    l "The most recent memories seem dark, very dark. I only recall the crackling of fire, screams, and smoke before my eyes, smoke everywhere..."
 
 # game/room4.rpy:216
 translate english get_to_know_more_7e59b69a:
@@ -450,7 +450,7 @@ translate english get_to_know_more_3bf52e4d:
 translate english get_to_know_more_b8513238:
 
     # l "Ігри з друзями – ха. Щось таке чуже тут. Ти перший відвідувач, якого я мав за довгий час..."
-    l "Games with friends – ha. Something so foreign here. You're the first visitor I've had in a long time..."
+    l "Games with friends, ha. Something so foreign here. You're the first visitor I've had in a long time..."
 
 # game/room4.rpy:225
 translate english get_to_know_more_d2756dad:
@@ -462,7 +462,7 @@ translate english get_to_know_more_d2756dad:
 translate english get_to_know_more_23502d7c:
 
     # v "Ти також допомагав людям, але часто лише якщо вони залишали смаколики."
-    v "You also helped people, but often only if they left treats."
+    v "You also helped people, but often only if they left some food for you."
 
 # game/room4.rpy:227
 translate english get_to_know_more_294db949:
@@ -510,7 +510,7 @@ translate english invite_lisovyk_71bafb0e:
 translate english invite_lisovyk_a9c22ffb:
 
     # l "Гадаю, я все одно скоро забуду про цю зустріч, брмсс."
-    l "I guess I'll soon forget about this meeting anyway, brmss."
+    l "I guess I'll soon forget about this meeting anyway, brmmm..."
 
 # game/room4.rpy:254
 translate english invite_lisovyk_c4f34623:
@@ -526,7 +526,7 @@ translate english strings:
 
     # game/room4.rpy:84
     old "Напряму поділитись планом втечі"
-    new "Directly share the escape plan"
+    new "Share the escape plan directly"
 
     # game/room4.rpy:84
     old "Пояснити, що він у пастці темряви"
@@ -534,11 +534,11 @@ translate english strings:
 
     # game/room4.rpy:130
     old "Батько бананів"
-    new "Father of Bananas"
+    new "Father of the Bananas"
 
     # game/room4.rpy:130
     old "Володар лісів"
-    new "Guardian of Forests"
+    new "Guardian of the Forests"
 
     # game/room4.rpy:130
     old "Покровитель лисих"
@@ -546,7 +546,7 @@ translate english strings:
 
     # game/room4.rpy:130
     old "Найкращий друг жаб"
-    new "Best Friend of Frogs"
+    new "Friend of the Frogs"
 
     # game/room4.rpy:203
     old "Запитати про його минуле життя"
@@ -554,4 +554,4 @@ translate english strings:
 
     # game/room4.rpy:203
     old "Розповісти про його минуле життя:"
-    new "Tell him about his past life:"
+    new "Tell him about his past life"

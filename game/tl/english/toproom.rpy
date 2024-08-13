@@ -34,7 +34,7 @@ translate english toproom_7d14c6ac:
 translate english toproom_21fcadcb:
 
     # a "Хто сьогодні з тобою?"
-    a "Who do you have with you today?"
+    a "Who is with you today?"
 
 # game/toproom.rpy:56
 translate english toproom_98241007:
@@ -226,7 +226,7 @@ translate english resist_17f8385c:
 translate english resist_1e6177b7:
 
     # a "Подивимось, кого ж ми виберемо..."
-    a "Let's see who shall we choose..."
+    a "Let me choose one of them..."
 
 # game/toproom.rpy:146
 translate english kiki_hope_8313a339:
@@ -376,13 +376,13 @@ translate english r_hope_58f3aa03:
 translate english alk_stirs_drama_d012ff2e:
 
     # a "Зрозуміла тебе, Віло. Дякую за співпрацю."
-    a "I understand, Vila. Thank you for your cooperation."
+    a "I understand now, Vila. Thank you for always being so cooperative."
 
 # game/toproom.rpy:238
 translate english alk_stirs_drama_d8cd4a3d:
 
     # a "Здається, залишилася лише одна істота, щоб свідчити."
-    a "It seems there's only one creature left to vouch for."
+    a "As always, it seems there's only one creature left, who needs to testify."
 
 # game/toproom.rpy:243
 translate english alk_stirs_drama_46d19799:
@@ -406,7 +406,7 @@ translate english alk_stirs_drama_b6096910:
 translate english alk_stirs_drama_6a3ab281:
 
     # a "Бачиш, Берегиня пробувала це багато разів. Можливо, ти та ж сама Віла, а можливо, одна з інших. Кожного разу ви зазнаєте поразки, ваші спогади стираються, і ви повертаєтесь знову."
-    a "You see, Berehynia has tried this many times. Perhaps you're the same Vila, or perhaps one of the others. Each time you fail, your memories are erased, and you return again."
+    a "You see, Berehynia has tried this many times. Perhaps you're the same vila, or perhaps one of the others. Each time you fail, your memories are erased, and you return again."
 
 # game/toproom.rpy:249
 translate english alk_stirs_drama_a0d45f23:
@@ -418,7 +418,7 @@ translate english alk_stirs_drama_a0d45f23:
 translate english alk_stirs_drama_8a7237c1:
 
     # a "Так, дорога Віла, ти була тут раніше. Багато разів. І кожного разу ти не могла з цим впоратися. Ти впадала в розпач, твої спогади стиралися."
-    a "Yes, dear Vila, you've been here before. Many times. And each time you couldn't handle it. You fell into despair, your memories were erased."
+    a "Yes, dear Vila, you've been here before. Many times. And every time, you couldn't handle what I showed you. You fell into despair, and I had to erase your memories."
 
 # game/toproom.rpy:251
 translate english alk_stirs_drama_e912c15a:
@@ -460,7 +460,7 @@ translate english vila_hope_6d610e1a:
 translate english vila_hope_420f76fa:
 
     # "Какофонія знайомих голосів:"
-    "A cacophony of familiar voices:"
+    "But a chorus of familiar voices reaches her:"
 
 # game/toproom.rpy:284
 translate english vila_hope_bd293aed:
@@ -478,7 +478,7 @@ translate english vila_hope_c74790a0:
 translate english vila_hope_af6144fc:
 
     # l "І якщо нам доведеться повторювати цю подорож знову, так і буде."
-    l "And if we have to repeat this journey again, so be it."
+    l "If we have to repeat this journey again, so be it."
 
 # game/toproom.rpy:298
 translate english vila_hope_49ee292d:
@@ -544,7 +544,7 @@ translate english alk_chill_660b749d:
 translate english alk_chill_743ea1f1:
 
     # "Віла відчуває радість усіх своїх друзів, вона переповнює все оточування."
-    "Vila feels the joy of all her friends, it fills the entire surroundings."
+    "Vila feels the joy of all her friends, it fills everything around her."
 
 # game/toproom.rpy:347
 translate english alk_chill_c26a628e:
@@ -556,13 +556,13 @@ translate english alk_chill_c26a628e:
 translate english alk_chill_c30a867a:
 
     # p "Твоя мужність і рішучість вражають, Віла. Ми тепер вільні завдяки тобі."
-    p "Your courage and determination are impressive, Vila. We're free now because of you."
+    p "Your courage and determination are impressive, Vila. We're free now, because of you."
 
 # game/toproom.rpy:357
 translate english alk_chill_7e8b4db8:
 
     # l "Твоя сила і відданість допомогли нам усім, дякую тобі, Віла."
-    l "Your strength and dedication helped all of us, thank you, Vila."
+    l "Your strength and dedication helped all of us. Thank you, Vila."
 
 # game/toproom.rpy:362
 translate english alk_chill_1034ba74:
@@ -628,13 +628,13 @@ translate english alk_chill_3f6b3fce:
 translate english alk_chill_4aa06e98:
 
     # v "Я не знаю, що нас чекає потойбік цієї темряви, але я знаю, що з вами ми..."
-    v "I don't know what's waiting for us beyond this darkness, but I know that together we will..."
+    v "I don't know what's waiting for us beyond this darkness, but I know that together, ..."
 
 # game/toproom.rpy:393
 translate english alk_chill_9bf83b5f:
 
     # v "Я знаю, що разам ми знайдемо наш дім і створимо нові спогади!"
-    v "I know that together we'll find our home and create new memories!"
+    v "I know that together we'll find a new home and create new memories!"
 
 # game/toproom.rpy:396
 translate english alk_chill_70f8252a:
@@ -716,12 +716,12 @@ translate english strings:
 
     # game/toproom.rpy:391
     old "Знайдемо"
-    new "We will rediscover"
+    new "we will rediscover."
 
     # game/toproom.rpy:391
     old "Відбудуємо"
-    new "Will Will Rebuild"
+    new "we will rebuild."
 
     # game/toproom.rpy:391
     old "Вдома"
-    new "Are Already Home"
+    new "we are already home."

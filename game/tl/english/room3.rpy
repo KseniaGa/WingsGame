@@ -4,7 +4,7 @@
 translate english rusalka_already_joined_dfd5dff9:
 
     # b "Як то кажуть, 'і мокрого місця не залишилося'. Хоча тут трошки слизько від води."
-    b "As they say, 'there wasn’t even a wet spot left.' Although it's a bit slippery from the water here."
+    b "As they say, 'not even a droplet left.' Although it's still a bit slippery here."
 
 # game/room3.rpy:24
 translate english rusalka_already_visited_5afb7946:
@@ -16,13 +16,13 @@ translate english rusalka_already_visited_5afb7946:
 translate english rusalka_intro_d800d198:
 
     # b "Русалка — це водяний дух. А тут, глибоко під землею навіть і підземного струмка нема."
-    b "Rusalka is a water spirit. But here, deep underground, there isn’t even a subterranean stream."
+    b "Rusalka is a water spirit. But here, deep underground, there isn't even a subterranean stream."
 
 # game/room3.rpy:41
 translate english rusalka_intro_8a18b95e:
 
     # b "Натомість, єдина вода, яку ти тут знайдеш, — це її сльози..."
-    b "Instead, the only water you’ll find here are her tears..."
+    b "Instead, the only water you'll find here are her tears..."
 
 # game/room3.rpy:42
 translate english rusalka_intro_00fd952a:
@@ -58,7 +58,7 @@ translate english rusalka_intro_65f85fb0:
 translate english rusalka_intro_8f395ba2:
 
     # r "Ніколи не відчувала такої спраги, як тут."
-    r "I’ve never felt thirst like this before."
+    r "I've never felt thirst like this before."
 
 # game/room3.rpy:61
 translate english rusalka_intro_e1521537:
@@ -82,7 +82,7 @@ translate english rusalka_intro_798a47f9:
 translate english rusalka_intro_42607945:
 
     # v "Я Віла! І шукаю шлях з цієї темряви. Я можу допомогти тобі!"
-    v "I’m Vila! And I’m looking for a way out of this darkness. I can help you!"
+    v "I'm Vila! And I'm looking for a way out of this darkness. I can help you!"
 
 # game/room3.rpy:76
 translate english rusalka_intro_27204c28:
@@ -94,13 +94,13 @@ translate english rusalka_intro_27204c28:
 translate english rusalka_intro_94839274:
 
     # v "Не хвилюйся, не хвилюйся! Все, що нам потрібно зробити, це знайти справжню ТЕБЕ. Вона захлвана десь в тобі, я знаю."
-    v "Don’t worry, don’t worry! All we need to do is find the real YOU. She’s hidden deep inside you, I know it."
+    v "Don't worry, don't worry! All we need to do is find the real YOU. She's hidden deep inside you, I know it."
 
 # game/room3.rpy:78
 translate english rusalka_intro_1e1d79ab:
 
     # r "Справжню мене? Але я тут... Це моє життя..."
-    r "The real me? But I’m here... This is my life..."
+    r "The real me? But I'm here... This is my life..."
 
 # game/room3.rpy:79
 translate english rusalka_intro_7be03c22:
@@ -118,7 +118,7 @@ translate english rusalka_intro_21da32fd:
 translate english rusalka_intro_4b604510:
 
     # r "Здається, сталися жахливі-жахливі речі. Але я не знаю, що саме..."
-    r "It seems like terrible, terrible things happened. But I don’t know what exactly..."
+    r "It seems like terrible, terrible things happened. But I don't know what exactly..."
 
 # game/room3.rpy:86
 translate english rusalka_intro_abe9af98:
@@ -130,13 +130,13 @@ translate english rusalka_intro_abe9af98:
 translate english rusalka_intro_dc6c78b5:
 
     # r "Ніби якась отрута поглинула мене..."
-    r "It’s like some poison consumed me..."
+    r "It's like some poison consumed me..."
 
 # game/room3.rpy:88
 translate english rusalka_intro_d815b93b:
 
     # v "Гм, це дійсно можна описати так."
-    v "Hmm, that’s actually a fitting description."
+    v "Hmm, that's actually a fitting description."
 
 # game/room3.rpy:89
 translate english rusalka_intro_c40e1f67:
@@ -166,7 +166,7 @@ translate english rusalka_remember_b54eba46:
 translate english rusalka_remember_22855f35:
 
     # r "Я не сміялася вже цілу вічність!"
-    r "I haven’t laughed in what feels like an eternity!"
+    r "I haven't laughed in what feels like an eternity!"
 
 # game/room3.rpy:108
 translate english rusalka_remember_075b9629:
@@ -178,13 +178,13 @@ translate english rusalka_remember_075b9629:
 translate english rusalka_remember_13abab41:
 
     # v "Так, сміх. Насправді, твоє лоскотання навіть могло бути зброєю."
-    v "Yes, laughter. In fact, your tickling could even be a weapon."
+    v "Yes, laughter. In fact, your tickling could even be considered a weapon."
 
 # game/room3.rpy:111
 translate english rusalka_remember_8e598cb4:
 
     # r "Гм, я пам'ятаю лоскотання у воді... Ах, плавання і веселощі в воді - найкраще, що є у цьому житті! Найкраще, що було..."
-    r "Hmm, I remember tickling in the water... Ah, swimming and fun in the water - the best things in life! The best that was..."
+    r "Hmm, I remember tickling people in the water... Ah, swimming and having fun in the water - the best things in life! It used to be, at least..."
 
 # game/room3.rpy:117
 translate english rusalka_remember_d31d3d46:
@@ -226,7 +226,7 @@ translate english rusalka_remember_b202a232:
 translate english rusalka_remember_d413af22:
 
     # r "Люди завжди бояться того, чого не знають, і помилково вважають нас злими."
-    r "People always fear what they don’t understand, and they mistakenly believe us to be evil."
+    r "People always fear what they don't understand, and they mistakenly believe us to be evil."
 
 # game/room3.rpy:143
 translate english rusalka_remember_be8d8ac6:
@@ -256,13 +256,13 @@ translate english make_rusalka_feel_better_379b09c7:
 translate english make_rusalka_feel_better_584358c7:
 
     # v "Але я тут, з тобою, Русалко!"
-    v "But I’m here with you, Rusalka!"
+    v "But I'm here with you, Rusalka!"
 
 # game/room3.rpy:163
 translate english make_rusalka_feel_better_687cd8e5:
 
     # v "Насправді, твоє ім'я асоціюється із Зеленими святами, або святом Русалій (Розалій)..."
-    v "In fact, your name is associated with the Green Holidays, or the feast of Rusalii (Rosalii)..."
+    v "In fact, your name is associated with the green week and the Pentecost, also known as Rusalii..."
 
 # game/room3.rpy:164
 translate english make_rusalka_feel_better_cb7ed090:
@@ -286,7 +286,7 @@ translate english make_rusalka_feel_better_052faf96:
 translate english make_rusalka_feel_better_3643dcb8:
 
     # v "Насправді, шкода, завдана тобі, не залишиться назавжди..."
-    v "Actually, the harm done to you won’t last forever..."
+    v "Actually, the harm done to you won't last forever..."
 
 # game/room3.rpy:175
 translate english make_rusalka_feel_better_c9e7081f:
@@ -316,25 +316,25 @@ translate english make_rusalka_feel_better_63ff817c:
 translate english make_rusalka_feel_better_73124cde:
 
     # v "Насправді, все могло бути набагато гірше, принаймні ти жива і все ще тут."
-    v "Actually, things could be much worse, at least you’re alive and still here."
+    v "Actually, things could be much worse, at least you're alive and still here."
 
 # game/room3.rpy:186
 translate english make_rusalka_feel_better_6d03cd42:
 
     # v "Це єдине, що ми знаємо напевно."
-    v "That’s the only thing we know for sure."
+    v "That's the only thing we know for sure."
 
 # game/room3.rpy:188
 translate english make_rusalka_feel_better_c89ad6f5:
 
     # r "Мені не вдалося нікого врятувати..."
-    r "I wasn’t able to save anyone..."
+    r "I wasn't able to save anyone..."
 
 # game/room3.rpy:189
 translate english make_rusalka_feel_better_431fd870:
 
     # r "...тож я залишусь тут, можливо, назавжди."
-    r "...so I’ll stay here, maybe forever."
+    r "...so I'll stay here, maybe forever."
 
 # game/room3.rpy:190
 translate english make_rusalka_feel_better_0cce31c3:
@@ -364,7 +364,7 @@ translate english rusalka_invite_fb0d8579:
 translate english rusalka_invite_c6797973:
 
     # r "Я дійсно хочу приєднатися до тебе... Що далі?"
-    r "I really want to join you... What’s next?"
+    r "I really want to join you... What's next?"
 
 # game/room3.rpy:227
 translate english rusalka_invite_5401750d_1:
@@ -376,7 +376,7 @@ translate english rusalka_invite_5401750d_1:
 translate english rusalka_invite_32765c00:
 
     # r "Я не впевнена... Темрява дуже тисне на мене."
-    r "I’m not sure... The darkness weighs too heavily on me."
+    r "I'm not sure... The darkness weighs too heavily on me."
 
 # game/room3.rpy:230
 translate english rusalka_invite_4d9626c8:
@@ -388,7 +388,7 @@ translate english strings:
 
     # game/room3.rpy:55
     old "Розрядити обстановку жартом"
-    new "Defuse the situation with a joke"
+    new "Defuse the tense situation with a joke"
 
     # game/room3.rpy:55
     old "Обережно представитися"
@@ -416,7 +416,7 @@ translate english strings:
 
     # game/room3.rpy:158
     old "Дати надію на майбутнє"
-    new "Give hope for the future"
+    new "Give her hope for the future"
 
     # game/room3.rpy:158
     old "Будь реалістом/песимістом"

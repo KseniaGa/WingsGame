@@ -12,7 +12,7 @@ translate english strings:
 
 translate english strings:
     old "Полудниця"
-    new "Poludnycia"
+    new "Poludnicia"
 
 translate english strings:
     old "Кікімора"
@@ -53,13 +53,13 @@ translate english start_905a44f9:
 translate english start_dbcb2a3f:
 
     # v "Знайомий голос..."
-    v "Familiar voice..."
+    v "A familiar voice..."
 
 # game/script.rpy:141
 translate english start_2b24d774:
 
     # v "Але так холодно... так важко відкрити очі"
-    v "But it’s so cold... it's so hard to open my eyes."
+    v "But it's so cold... it's so hard to open my eyes."
 
 # game/script.rpy:142
 translate english start_fdbbfc4a:
@@ -215,7 +215,7 @@ translate english villa_remember_afcb0888:
 translate english villa_remember_730962b0:
 
     # б "Будь обережна, Віло. Не загуби себе в темряві..."
-    б "Be careful, Vila. Don’t lose yourself in the darkness..."
+    б "Be careful, Vila. Don't lose yourself in the darkness..."
 
 # game/script.rpy:190
 translate english villa_remember_968cae8c:
@@ -281,7 +281,7 @@ translate english meet_mara_150e757c:
 translate english meet_mara_17ff3844:
 
     # в "Eee..Мара, твоя сестра поручила мені тебе знайти. Вона сказала,що ти можеш мені допомогти. Допомогти врятувати інших від темряви та повернутися додому."
-    в "Uhh..Mara, your sister instructed me to find you. She said you could help me. Help me save the others from the darkness and return home."
+    в "Uhh... Mara, your sister instructed me to find you. She said you could help me. Help me save the others from the darkness and return home."
 
 # game/script.rpy:224
 translate english meet_mara_7a249b52:
@@ -299,13 +299,13 @@ translate english meet_mara_421d8a3d:
 translate english meet_mara_dcd198d3:
 
     # м "Чому б я тобі допомогала, Віла, я люблю темряву. Темрява - це мій дім. "
-    м "Why should I help you, Vila? I love the darkness. Darkness is my home."
+    м "Why should I help you, Vila? I love the darkness. The darkness is my home."
 
 # game/script.rpy:228
 translate english meet_mara_4d2db33a:
 
     # "Берегиня шепче Вілі: Щось не так, їй тут не місце, вона ховається від чогось. Або від когось..."
-    "Berehynia whispers to Vila: Something’s wrong, she doesn’t belong here, she’s hiding from something. Or someone..."
+    "Berehynia whispers to Vila: Something's wrong, this is not where she belongs. She's hiding from something, or someone..."
 
 # game/script.rpy:229
 translate english meet_mara_3fce4935:
@@ -323,13 +323,13 @@ translate english meet_mara_a9c9c666:
 translate english meet_mara_6033fafe:
 
     # в "Я знаю, що богиня темряви зазвичай не ховається бо-зна-де в потойбіччі..."
-    в "I know that the goddess of darkness doesn’t usually hide out in the middle of nowhere..."
+    в "I know that the goddess of darkness doesn't usually hide out in the middle of nowhere..."
 
 # game/script.rpy:232
 translate english meet_mara_5185c39e:
 
     # в "Можливо ти і не страждаєш від темряви, але тобі теж потрібна допомога."
-    в "Maybe you don’t suffer from the darkness, but you need help too."
+    в "Maybe you don't suffer from the darkness, but you need help too."
 
 # game/script.rpy:234
 translate english meet_mara_fe729662:
@@ -341,7 +341,7 @@ translate english meet_mara_fe729662:
 translate english meet_mara_19d53dd7:
 
     # в " Так, але... "
-    в " Yes, but..."
+    в "Yes, but..."
 
 # game/script.rpy:240
 translate english meet_mara_2c44a67a:
@@ -353,7 +353,7 @@ translate english meet_mara_2c44a67a:
 translate english meet_mara_3350aa24:
 
     # м " Ха-ха-ха "
-    м " Ha-ha-ha"
+    м "Ha-ha-ha"
 
 # game/script.rpy:245
 translate english meet_mara_596c39d9:
@@ -377,7 +377,7 @@ translate english meet_mara_53becf1d:
 translate english meet_mara_8e9c84c8:
 
     # v "Добре, я і без тебе справлюся."
-    v "Fine, I’ll manage without you."
+    v "Fine, I'll manage without you."
 
 # game/script.rpy:253
 translate english meet_mara_d27c7dce:
@@ -389,25 +389,25 @@ translate english meet_mara_d27c7dce:
 translate english meet_mara_c046f657:
 
     # м " Ох, яка ти серйозна, нагадуєш мені мою сестру"
-    м "Oh, you’re so serious, you remind me of my sister."
+    м "Oh, you're so serious, you remind me of my sister."
 
 # game/script.rpy:261
 translate english mara_joins_80b924e0:
 
     # м "Добре, добре. Мені тут все одно зараз робити нема чого."
-    м "Alright, alright. There’s nothing else for me to do here anyway."
+    м "Alright, alright. There's nothing else for me to do here anyway."
 
 # game/script.rpy:262
 translate english mara_joins_2e9fc95f:
 
     # м "Так і бути, Віла, я піду з тобою. "
-    м "Fine, Vila, I’ll go with you."
+    м "Fine, Vila, I'll go with you."
 
 # game/script.rpy:263
 translate english mara_joins_b3852158:
 
     # м "Але передай моїй сестрі, що вона у мене в боргу (знову.)"
-    м "But tell my sister that she owes me one (again.)"
+    м "But tell my sister that she owes me one (again)."
 
 # game/script.rpy:264
 translate english mara_joins_f7f06ba7:
@@ -425,7 +425,7 @@ translate english mara_joins_393aed94:
 translate english mara_joins_20835cc8:
 
     # м "Хех, я тобі покажу"
-    м "Heh, I’ll show you."
+    м "Heh, I'll show you."
 
 # game/script.rpy:276
 translate english mara_joins_80deded7:
@@ -449,7 +449,7 @@ translate english mara_joins_27ed6635:
 translate english mara_joins_99ee91e0:
 
     # m "Але якщо ти хочеш вибратися звідси, тобі знадобиться допомога, і моєї допомоги недостатньо. -незважаючи на те, що я всемогутня і неймовірна Мара, до речі набагато могутніша від Бережки, щоб ти знала-"
-    m "But if you want to get out of here, you’ll need help, and my help isn’t enough - despite the fact that I’m the all-powerful and incredible Mara, by the way much more powerful than Berezhka, just so you know-"
+    m "But if you want to get out of here, you'll need help, and my help isn't enough - despite the fact that I'm the all-powerful and incredible Mara, by the way much more powerful than Berezhka, just so you know-"
 
 # game/script.rpy:281
 translate english mara_joins_39352d35:
@@ -461,7 +461,7 @@ translate english mara_joins_39352d35:
 translate english mara_joins_5ef89a76:
 
     # м "Кхм кхм, так що я хотіла сказати.. А!"
-    м "Ahem ahem, so what was I saying... Ah!"
+    м "Ahem, so what was I saying... Ah!"
 
 # game/script.rpy:283
 translate english mara_joins_d2cf63c1:
@@ -473,13 +473,13 @@ translate english mara_joins_d2cf63c1:
 translate english mara_joins_e89336ee:
 
     # м " Якщо хочеш вернутися додому, тобі потрібно якось дістатися верхівки підземелля, а щоб дістатися верхівки, магія твоїх крил повинна бути відновлена "
-    м "If you want to get home, you’ll need to reach the very top level, and to reach the top, the magic of your wings must be restored."
+    м "If you want to get home, you'll need to reach the very top level, and to reach the top, the magic of your wings must be restored."
 
 # game/script.rpy:287
 translate english mara_joins_b5b6c24f:
 
     # м "Моя магія дозволить тобі піднятися на наступний рівень, але для того щоб піднятися вище тобі буде потрібно більше магії"
-    м "My magic will allow you to ascend to the next level, but to rise higher, you’ll need much more."
+    м "My magic will allow you to ascend to the next level, but to rise higher, you'll need much more."
 
 # game/script.rpy:290
 translate english mara_joins_6e42ae29:
@@ -491,7 +491,7 @@ translate english mara_joins_6e42ae29:
 translate english mara_joins_3727be16:
 
     # м "До речі ! Час рушати, красуня! "
-    м "By the way! Time to move, gorgeous!"
+    м "By the way, it's time to move, gorgeous!"
 
 # game/script.rpy:294
 translate english mara_joins_e2dbba60:
@@ -515,7 +515,7 @@ translate english mara_joins_e28fd3cc:
 translate english mara_joins_1e5edb44:
 
     # б "Ха-ха я бачу ви подружилися. Хай щастить, люба. Я завжди поруч."
-    б "Ha-ha I see you’ve become friends. Good luck, dear. I’m always nearby."
+    б "Ha-ha I see you've become friends. Good luck, dear. I'm always nearby."
 
 # game/script.rpy:313
 translate english game_over_darkness_501d9ce6:

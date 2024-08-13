@@ -4,7 +4,7 @@
 translate english kiki_already_joined_48061d46:
 
     # b "Кікімната-"
-    b "Kikirooma—"
+    b "Kikimnata, Kikirooma ~ ♪"
 
 # game/room1.rpy:24
 translate english kiki_already_joined_f77f55aa:
@@ -22,13 +22,13 @@ translate english kiki_already_visited_6145fc01:
 translate english kiki_intro_10052378:
 
     # b "Кікімора – це дух дому, що піклується про порядок та чистоту. Вона живе в кожному закутку, стежачи, щоб усе було на своїх місцях."
-    b "Kikimora is the spirit of the home, responsible for order and cleanliness. She lives in every nook, ensuring everything is in its place."
+    b "Kikimora is the spirit of the home, responsible for order and cleanliness. She lives in the nooks and corners of houses, ensuring that everything is in its place."
 
 # game/room1.rpy:41
 translate english kiki_intro_75d7e205:
 
     # b "Коли вона щаслива, дім наповнюється затишком і спокоєм. Але коли її тривожать чи забувають, її сум і тривога можуть стати нестерпними."
-    b "When she is happy, the home is filled with coziness and peace. But when she is disturbed or forgotten, her sadness and anxiety can become unbearable."
+    b "When she is happy, the home is filled with coziness and peace. But when she is disturbed or forgotten, her sadness and anxiety can become unbearable for the residents."
 
 # game/room1.rpy:42
 translate english kiki_intro_dba49137:
@@ -58,13 +58,13 @@ translate english kiki_first_4ffb3fc1:
 translate english kiki_first_83a652ff:
 
     # ki "Всі пішли, всі залишили..."
-    ki "They all left, they all up and left..."
+    ki "They all left, everyone just left..."
 
 # game/room1.rpy:55
 translate english kiki_first_0a9d2681:
 
     # v "Вітаю, Кікімора, так? Я Віла."
-    v "Greetings, Kikimora, is it? I’m Vila."
+    v "Greetings, Kikimora, is it? I'm Vila."
 
 # game/room1.rpy:57
 translate english kiki_first_342f7efd:
@@ -118,7 +118,7 @@ translate english kiki_first_c8e4acc0:
 translate english kiki_first_ceddde96:
 
     # v "Давай тоді знайдемо тобі будинок та метелеків, Кікі."
-    v "Let’s find you a house and some butterflies then, Kiki."
+    v "Let's find you a house and some butterflies then, Kiki."
 
 # game/room1.rpy:68
 translate english kiki_first_bb7bb537:
@@ -130,13 +130,13 @@ translate english kiki_first_bb7bb537:
 translate english kiki_first_7a548ff4:
 
     # v "Привіт, ти знаєш когось, хто може допомогти мені з домашньою проблемою, я не знаю як..."
-    v "Hi, do you know someone who could help me with a household problem? I don’t know how to..."
+    v "Hi, do you know someone who could help me with a household problem? I don't know how to..."
 
 # game/room1.rpy:74
 translate english kiki_first_7e028721:
 
     # v "Ее... Я не знаю, як користуватися віником."
-    v "Uh... I don’t know how to use a broom."
+    v "Uh... I don't know how to use a broom."
 
 # game/room1.rpy:75
 translate english kiki_first_73623895_1:
@@ -178,7 +178,7 @@ translate english kiki_first_91b760d9:
 translate english kiki_first_24283409:
 
     # ki "Дякую, Кікі!"
-    ki "Thank you, Kiki!"
+    v "Thank you, Kiki!"
 
 # game/room1.rpy:85
 translate english kiki_first_39a0ad2b_1:
@@ -256,13 +256,13 @@ translate english kiki_first_e8ba30af:
 translate english kiki_first_83a652ff_1:
 
     # ki "Всі пішли, всі залишили..."
-    ki "They all left, they all up and left..."
+    ki "They all left, everyone just left..."
 
 # game/room1.rpy:112
 translate english kiki_first_b80632a5:
 
     # v "Я тобі допоможу! Не знаю як, але ми щось придумаємо разом"
-    v "I will help you! I don’t know how yet, but we’ll figure something out together."
+    v "I will help you! I don't know how yet, but we'll figure something out together."
 
 # game/room1.rpy:113
 translate english kiki_first_103df08d:
@@ -298,13 +298,13 @@ translate english remind_her_f5993aa7:
 translate english remind_her_b6a10a92_1:
 
     # "Віла починає наводити лад у кімнаті та прибирати."
-    "Vila begins to tidy up the room and clean."
+    "Kikimora begins to tidy up the room."
 
 # game/room1.rpy:128
 translate english remind_her_100ec775:
 
     # v "О! Дякую, Кікі, ти справжній експерт у цьому!"
-    v "Oh! Thank you, Kiki, you’re a real expert at this!"
+    v "Oh! Thank you, Kiki, you're a real expert at this!"
 
 # game/room1.rpy:129
 translate english remind_her_173788c9:
@@ -472,7 +472,7 @@ translate english invite_kikimora_7ba006f9:
 translate english invite_kikimora_83a652ff:
 
     # ki "Всі пішли, всі залишили..."
-    ki "They all left, they all up and left..."
+    ki "They all left, everyone just left..."
 
 translate english strings:
 
@@ -490,7 +490,7 @@ translate english strings:
 
     # game/room1.rpy:119
     old "Показати їй, хто вона"
-    new "Show don't tell."
+    new "Show, don't tell."
 
     # game/room1.rpy:119
     old "Сказати їй, хто вона"
